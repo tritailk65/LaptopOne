@@ -1,0 +1,141 @@
+/* Navbar header*/
+.navbar{
+    position: inherit;
+    display: block;
+    
+}
+
+.navbar__header{
+    position: absolute;
+    display: flex;
+    top:0;
+    left:0;
+    padding: 14px;
+    height: 150px;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.navbar__header-logo{
+    display: block;
+    /* background-image: url('https://macone.vn/wp-content/uploads/2019/08/Logo-MacOne.png'); */
+    margin-left: 179px;
+    width: 216px;
+    height: 84px;
+
+    /* background-size: cover; */
+    background-color: green;
+}
+
+.navbar__help-and-search{
+    display: inline;
+    height: 86px;
+    width: 424px;
+    margin-left: 38px;
+}
+
+.navbar__header-help{
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.navbar__header-search{
+    display: flex;
+    margin-top: 10px;
+    height: 39px;
+    width: 425px;
+}
+
+.navbar__header-search-box{
+    background-color: var(--white-color);
+    width: 382px;
+}
+
+.navbar__header-search-txt{
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 2.5;
+    margin-left: 20px;
+}
+
+.navbar__header-search-box-icon{
+    float: right;
+    background-color: var(--border-color);
+    width: 43px;
+    text-align: center;
+}
+
+.navbar__header-search-icon{
+    font-size: 2em;
+    padding-top: 10px;
+}
+
+.navbar__user{
+    display: flex;
+    justify-content: space-between;
+    width: 475px;
+    height: 87px;
+    margin-left: 39px;
+}
+
+.navbar__user-item{
+    display: flex;
+    flex-direction: column;
+    width: 137px;
+    height: 87px;
+    font-weight: 400;
+    font-size: 1.6em;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.navbar__user-icon{
+    text-align: center;
+    line-height: 1.5;
+    height: 60%;
+    font-size: 3rem;
+}
+
+.navbar__list-item{
+    position: absolute;
+    display: block;
+    top:112px;
+    left:0;
+    height: 38px;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.navbar__list-item-box{
+    display: flex;
+    height: 38px;
+    width: 233px;
+    margin-left: 193px;
+    background-color: #be0000;
+    cursor: pointer;
+}
+
+.navbar__list-item-txt{
+    font-weight: 500;
+    font-size: 1.6em;
+    color: var(--white-color);
+    line-height: 2.4;
+}
+
+.navbar__list-item-icon{
+    font-size: 2rem;
+    width: 45px;
+    text-align: center;
+    line-height: 2;
+    
+}
+
+/* .navbar__help-and-search{
+    
+} */

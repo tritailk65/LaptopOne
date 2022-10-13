@@ -1,6 +1,8 @@
 :root{
-    --primary-color: #a85a2e;
-    --while-color: #fff;
+    --primary-color: #0022c2;
+    --secondary-color: #FF0000;
+    --button-color: #E1DAFD;
+    --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;    
@@ -30,4 +32,12 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Button */
+.btn{
+    display: block;
+    height: 35px;
+    width: 200px;
+    background-color: var(--border-color);
 }
