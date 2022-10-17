@@ -32,7 +32,7 @@
     background-color: gray;
     float: left;
 }
-.productdetails__header--information--image--sub--1{
+.productdetails__header--information--image--sub--previous{
     width: 10px;
     height: 10px;
     text-align: center;
@@ -40,12 +40,12 @@
     margin-left: 10px;
     margin-top: 10px;
 }
-.productdetails__header--information--image--sub--2{
+.productdetails__header--information--image--sub--image{
     width: 40px;
     height: 30px;
     margin-left: 10px;
 }
-.productdetails__header--information--image--sub--3{
+.productdetails__header--information--image--sub--next{
     width: 10px;
     height: 10px;
     text-align: center;
@@ -89,8 +89,12 @@
     font-weight: 1000;
     background-color: gray;
     width: 60%;
-    height: 500px;
+    height: 750px;
     margin: 0px 150px;
+}
+.productdetails__details--table{
+    border: solid black;
+    width: 100%;
 }
 .productdetails__review{
     font-weight: 1000;
