@@ -9,39 +9,42 @@
 </head>
 
 <body>
-    <h1>Giỏ hàng</h1>
-    <div id="tb-cart">
-        <table>
-            <tr>
-                <th>STT</th>
-                <th>Sản phẩm</th>
-                <th>Tên sản phẩm</th>
-                <th>Số lượng</th>
-                <th>Giá tiền</th>
-                <th>Xóa</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><button>Xóa</button></td>
-            </tr>
-            <tr>
-                <td colspan="4">Tổng cộng</td>
-                <td colspan="2"></td>
-            </tr>
-        </table>
-    </div>
-    <div id="note">
-        <div>
-            <input type="text" class="note" name="note" placeholder="Ghi chú">
+    <div class="cart">
+        <div class="cart-form">
+            <h1 class="cart__headline">Giỏ hàng</h1>
+            <div class="cart--table">
+                <table>
+                    <tr>
+                        <th>STT</th>
+                        <th>Sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá tiền</th>
+                        <th>Xóa</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button>Xóa</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Tổng cộng</td>
+                        <td colspan="2"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cart__note">
+                <div>
+                    <input type="text" class="cart__note--cartbox" name="cart__note--cartbox" placeholder="Ghi chú">
+                </div>
+                <div>
+                    <button class="cart__note--btn">Thanh toán</button>
+                </div>
+            </div>
         </div>
-        <div>
-            <button class="btn-note">Thanh toán</button>
-        </div>
-    </div>
     </div>
 
 </html>
