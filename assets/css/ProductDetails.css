@@ -19,39 +19,32 @@
     height: 500px;
     float: left;
 }
-.productdetails__header--information--image--main{
+.productdetails__header--information--image--item--image:nth-child(1){
     background-color: gray;
     height: 300px;
     width: 300px;
-    margin: 30px 150px;
+    margin: 30px 0px;
+    background-size: 300px 300px;
 }
-.productdetails__header--information--image--sub{
-    margin-left: 150px;
+.productdetails__header--information--image--item{
+    margin-left: 170px;
 }
-.productdetails__header--information--image--sub div{
-    background-color: gray;
-    float: left;
+.productdetails__header--information--image--previous{
+    position: absolute;
+    top: 370px;
+    left: 150px;
 }
-.productdetails__header--information--image--sub--previous{
-    width: 10px;
-    height: 10px;
-    text-align: center;
-    line-height: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-.productdetails__header--information--image--sub--image{
+.productdetails__header--information--image--item--image:nth-child(n+2){
     width: 40px;
     height: 30px;
-    margin-left: 10px;
+    margin-left: 15px;
+    background-size: 40px 30px;
+    float: left;
 }
-.productdetails__header--information--image--sub--next{
-    width: 10px;
-    height: 10px;
-    text-align: center;
-    line-height: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
+.productdetails__header--information--image--next{
+    position: absolute;
+    top: 370px;
+    left: 480px;
 }
 .productdetails__header--information--content{
     width: 60%;
@@ -84,22 +77,20 @@
     padding: 10px 50px;
     font-weight: 1000;
     margin-left: 40px;
+    border-radius: 10px;
+}
+.productdetails__header--information--content--order:hover{
+    background-color: aqua;
 }
 .productdetails__details{
-    font-weight: 1000;
-    background-color: gray;
     width: 60%;
-    height: 750px;
+    height: 100%;
     margin: 0px 150px;
+    border: solid rgb(240, 240, 240);
+    background-color: rgb(247, 247, 247);
 }
 .productdetails__details--table{
     border: solid black;
     width: 100%;
 }
-.productdetails__review{
-    font-weight: 1000;
-    background-color: gray;
-    height: 800px;
-    width: 60%;
-    margin: 50px 150px;
-}
+
