@@ -42,4 +42,9 @@ html{
     height: 35px;
     width: 200px;
     background-color: var(--border-color);
+    border-radius: 6px;
+}
+
+.separate{
+    border: 1px solid var(--border-color);
 }
