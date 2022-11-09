@@ -11,7 +11,6 @@ function PreviousImage(){
     let lists= document.querySelectorAll('.productdetails__header--information--image--item--image');
     document.getElementById('image').prepend(lists[lists.length-1]);
 }
-
 function PushInformationImage(){
     var str="<div class='productdetails__header--information--image--item' id='image'>"+
     "<div class='productdetails__header--information--image--item--image' id='image-1' style='background-image: url("+"1.jpg"+") ;'></div>"+
@@ -26,7 +25,7 @@ function PushInformationImage(){
     document.getElementById('product--image').innerHTML=str;
 }
 function PushInformationContent(){
-    var str="<div class='productdetails__header--information--content--name' id='product-name'>Tên sản phẩm</div>"+
+    var str="<div class='productdetails__header--information--content--name' id='product-name'><b>Tên sản phẩm</b></div>"+
     "<div class='productdetails__header--information--content--info'>"+
     "<span class='productdetails__header--information--content--info--details1'>"+"Thông tin chung: "+"</span><br>"+
     "<span class='productdetails__header--information--content--info--details2'>"+"Bảo hành"+"</span><br>"+
@@ -34,7 +33,7 @@ function PushInformationContent(){
     "<span class='productdetails__header--information--content--info--details2'>"+"Window bản quyền"+"</span>"+
     "</div>"+
     "<div class='productdetails__header--information--content--price' id='product-price'>"+"Giá của sản phẩm"+"</div>"+
-    "<div class='productdetails__header--information--content--order' onclick='OrderProduct()'>Đặt hàng</div>";
+    "<input type='button' class='productdetails__header--information--content--order' onclick='OrderProduct()' value='Đặt hàng'>";
     document.getElementById('product--content').innerHTML=str;
 }
 function PushTable(){
