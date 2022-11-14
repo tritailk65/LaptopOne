@@ -1,4 +1,5 @@
 [
+    // "Dell_VanPhong"
     {
         "productId": 10001, 
         "brand": "Dell", 
@@ -31,7 +32,8 @@
         "description_4":"Bàn phím, touchpad hỗ trợ soạn thảo văn bản hiệu quả/Laptop Dell Latitude 3520 70280536 có kích thước phần bàn phím khá lớn giúp quá trình gõ phím nhanh hơn và chính xác hơn, vì vậy mà việc soạn thảo văn bản hay nhập liệu của bạn trở nên dễ dàng hơn rất nhiều. Ngoài ra hành trình phím ngắn cũng là ưu điểm lớn để bạn không bị mỏi tay khi gõ phím trong thời gian dài.Touchpad được thiết kế lớn hơn phù hợp với những ai thường xuyên thay đổi nơi làm việc, học tập. Giờ đây bạn có thể thao tác trên máy dễ dàng mà không cần đến chuột.",
         "description_5":"Đa dạng cổng kết nối/Là dòng laptop văn phòng phục vụ cho quá trình làm việc, học tập nên máy được trang bị đầy đủ các cổng kết nối bao gồm:/1x USB 3.2 Gen 1 Type-C (with DisplayPort®)/1x USB 3.2 Gen 1 Type-A/1x USB 3.2 Gen 1 with PowerShare/1x Headset Jack/1x RJ-45 port/1x DC in/Ngoài ra máy còn có Bluetooth 5.0 giúp bạn dễ dàng kết nối với các thiết bị ngoại vi khác mà không cần dây kết nối.",
         "description_6":"Hiệu năng mạnh mẽ/Không quá mạnh mẽ như những chiếc laptop gaming, nhưng với việc sử dụng con chip Intel Core i3-1115G4 kết hợp card đồ họa Intel UHD Graphics giúp laptop Dell Latitude 3520 70280536 sở hữu hiệu năng cao đủ sức chạy các phần mềm văn phòng dễ dàng cùng một số phần mềm đồ họa cơ bản như Photoshop, AI, … Được trang bị đến 8GB RAM DDR4 giúp chiếc laptop của bạn chạy tốt nhiều phần mềm hoặc nhiều tab trình duyệt cùng lúc. Dell còn khá hào phóng khi trang bị sẵn cho máy ổ cứng SSD lên đến 256GB dư sức đáp ứng nhu cầu lưu trữ dữ liệu người dùng.",
-        "price":12090000
+        "old-price":12990000,
+        "new-price":12090000
     },
     {
         "productId": 10002, 
@@ -65,7 +67,8 @@
         "description_4":"Màn hình góc rộng, độ sắc nét cao/Laptop sở hữu kích thước màn hình 15.6 inch với độ phân giải FHD (1920x1080), vừa đủ để thực hiện công việc, giải trí và sáng tạo một cách trọn vẹn. Đường viền được thiết kế hẹp hơn ở 2 bên nhằm mở rộng không gian cho bạn có góc nhìn thoải mái hơn. Hình ảnh chân thật, màu sắc sống động, độ chống lóa tốt tăng trải nghiệm vào những thời gian sử dụng hiệu quả nhất. ",
         "description_5":"Cổng giao tiếp đa dạng/Dell Inspiron 15 3511 P112F001EBL được trang bị đầy đủ các cổng kết nối đa dạng để bạn có thể kết nối các thiết bị ngoại vi khác một cách dễ dàng hơn. Dell đã gắn trên người “đứa con tinh thần” Dell Inspiron của mình những cổng kết nối phù hợp nhất:/2x USB 3.2 Gen 1 ports/1x USB 2.0 port/1x HDMI 1.4 port/1x Audio jack/Đây hứa hẹn chính là chiếc laptop cho sinh viên đáng đầu tư nhất trong mùa back to school này. Hay bạn là nhân viên văn phòng cần một chiếc laptop mỏng nhẹ với hiệu năng ổn định để giải quyết mọi công việc thì Dell Inspiron 15 3511 P112F001EBL vẫn rất xứng đáng để bạn cân nhắc.",
         "description_6":"",
-        "price":12290000
+        "old-price":14490000,
+        "new-price":12290000
     },
     {
         "productId": 10003, 
@@ -99,7 +102,8 @@
         "description_4":"Màn hình sắc nét cùng âm thanh sống động/Laptop Dell Vostro 3420 sở hữu màn hình 14 inch với độ phân giải Full HD để những trải nghiệm qua màn ảnh được trọn vẹn. Công nghệ chống chói Anti-glare bảo vệ cho đôi mắt khỏi những tác nhân gây hại bởi ánh sáng xanh, song đó là Wide Viewing Angle (WVA) cho góc nhìn đẹp ở mọi vị trí. Kết hợp cùng âm thanh độ nét cao cho không gian giải trí như chơi game, nghe nhạc hay xem phim chân thật hơn bao giờ hết. Việc sử dụng laptop để video call cùng bạn bè, người thân hay học tập và làm việc trực tuyến đã không còn xa lạ trong thời điểm hiện nay. Vì thế Dell đã trang bị cho laptop Vostro 3420 webcam HD có độ phân giải là 720p cho hình ảnh rõ nét hơn khi sử dụng. ",
         "description_5":"Trang bị đầy đủ cổng kết nối/Dọc theo 2 bên thân máy Dell Vostro 3420 là các cổng kết nối như: 2 x USB 3.2 Gen 1 ports, 1 x USB 3.2 Gen, 1 x Headset jack, 1 x HDMI 1.4 port, 1 x power-adapter port,1 x RJ45 Ethernet port./Laptop Dell Vostro 3420 mang một vẻ đẹp hiện đại với những tính năng làm việc hấp dẫn mà bất kỳ người dùng nào cũng muốn sở hữu cho các công việc hằng ngày. Hứa hẹn mang tới nhiều trải nghiệm thực tế hấp dẫn hơn những thông tin được chia sẻ từ GEARVN đấy nhé!",
         "description_6":"",
-        "price":12590000
+        "old-price":14990000,
+        "new-price":12590000
     },
     {
         "productId": 10004, 
@@ -133,7 +137,8 @@
         "description_4":"Màn hình góc rộng, độ sắc nét cao/Laptop sở hữu kích thước màn hình 15.6 inch với độ phân giải FHD (1920x1080), vừa đủ để thực hiện công việc, giải trí và sáng tạo một cách trọn vẹn. Đường viền được thiết kế hẹp hơn ở 2 bên nhằm mở rộng không gian cho bạn có góc nhìn thoải mái hơn. Hình ảnh chân thật, màu sắc sống động, độ chống lóa tốt tăng trải nghiệm vào những thời gian sử dụng hiệu quả nhất. ",
         "description_5":"Cổng giao tiếp đa dạng/Dell Inspiron 15 được trang bị đầy đủ các cổng kết nối đa dạng để bạn có thể kết nối các thiết bị ngoại vi khác một cách dễ dàng hơn. Dell đã gắn trên người “đứa con tinh thần” Dell Inspiron của mình những cổng kết nối phù hợp nhất:/1 x USB 3.2 Gen 1/2 x USB 3.2 Gen 1/1 x USB 2.0 /1 x headset/1 x HDMI 1.4 /One SD card/Đây hứa hẹn chính là chiếc laptop cho sinh viên đáng đầu tư nhất trong mùa back to school này. Hay bạn là nhân viên văn phòng cần một chiếc laptop mỏng nhẹ với hiệu năng ổn định để giải quyết mọi công việc thì Dell Inspiron 15 3520 i3U082W11BLU vẫn rất xứng đáng để bạn cân nhắc.",
         "description_6":"",
-        "price":14290000
+        "old-price":15190000,
+        "new-price":14290000
     },
     {
         "productId": 10005, 
@@ -167,7 +172,8 @@
         "description_4":"Màn hình Full HD cho trải nghiệm hình ảnh đỉnh cao/Laptop Dell Vostro 14 5415 sở hữu màn hình với kích thước hình 14 inch có độ phân giải Full HD (1920 x 1080) hiển thị sắc nét từng chi tiết mang đến cho người sử dụng những giờ phút giây thư giãn thoải mái.",
         "description_5":"Công nghệ âm thanh Realtek High Definition Audio/Laptop Dell Vostro 14 5415 P143G002AGR là một trong những dòng laptop văn phòng được trang bị hệ thống loa công nghệ Realtek High Definition Audio cho chất âm to rõ, đáp ứng tốt nhu cầu giải trí, hội họp trực tuyến. Giúp người dùng khi đàm thoại nâng cao hiệu quả trong công việc và những phút giây giải trí với âm thanh vô cùng chất lượng.",
         "description_6":"",
-        "price":15490000
+        "old-price":16490000,
+        "new-price":15490000
     },
     {
         "productId": 10006, 
@@ -201,7 +207,8 @@
         "description_4":"Bàn phím, touchpad hỗ trợ soạn thảo văn bản hiệu quả/Laptop Dell Latitude 3520 70280543 có kích thước phần bàn phím khá lớn giúp quá trình gõ phím nhanh hơn và chính xác hơn, vì vậy mà việc soạn thảo văn bản hay nhập liệu của bạn trở nên dễ dàng hơn rất nhiều. Ngoài ra hành trình phím ngắn cũng là ưu điểm lớn để bạn không bị mỏi tay khi gõ phím trong thời gian dài./Touchpad được thiết kế lớn hơn phù hợp với những ai thường xuyên thay đổi nơi làm việc, học tập. Giờ đây bạn có thể thao tác trên máy dễ dàng mà không cần đến chuột.",
         "description_5":"Đa dạng cổng kết nối/Là dòng laptop văn phòng phục vụ cho quá trình làm việc, học tập nên máy được trang bị đầy đủ các cổng kết nối bao gồm:/1x USB 3.2 Gen 1 Type-C (with DisplayPort®)/1x USB 3.2 Gen 1 Type-A/1x USB 3.2 Gen 1 with PowerShare/1x Headset Jack/1x RJ-45 port/1x DC in/Ngoài ra máy còn có Bluetooth 5.0 giúp bạn dễ dàng kết nối với các thiết bị ngoại vi khác mà không cần dây kết nối.",
         "description_6":"Hiệu năng mạnh mẽ/Không quá mạnh mẽ như những chiếc laptop gaming, nhưng với việc sử dụng con chip Intel Core i3-1115G4 kết hợp card đồ họa Intel UHD Graphics giúp laptop Dell Latitude 3520 70280543 sở hữu hiệu năng cao đủ sức chạy các phần mềm văn phòng dễ dàng cùng một số phần mềm đồ họa cơ bản như Photoshop, AI, … Được trang bị đến 8GB RAM DDR4 giúp chiếc laptop của bạn chạy tốt nhiều phần mềm hoặc nhiều tab trình duyệt cùng lúc. Dell còn khá hào phóng khi trang bị sẵn cho máy ổ cứng SSD lên đến 256GB dư sức đáp ứng nhu cầu lưu trữ dữ liệu người dùng.",
-        "price":16990000
+        "old-price":18990000,
+        "new-price":16990000
     },
     {
         "productId": 10007, 
@@ -269,7 +276,8 @@
         "description_4":"Cấu hình mạnh mẽ cho tác vụ văn phòng/Laptop Dell Vostro 3510 7T2YC2 được trang bị con CPU Intel Core i5 thế hệ 11 mới nhất đem lại tốc độ xử lý nhanh gọn cho các công việc văn phòng. Hỗ trợ thêm đó là 8GB RAM cùng 512GB SSD tăng thêm khả năng đa nhiệm trên nhiều tác vụ, và sẽ là bộ nhớ lưu trữ thoải mái cho các tài liệu.",
         "description_5":"Đa dạng các cổng kết nối/Là một chiếc laptop dành cho học tập và làm việc, Dell Vostro 3510 7T2YC2 có tất cả những cổng kết nối cần thiết cả 2 nhu cầu văn phòng và đi học, bao gồm: USB Type-A, HDMI và đầu đọc thẻ nhớ SD.",
         "description_6":"",
-        "price":17490000
+        "old-price":20990000,
+        "new-price":17490000
     },
     {
         "productId": 10009, 
@@ -303,7 +311,8 @@
         "description_4":"Màn hình góc rộng, độ sắc nét cao/Laptop sở hữu kích thước màn hình 15.6 inch với độ phân giải FHD (1920x1080), vừa đủ để thực hiện công việc, giải trí và sáng tạo một cách trọn vẹn. Đường viền được thiết kế hẹp hơn ở 2 bên nhằm mở rộng không gian cho bạn có góc nhìn thoải mái hơn. Hình ảnh chân thật, màu sắc sống động, độ chống lóa tốt tăng trải nghiệm vào những thời gian sử dụng hiệu quả nhất. ",
         "description_5":"Cổng giao tiếp đa dạng/Dell Inspiron 15 được trang bị đầy đủ các cổng kết nối đa dạng để bạn có thể kết nối các thiết bị ngoại vi khác một cách dễ dàng hơn. Dell đã gắn trên người “đứa con tinh thần” Dell Inspiron của mình những cổng kết nối phù hợp nhất:/2x USB 3.2 Gen 1 ports/1x USB 2.0 port/1x HDMI 1.4 port/1x Audio jack/Đây hứa hẹn chính là chiếc laptop cho sinh viên đáng đầu tư nhất trong mùa back to school này. Hay bạn là nhân viên văn phòng cần một chiếc laptop mỏng nhẹ với hiệu năng ổn định để giải quyết mọi công việc thì Dell Inspiron 15 3520 i5U085W11BLU vẫn rất xứng đáng để bạn cân nhắc.",
         "description_6":"",
-        "price":17790000
+        "old-price":18990000,
+        "new-price":17790000
     },
     {
         "productId": 10010, 
@@ -371,7 +380,8 @@
         "description_4":"Màn hình sắc nét cùng âm thanh sống động/Laptop Dell Vostro 5410 sở hữu màn hình 14 inch với độ phân giải Full HD để những trải nghiệm qua màn ảnh được trọn vẹn. Công nghệ chống chói Anti-glare bảo vệ cho đôi mắt khỏi những tác nhân gây hại bởi ánh sáng xanh, song đó là Wide Viewing Angle (WVA) cho góc nhìn đẹp ở mọi vị trí. Kết hợp cùng âm thanh độ nét cao qua High Definition (HD) Audio cho không gian giải trí như chơi game, nghe nhạc hay xem phim chân thật hơn bao giờ hết. Việc sử dụng laptop để video call cùng bạn bè, người thân hay học tập và làm việc trực tuyến đã không còn xa lạ trong thời điểm hiện nay. Vì thế Dell đã trang bị cho laptop Vostro 5410 webcam HD có độ phân giải là 720p cho hình ảnh rõ nét hơn khi sử dụng. ",
         "description_5":"Trang bị đầy đủ cổng kết nối/Dọc theo 2 bên thân máy Dell Vostro 5410 là các cổng kết nối như: 2 x USB 3.2 Gen 1 Type-A, 1 x RJ45, 1 x Headset Jack, 1 x Wedge shaped lock, 1 x HDMI 1.4, 1 x USB 3.2 Gen 2x2 Type-C™ (Display Port/PowerDelivery). Người dùng có thể tự do kết nối các thiết bị ngoại vi khác hỗ trợ cho nhu cầu sử dụng như tai nghe, chuột máy tính, loa,.../Laptop Dell Vostro 5410 mang một vẻ đẹp hiện đại với những tính năng làm việc hấp dẫn mà bất kỳ người dùng nào cũng muốn sở hữu cho các công việc hằng ngày.",
         "description_6":"",
-        "price":19990000
+        "old-price":23690000,
+        "new-price":19990000
     },
     {
         "productId": 10012, 
@@ -405,6 +415,144 @@
         "description_4":"Màn hình góc rộng, độ sắc nét cao/Laptop sở hữu kích thước màn hình 15.6 inch với độ phân giải FHD (1920x1080), vừa đủ để thực hiện công việc, giải trí và sáng tạo một cách trọn vẹn. Đường viền được thiết kế hẹp hơn ở 2 bên nhằm mở rộng không gian cho bạn có góc nhìn thoải mái hơn. Hình ảnh chân thật, màu sắc sống động, độ chống lóa tốt tăng trải nghiệm vào những thời gian sử dụng hiệu quả nhất. ",
         "description_5":"Cổng giao tiếp đa dạng/Dell Inspiron 15 được trang bị đầy đủ các cổng kết nối đa dạng để bạn có thể kết nối các thiết bị ngoại vi khác một cách dễ dàng hơn. Dell đã gắn trên người “đứa con tinh thần” Dell Inspiron của mình những cổng kết nối phù hợp nhất:/1x USB 3.2 Gen 1 Type-C với DisplayPort 1.4/3x USB 3.2 Gen 1/1x USB 2.0/1x Cổng tai nghe (kết hợp tai nghe và micrô)/1x HDMI 1.4 (Hỗ trợ qua HDMI 1920x1080 @ 60Hz, không có đầu ra 4K/2K)/Đây hứa hẹn chính là chiếc laptop cho sinh viên đáng đầu tư nhất trong mùa back to school này. Hay bạn là nhân viên văn phòng cần một chiếc laptop mỏng nhẹ với hiệu năng ổn định để giải quyết mọi công việc thì Dell Inspiron 15 3520 70296960 vẫn rất xứng đáng để bạn cân nhắc.",
         "description_6":"",
-        "price":20490000
+        "old-price":22390000,
+        "new-price":20490000
+    },
+//  "Dell_Gaming"
+        {
+        "productId": 10013, 
+        "brand": "Dell", 
+        "img_1":"image/product/10013_1.jpg",
+        "img_2":"image/product/10013_2.jpg",
+        "img_3":"image/product/10013_3.jpg",
+        "img_4":"image/product/10013_4.jpg",
+        "img_5":"image/product/10013_5.jpg",
+        "img_6":"image/product/10013_6.jpg",
+        "name": "Laptop gaming Dell G15 5525 R5H085W11GR3050",
+        "CPU": "AMD Ryzen 5 6600H (19MB Cache, 3.3GHz, Turbo Boost 4.5GHz), 6 Cores 12 Threads",
+        "RAM":"1 x 8GB DDR5 4800MHz (2x SO-DIMM socket, up to 32GB SDRAM)",  
+        "Hardware": "512GB SSD M.2 PCIe PCIE G4X4",
+        "Card":"NVIDIA® GeForce RTX™ 3050 4GB GDDR6",
+        "screen":"15.6-inch FHD (1920 x1080) 120Hz, 250 nits, WVA, Anti-Glare, LED Backlit, Narrow Border Display",
+        "CGT": "3x USB 3.2 Gen 1/1x USB 3.2 Gen 1 Type-C port with DisplayPort with alt mode/1x HDMI 2.1/1x RJ45/1x Headphones,mic",
+        "keyboard":"US English Orange Qwerty Backlit Keyboard with Numeric Keypad and G-Key",
+        "Audio":"Nahimic Audio",
+        "Bluetooth":"Wi-Fi 6 (802.11ax) + v5.2",        
+        "Webcam":"HD camera (720p) ",
+        "OS":"Windows 11 Home + Office Home & Student",
+        "Pin":"3 Cell 56WHrs",
+        "Weigth":"2.72 kg",
+        "color":"Dark Shadow Grey",
+        "size":"357.26 x 272.11 x 26.90 (mm)",
+        "description_1":"Đánh giá chi tiết laptop gaming Dell G15 5525 R5H085W11GR3050/Laptop gaming Dell G15 5525 R5H085W11GR3050 là sản phẩm nằm trong phân khúc laptop gaming 25 đến 30 triệu và là thế hệ chơi game tiếp theo của Dell. Vốn nổi tiếng với những chiếc laptop văn phòng thì nay Dell mang đến cho game thủ một lựa chọn mới đầy tính năng, cấu hình mạnh mẽ và đương đầu với vô số tựa game dễ dàng. Vậy Dell G15 5525 sẽ được trang bị những gì?",
+        "description_2":"Thiết kế mới lạ, độc đáo/Thiết kế độc lạ so với những dòng laptop gaming khác, đơn giản và không quá cầu kì, nhưng Dell G15 5525 vẫn được chau chuốt khi sở hữu vẻ ngoài mạnh mẽ với màu Dark Shadow Grey cùng thiết kế bản lề nối với màn hình độc đáo. Thiết kế của Dell G15 khiến ta liên tưởng đến ngay dòng sản phẩm cao cấp Alienware trước đây của Dell.",
+        "description_3":"Hiệu năng mạnh mẽ, vượt trội/Dòng laptop Dell này được trang bị cấu hình mạnh mẽ giúp cho các game thủ chiến game mượt mà. Đó là sức mạnh đến từ CPU AMD Ryzen 5 6600H đi cùng là card đồ họa RTX 3050. Bộ vi xử lý đảm bảo tốc độ xử lý các tác vụ, RTX 3050 thì đem lại đồ họa đỉnh cao trên những tựa game AAA, tất cả hướng đến trải nghiệm chơi game tuyệt vời nhất cho người dùng.",
+        "description_4":"Nâng tầm trải nghiệm thị giác/Dell G15 5525 sở hữu màn hình Full HD có kích thước 15.6 inch, độ phân giải 1920x1080 và độ sáng đạt 250 nits đem lại những khung hình sắc nét, chi tiết trên từng khung hình. Và một thứ làm nên sự khác biệt giữa màn hình của một chiếc laptop gaming và laptop thông thường là tần số quét, khi Dell G15 mang lại tần số quét lên đến 120Hz cho cảm giác sử dụng mượt mà, thích mắt hơn và đặc biệt trong những tựa game FPS, đó sẽ là lợi thế của bạn khi sở hữu em nó.",
+        "description_5":"Bộ bàn phím với độ nhạy cao/Sở hữu bàn phím gõ sâu, cực kỳ nhạy và chính xác. Độ cao phím vừa phải phù hợp cho mọi kích cỡ tay, xung quanh còn được viền thêm dàn đèn LED để hỗ trợ tối đa khi bạn làm việc hoặc chơi game trong điều kiện thiếu ánh sáng. ",
+        "description_6":"Thiết kế tản nhiệt thông minh/Những khe tản nhiệt được đặt ở mặt dưới, 2 bên cạnh sau và đằng trước của laptop Dell gaming G15 5525. Giúp đem lại khả năng tản nhiệt tối ưu, cân bằng nhiệt độ và cho hiệu năng sử dụng lâu dài với chiếc laptop gaming từ Dell, hạn chế việc quá tải hoặc nhiệt cao gây hư hại cho máy.",
+        "old-price":26490000,
+        "new-price":25490000
+    },
+    {
+        "productId": 10014, 
+        "brand": "Dell", 
+        "img_1":"image/product/10014_1.jpg",
+        "img_2":"image/product/10014_2.jpg",
+        "img_3":"image/product/10014_3.jpg",
+        "img_4":"image/product/10014_4.jpg",
+        "img_5":"image/product/10014_5.jpg",
+        "img_6":"image/product/10014_6.jpg",
+        "name": "Laptop gaming Dell G15 5520 i7H165W11GR3050T",
+        "CPU": "Intel Core i7-12700H (14 Cores 20 Threads, 24MB Cache, 3.5 GHz, Turbo Boost 4.7 GHz)",
+        "RAM":"16GB (2x8GB) DDR5 4800MHz (2x SO-DIMM socket, up to 32GB SDRAM)",  
+        "Hardware": "512GB SSD M.2 PCIe PCIE G4X4",
+        "Card":"NVIDIA GeForce RTX 3050Ti 4GB GDDR6",
+        "screen":"15.6-inch FHD (1920 x1080) 165Hz 300 nits WVA Anti-Glare LED Backlit Narrow Border Display",
+        "CGT": "3x USB 3.2 Gen 1/1x USB 3.2 Gen 1 Type-C port with DisplayPort with alt mode/1x HDMI 2.1/1x RJ45/1x Headphones,mic",
+        "keyboard":"Four-zone RGB Backlit Keyboard with Numeric Keypad and G-Key",
+        "Audio":"Nahimic Audio",
+        "Bluetooth":"Intel(R) Wi-Fi 6 AX201 (2x2) Wi-Fi + v5.2",        
+        "Webcam":"HD 720p",
+        "OS":"Windows 11 Home SL + Office Home & Student 2021",
+        "Pin":"3 Cell 56WHrs",
+        "Weigth":"2.67 kg",
+        "color":"Dark Shadow Grey",
+        "size":"357.26 x 272.11 x 24.90 (mm)",
+        "description_1":"Đánh giá chi tiết laptop gaming Dell G15 5520 i7H165W11GR3050T/Laptop gaming Dell G15 5520 i7H165W11GR3050T là sản phẩm nằm trong phân khúc laptop gaming trên 30 triệu và là thế hệ chơi game tiếp theo của Dell. Vốn nổi tiếng với những chiếc laptop văn phòng thì nay Dell mang đến cho game thủ một lựa chọn mới đầy tính năng, cấu hình mạnh mẽ và đương đầu với vô số tựa game dễ dàng. Vậy Dell G15 5520 sẽ được trang bị những gì? ",
+        "description_2":"Thiết kế mới lạ, độc đáo/Thiết kế độc lạ so với những dòng laptop gaming khác, đơn giản và không quá cầu kì, nhưng Dell G15 5520 vẫn được chau chuốt khi sở hữu vẻ ngoài mạnh mẽ với màu Dark Shadow Grey cùng thiết kế bản lề nối với màn hình độc đáo. Thiết kế của Dell G15 khiến ta liên tưởng đến ngay dòng sản phẩm cao cấp Alienware trước đây của Dell.",
+        "description_3":"Hiệu năng mạnh mẽ, vượt trội/Dòng laptop Dell này được trang bị cấu hình mạnh mẽ giúp cho các game thủ chiến game mượt mà. Đó là sức mạnh đến từ CPU Intel Core i7-12700H đi cùng là card đồ họa RTX 3050Ti. Bộ vi xử lý đảm bảo tốc độ xử lý các tác vụ, RTX 3050Ti thì đem lại đồ họa đỉnh cao trên những tựa game AAA, tất cả hướng đến trải nghiệm chơi game tuyệt vời nhất cho người dùng.",
+        "description_4":"Nâng tầm trải nghiệm thị giác/Dell G15 5520 sở hữu màn hình Full HD có kích thước 15.6 inch, độ phân giải 1920x1080 và độ sáng đạt 300 nits đem lại những khung hình sắc nét, chi tiết trên từng khung hình. Và một thứ làm nên sự khác biệt giữa màn hình của một chiếc laptop gaming và laptop thông thường là tần số quét, khi Dell G15 mang lại tần số quét lên đến 165Hz cho cảm giác sử dụng mượt mà, thích mắt hơn và đặc biệt trong những tựa game FPS, đó sẽ là lợi thế của bạn khi sở hữu em nó.",
+        "description_5":"Bộ bàn phím với độ nhạy cao/Sở hữu bàn phím gõ sâu, cực kỳ nhạy và chính xác. Độ cao phím vừa phải phù hợp cho mọi kích cỡ tay, xung quanh còn được viền thêm dàn đèn LED để hỗ trợ tối đa khi bạn làm việc hoặc chơi game trong điều kiện thiếu ánh sáng. ",
+        "description_6":"Thiết kế tản nhiệt thông minh/Những khe tản nhiệt được đặt ở mặt dưới, 2 bên cạnh sau và đằng trước của laptop Dell gaming G15 5520. Giúp đem lại khả năng tản nhiệt tối ưu, cân bằng nhiệt độ và cho hiệu năng sử dụng lâu dài với chiếc laptop gaming từ Dell, hạn chế việc quá tải hoặc nhiệt cao gây hư hại cho máy.",
+        "old-price":37990000,
+        "new-price":35490000
+    },
+    {
+        "productId": 10015, 
+        "brand": "Dell", 
+        "img_1":"image/product/10015_1.jpg",
+        "img_2":"image/product/10015_2.jpg",
+        "img_3":"image/product/10015_3.jpg",
+        "img_4":"image/product/10015_4.jpg",
+        "img_5":"image/product/10015_5.jpg",
+        "img_6":"image/product/10015_6.jpg",
+        "name": "Laptop gaming Dell Alienware M15 R6 P109F001DBL",
+        "CPU": "Intel Core i7-11800H 2.3GHz up to 4.6GHz 24MB",
+        "RAM":"32GB (16x2) DDR4 3200MHz (2x SO-DIMM socket, up to 64GB SDRAM)",  
+        "Hardware": "1TB SSD M.2 PCIe",
+        "Card":"NVIDIA GeForce RTX 3060 6GB GDDR6",
+        "screen":"15.6 inch FHD (1920 x 1080) 165Hz, 3ms, with ComfortView Plus",
+        "CGT": "1x Type-C port (Includes Thunderbolt™ 4i, USB 3.2 Gen 2, Display Port 1.4, and Power Delivery 15W Output (5V,3A) capabilities)/3x Type-A USB 3.2 Gen 1 ports (one with PowerShare)/1x HDMI 2.1 Output port/1x Killer E2600 1 Gbps rated RJ-45 Ethernet port/1x Global Headset jack/1x Power,DC-In port",
+        "keyboard":"Alienware CherryMX ultra low-profile mechanical keyboard with per-key AlienFX RGB ",
+        "Audio":"Realtek ALC3254 with A-Volute Nahimic audio processing software - Integrated in Alienware Sound Center (AWSC), 2 W x 2 = 4 W total",
+        "Bluetooth":"802.11AX (WiFi 6) + v5.2",        
+        "Webcam":"Alienware HD (1280x720 resolution) camera with dual-array microphones",
+        "OS":"Windows 11 Home + Office Home & Student",
+        "Pin":"6 Cell 86WHr ",
+        "Weigth":"2.69 kg",
+        "color":"Dark Side of the Moon",
+        "size":"356.2 x 272.5 x 22.85 (mm)",
+        "description_1":"Đánh giá chi tiết laptop gaming Dell Alienware M15 R6 P109F001DBL/Một trong những dòng laptop chơi game cao cấp được yêu thích nhất hiện nay với vẻ ngoài đặc biệt cùng cấu hình mạnh mẽ, đây cũng là đứa con của thương hiệu Dell nổi tiếng với dòng laptop văn phòng, đó chính là Alienware. Hôm nay GEARVN sẽ đem đến cho bạn chiếc laptop Dell Alienware M15 R6 P109F001DBL, hãy cùng xem “người ngoài hành tinh” sẽ được trang bị những gì cho game thủ chúng ta nhé!",
+        "description_2":"Sức mạnh Dell Alienware M15 R6 P109F001DBL vượt trội/Được trang bị con chip Intel Core i7 thế hệ 11- i7-11800H, Dell Alienware M15 R6 P109F001DBL mang đến khả năng xử lý với tốc độ nhanh như chớp. Kết hợp cùng card đồ họa RTX 3060, dòng card RTX 30 series sở hữu cho mình những công nghệ thúc đẩy hiệu năng xử lý hình tốt nhất hiện nay như DLSS, Dynamic Boost 2.0 và lõi Tensor thì việc xử lý hình ảnh, edit video, tận hưởng những tựa game AAA sẽ vô cùng mượt mà./Laptop Dell Alienware M15 R6 P109F001DBL sở hữu cho mình 32GB RAM để cho khả năng đa nhiệm tốt nhất còn bộ nhớ trong lên đến 1TB SSD, vừa đóng vai trò là không gian lưu trữ dữ liệu vừa giúp khởi động laptop nhanh hơn.",
+        "description_3":"Hệ thống tản nhiệt Cryo-Tech tối ưu/Sức mạnh lớn đi với nhiệt độ hoạt động sẽ vô cùng cao, vì vậy Dell đã trang bị cho Alienware M15 R6 một hệ thống tản nhiệt mới - Cryo-Tech. Hệ thống 4 ống đồng dẫn nhiệt từ chính CPU và GPU, kết hợp cùng hệ thống quạt kép lấy không khí mát từ bên trên và dưới, đẩy không khí nóng ra 2 bên và phía sau sẽ giúp cho Dell Alienware M15 R6 luôn hoạt động ở mức hiệu năng tối đa nhất của chiếc máy/Thông qua phần mềm Alienware Command Center, bạn có thể thoải mái tùy chỉnh tốc độ quạt dựa trên tác vụ, nhiệt độ và nhu cầu cá nhân khi sử dụng Dell Alienware M15 R6..",
+        "description_4":"Màn hình dành riêng cho game thủ/Dell Alienware M15 R6 P109F001DBL mang lại khung hình 15.6 inch ở độ phân giải 2K QHD đem đến hình ảnh rộng và bắt mắt hơn. Là chiếc laptop dành cho gaming, không thể một tần số quét khủng, với con số 165Hz, Alienware M15 R6 sẽ cho bạn mọi lợi thế cần thiết khi chơi game.",
+        "description_5":"Trải nghiệm chơi game tuyệt vời/Dell Alienware M15 R6 P109F001DBL mang đến cho game thủ chúng ta chiếc bàn phím không thể tuyệt hơn. Hành trình phím 1.8mm đem lại cảm giác nhấn phím nhẹ nhàng, N-Key Rollover cho bạn thao tác nhiều phím cùng lúc và công nghệ Anti-ghosting./Một điều tuyệt vời hơn hết khi Alienware M15 R6 được trang bị switch Cherry MX, switch chỉ có trên những chiếc bàn phím cơ, bọc tiếp xúc điện mạ vàng cho trải nghiệm gõ phím như trên những chiếc bàn phím gaming. Hệ thống LED RGB 4 vùng sẽ giúp cho Alienware M15 R6 nổi bật ngay cả trong không gian tối. Bạn có thể tùy chỉnh thông qua Alienware Command Center.",
+        "description_6":"Đa dạng các cổng kết nối /Alienware M15 R6 P109F001DBL cung cấp cho bạn những cổng kết nối thiếu yếu và hữu dụng nhất, bao gồm: USB Type-A 3.2 Gen 1, USB Type-C 3.2 Gen 1 (cả 2 đều sở hữu công nghệ SuperSpeed), cổng HDMI 2.1, cổng Ethernet Killer E2600 và jack Audio.",
+        "old-price":61990000,
+        "new-price":47990000
+    },
+    {
+        "productId": 10016, 
+        "brand": "Dell", 
+        "img_1":"image/product/10016_1.jpg",
+        "img_2":"image/product/10016_2.jpg",
+        "img_3":"image/product/10016_3.jpg",
+        "img_4":"image/product/10016_4.jpg",
+        "img_5":"image/product/10016_5.jpg",
+        "img_6":"image/product/10016_6.jpg",
+        "name": "Laptop gaming Dell Alienware M15 R6 P109F001CBL",
+        "CPU": "Intel Core i7-11800H 2.3GHz up to 4.6GHz 24MB",
+        "RAM":"32GB (16x2) DDR4 3200MHz (2x SO-DIMM socket, up to 64GB SDRAM)",  
+        "Hardware": "1TB SSD M.2 PCIe",
+        "Card":"NVIDIA GeForce RTX 3060 6GB GDDR6",
+        "screen":"15.6 inch QHD (2560 x 1440) 240Hz, 2ms, with ComfortView plus, NVIDIA G-SYNC and Advanced Optimus, WVA Display",
+        "CGT": "1x Type-C port (Includes Thunderbolt™ 4i, USB 3.2 Gen 2, Display Port 1.4, and Power Delivery 15W Output (5V,3A) capabilities)/3x Type-A USB 3.2 Gen 1 ports (one with PowerShare)/1x HDMI 2.1 Output port/1x Killer E2600 1 Gbps rated RJ-45 Ethernet port/1x Global Headset jack/1x Power,DC-In port",
+        "keyboard":"Alienware CherryMX ultra low-profile mechanical keyboard with per-key AlienFX RGB",
+        "Audio":"Realtek ALC3254 with A-Volute Nahimic audio processing software - Integrated in Alienware Sound Center (AWSC), 2 W x 2 = 4 W total",
+        "Bluetooth":"802.11AX (WiFi 6) + v5.2",        
+        "Webcam":"Alienware HD (1280x720 resolution) camera with dual-array microphones",
+        "OS":"Windows 11 Home + Office Home & Student",
+        "Pin":"6 Cell 86WHr ",
+        "Weigth":"2.69 kg",
+        "color":"Dark Side of the Moon",
+        "size":"356.2 x 272.5 x 22.85 (mm)",
+        "description_1":"Đánh giá chi tiết laptop gaming Dell Alienware M15 R6 P109F001CBL/Một trong những dòng laptop chơi game cao cấp được yêu thích nhất hiện nay với vẻ ngoài đặc biệt cùng cấu hình mạnh mẽ, đây cũng là đứa con của thương hiệu Dell nổi tiếng với dòng laptop văn phòng, đó chính là Alienware. Hôm nay GEARVN sẽ đem đến cho bạn chiếc laptop Dell Alienware M15 R6 P109F001CBL, hãy cùng xem “người ngoài hành tinh” sẽ được trang bị những gì cho game thủ chúng ta nhé!",
+        "description_2":"Sức mạnh Dell Alienware M15 R6 P109F001CBL vượt trội/Được trang bị con chip Intel Core i7 thế hệ 11- i7-11800H, Dell Alienware M15 R6 P109F001CBL mang đến khả năng xử lý với tốc độ nhanh như chớp. Kết hợp cùng card đồ họa RTX 3060, dòng card RTX 30 series sở hữu cho mình những công nghệ thúc đẩy hiệu năng xử lý hình tốt nhất hiện nay như DLSS, Dynamic Boost 2.0 và lõi Tensor thì việc xử lý hình ảnh, edit video, tận hưởng những tựa game AAA sẽ vô cùng mượt mà./Laptop Dell Alienware M15 R6 P109F001CBL sở hữu cho mình 32GB RAM để cho khả năng đa nhiệm tốt nhất còn bộ nhớ trong lên đến 1TB SSD, vừa đóng vai trò là không gian lưu trữ dữ liệu vừa giúp khởi động laptop nhanh hơn.",
+        "description_3":"Hệ thống tản nhiệt Cryo-Tech tối ưu/Sức mạnh lớn đi với nhiệt độ hoạt động sẽ vô cùng cao, vì vậy Dell đã trang bị cho Alienware M15 R6 một hệ thống tản nhiệt mới - Cryo-Tech. Hệ thống 4 ống đồng dẫn nhiệt từ chính CPU và GPU, kết hợp cùng hệ thống quạt kép lấy không khí mát từ bên trên và dưới, đẩy không khí nóng ra 2 bên và phía sau sẽ giúp cho Dell Alienware M15 R6 luôn hoạt động ở mức hiệu năng tối đa nhất của chiếc máy/Thông qua phần mềm Alienware Command Center, bạn có thể thoải mái tùy chỉnh tốc độ quạt dựa trên tác vụ, nhiệt độ và nhu cầu cá nhân khi sử dụng Dell Alienware M15 R6..",
+        "description_4":"Màn hình dành riêng cho game thủ/Dell Alienware M15 R6 P109F001CBL mang lại khung hình 15.6 inch ở độ phân giải 2K QHD đem đến hình ảnh rộng và bắt mắt hơn. Là chiếc laptop dành cho gaming, không thể một tần số quét khủng, với con số 240Hz, Alienware M15 R6 sẽ cho bạn mọi lợi thế cần thiết khi chơi game. Công nghệ NVIDIA G-Sync hướng đến khả năng chơi game mượt mà và giảm thiểu tình trạng xé màn hình.",
+        "description_5":"Trải nghiệm chơi game tuyệt vời/Dell Alienware M15 R6 P109F001CBL mang đến cho game thủ chúng ta chiếc bàn phím không thể tuyệt hơn. Hành trình phím 1.8mm đem lại cảm giác nhấn phím nhẹ nhàng, N-Key Rollover cho bạn thao tác nhiều phím cùng lúc và công nghệ Anti-ghosting./Một điều tuyệt vời hơn hết khi Alienware M15 R6 được trang bị switch Cherry MX, switch chỉ có trên những chiếc bàn phím cơ, bọc tiếp xúc điện mạ vàng cho trải nghiệm gõ phím như trên những chiếc bàn phím gaming. Hệ thống LED RGB 4 vùng sẽ giúp cho Alienware M15 R6 nổi bật ngay cả trong không gian tối. Bạn có thể tùy chỉnh thông qua Alienware Command Center.",
+        "description_6":"Đa dạng các cổng kết nối /Alienware M15 R6 P109F001CBL cung cấp cho bạn những cổng kết nối thiếu yếu và hữu dụng nhất, bao gồm: USB Type-A 3.2 Gen 1, USB Type-C 3.2 Gen 1 (cả 2 đều sở hữu công nghệ SuperSpeed), cổng HDMI 2.1, cổng Ethernet Killer E2600 và jack Audio.",
+        "old-price":61990000,
+        "new-price":47990000
     }
 ]
