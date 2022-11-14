@@ -1,10 +1,3 @@
-// var productList = 
-//     document.querySelector('.navbar__list-item-box');
-
-// productList.onmouseenter = function (){
-//     document.querySelector('.navbar__list-item-box-hover').style.display='block';
-// }
-
 function SignUpOpen() {
     var textHTLM = '<div class="sign-up-form"> \
     <div onclick="SignUpClose()" class="sign-up_close-btn btn">x</div>\
@@ -95,5 +88,132 @@ function SignUpOpenFromRegister(){
     SignUpOpen();
 }
 
+var lapOfficeApi = 'http://localhost:3000/Product_LaptopVanPhong';
+var lapGamingApi = 'http://localhost:3000/Product_LaptopGaming';
+var keyboardApi = 'http://localhost:3000/Product_Keyboard';
+var mouseApi = 'http://localhost:3000/Product_Mouses';
+
+start()
+
+function start() {
+    getProductLapOffice(renderProductLapOffice)
+    getProductLapGaming(renderProductLapGaming)
+    getProductKeyboards(renderKeyboards)
+    getProductMouses(renderMouses)
+}
+
+function getProductLapOffice(callback) {
+    fetch(lapOfficeApi)
+        .then(function(response){
+            return response.json();
+        })
+        .then(callback)
+}
+
+function renderProductLapOffice(Products){
+    var listProduct = document.getElementById('LapVanPhong_Recommend');
+    var htmls = Products.map(function (product) {
+        return `<div class="product-detail">
+            <div class="new-product-img">
+                <img class="new-product-thumbnail"
+                src="${product.img}" alt="" />
+            </div>
+            <div class="new-product-percent">${product.new_productt_percent}</div>               
+            <h2 class="new-product-name">${product.name}</h2>
+            <del>${product.old_price}</del><br/>
+            <span class="new-product-sale">${product.new_price}</span>
+            </div>`;
+    });
+    listProduct.innerHTML = htmls.join("");
+}
+
+function getProductLapGaming(callback) {
+    fetch(lapGamingApi)
+        .then(function(response){
+            return response.json();
+        })
+        .then(callback)
+}
+
+function renderProductLapGaming(Products){
+    var listProduct = document.getElementById('LapGaming_Recommend');
+    var htmls = Products.map(function (product) {
+        return `<div class="product-detail">
+            <div class="new-product-img">
+                <img class="new-product-thumbnail"
+                src="${product.img}" alt="" />
+            </div>
+            <div class="new-product-percent">${product.new_productt_percent}</div>               
+            <h2 class="new-product-name">${product.name}</h2>
+            <del>${product.old_price}</del><br/>
+            <span class="new-product-sale">${product.new_price}</span>
+            </div>`;
+    });
+    listProduct.innerHTML = htmls.join("");
+}
+
+function getProductKeyboards(callback) {
+    fetch(keyboardApi)
+        .then(function(response){
+            return response.json();
+        })
+        .then(callback)
+}
+
+function renderKeyboards(Products){
+    var listProduct = document.getElementById('Keyboard_Recommend');
+    var htmls = Products.map(function (product) {
+        return `<div class="product-detail">
+            <div class="new-product-img">
+                <img class="new-product-thumbnail"
+                src="${product.img}" alt="" />
+            </div>
+            <div class="new-product-percent">${product.new_productt_percent}</div>               
+            <h2 class="new-product-name">${product.name}</h2>
+            <del>${product.old_price}</del><br/>
+            <span class="new-product-sale">${product.new_price}</span>
+            </div>`;
+    });
+    listProduct.innerHTML = htmls.join("");
+}
+
+function getProductMouses(callback) {
+    fetch(mouseApi)
+        .then(function(response){
+            return response.json();
+        })
+        .then(callback)
+}
+
+function renderMouses(Products){
+    var listProduct = document.getElementById('Mouse_Recommend');
+    var htmls = Products.map(function (product) {
+        return `<div class="product-detail">
+            <div class="new-product-img">
+                <img class="new-product-thumbnail"
+                src="${product.img}" alt="" />
+            </div>
+            <div class="new-product-percent">${product.new_productt_percent}</div>               
+            <h2 class="new-product-name">${product.name}</h2>
+            <del>${product.old_price}</del><br/>
+            <span class="new-product-sale">${product.new_price}</span>
+            </div>`;
+    });
+    listProduct.innerHTML = htmls.join("");
+}
+
+function containerHomeClose(){
+    var htmls ='<div class="productdetails">\
+                <div class="productdetails__header">\
+                    <div class="productdetails__header--information">\
+                        <div class="productdetails__header--information--image" id="product--image"></div>\
+                        <div class="productdetails__header--information--content" id="product--content"></div>\
+                    </div>\
+                </div>\
+                <div class="productdetails__detailss" id="productdetail"></div>\
+            </div>';
+    document.getElementById('content-home').style.display='none';
+    document.getElementById('content-productdetails').style.display='block'
+}
 
 

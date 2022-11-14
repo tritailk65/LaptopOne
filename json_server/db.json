@@ -1,0 +1,330 @@
+{
+  "Product_LaptopVanPhong": [
+    {
+      "id": "1",
+      "name": "Laptop MSI Modern 14 C5M 030VN",
+      "old_price":"15,990,000₫",
+      "new_price": "14,990,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/gearvn-laptop-msi-modern-14-c5m-030vn-1_72da5dd73e7b418389a915198f564fa6_large.png",
+      "new_productt_percent": "-6%"
+    },
+    {
+        "id": "2",
+        "name": "Laptop MSI Modern 15 B5M 023VN",
+        "old_price":"16,490,000₫",
+        "new_price": "15,490,000",
+        "new_productt_percent": "-6%",
+        "img": "https://product.hstatic.net/1000026716/product/gearvn-laptop-msi-modern-15-b5m-023vn-1_0b6130a19a354b8f867bc1458707adb1_large.png"
+    },
+    {
+        "id": "3",
+        "name": "Laptop MSI Modern 14 C12M 241VN",
+        "old_price":"20,490,000₫",
+        "new_price": "19,990,000₫",
+        "new_productt_percent": "-2%",
+        "img": "https://product.hstatic.net/1000026716/product/gearvn-laptop-msi-modern-14-c12m-241vn-1_e98aff877b764417a9f6c647082c59ec_large.png"
+    },
+    {
+        "id": "4",
+        "name": "Laptop MSI Modern 15 A5M 237VN",
+        "old_price":"19,990,000₫",
+        "new_price": "15,590,000₫",
+        "new_productt_percent":"-22%",
+        "img": "https://product.hstatic.net/1000026716/product/237vn_683b457d53e54636999fbdd3bf01bdea_large.png"
+    },
+    {
+        "id": "5",
+        "name": "Laptop Lenovo Ideapad 5 Pro 14IAP7 82SH002TVN",
+        "old_price":"24,990,000₫",
+        "new_price": "22,990,000₫",
+        "img": "https://product.hstatic.net/1000026716/product/1_6d92c0b6d173418fbd875a92c32f55dd_large.png",
+        "new_productt_percent": "-8%"
+      },
+      {
+        "id": "6",
+        "name": "Laptop Lenovo Ideapad 5 Pro 14IAP7 82SH002UVN",
+        "old_price":"27,490,000₫",
+        "new_price": "25,990,000₫",
+        "img": "https://product.hstatic.net/1000026716/product/gearvn-laptop-lenovo-ideapad-5-pro-14iap7-82sh002uvn-1_f632593e2e9149b3af68bd5dd0a959c2_large.png",
+        "new_productt_percent": "-5%"
+      },
+      {
+        "id": "7",
+        "name": "Laptop ASUS Vivobook 15X OLED A1503ZA L1421W",
+        "old_price":"20,790,000₫",
+        "new_price": "19,690,000₫",
+        "img": "https://product.hstatic.net/1000026716/product/l1421w_2b115562199d462b82b92e89e95b2473_large.png",
+        "new_productt_percent": "-5%"
+      },
+      {
+        "id": "8",
+        "name": "Laptop Asus ZenBook 13 UX325EA KG656W",
+        "old_price":"24,790,000₫",
+        "new_price": "17,990,000₫",
+        "img": "https://product.hstatic.net/1000026716/product/laptop-asus-zenbook-ux325ea-kg656w_33160483676c416081a2d4c83e86306f_large.png",
+        "new_productt_percent": "-27%"
+      },
+      {
+        "id": "9",
+        "name": "Laptop MSI Modern 14 B11MOU 1028VN",
+        "old_price":"14,490,000₫",
+        "new_price": "11,290,000₫",
+        "img": "https://product.hstatic.net/1000026716/product/laptop-msi-modern-14-b11mou-1028vn_1a6c3972f3de4fbc9070eca8914ffa55_large.jpg",
+        "new_productt_percent": "-22%"
+      },
+      {
+        "id": "10",
+        "name": "Laptop Lenovo IdeaPad 5 Pro 16ACH6 82L500WKVN",
+        "old_price":"25,990,000₫",
+        "new_price": "22,690,000₫",
+        "img": "https://product.hstatic.net/1000026716/product/82l500wkvn_0907c11960a7455dab1097e574e67e81_large.png",
+        "new_productt_percent": "-13%"
+      }
+  ],
+  "Product_LaptopGaming": [
+    {
+      "id": "1",
+      "name": "Laptop gaming Acer Nitro 5 Eagle AN515 57 54MV",
+      "old_price":"25,990,000₫",
+      "new_price": "22,490,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/laptop_gaming_acer_nitro_5_eagle_an515_57_54mv_3e5cc4ba80be4c8595540963d469ccc3_large.jpg",
+      "new_productt_percent": "-13%"
+    },
+    {
+      "id": "2",
+      "name": "Laptop gaming Acer Nitro 5 Tiger AN515 58 773Y",
+      "old_price":"32,990,000₫",
+      "new_price": "28,990,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/773y_5364964b798144f88c6137ff9a8afc60_large.png",
+      "new_productt_percent": "-12%"
+    },
+    {
+      "id": "3",
+      "name": "Laptop gaming MSI Katana GF66 11UC 224VN",
+      "old_price":"29,990,000₫",
+      "new_price": "22,490,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/224vn-w10_6f9cd0624e764b5f8e27f60072e51f9f_large.png",
+      "new_productt_percent": "-25%"
+    },
+    {
+      "id": "4",
+      "name": "Laptop gaming Asus TUF Dash F15 FX517ZC HN077W",
+      "old_price":"27,990,000₫",
+      "new_price": "24,990,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/3050_c761b4963d574e89829e45671fe80f32_large.png",
+      "new_productt_percent": "-11%"
+    },
+    {
+      "id": "5",
+      "name": "Laptop gaming MSI GF63 Thin 11UD 473VN",
+      "old_price":"22,990,000₫",
+      "new_price": "17,490,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/gearvn-laptop-gaming-msi-gf63-thin-11ud-473vn-1_37e7f1c2bc0f48d0a2efee221faa490c_large.png",
+      "new_productt_percent": "-24%"
+    },
+    {
+      "id": "6",
+      "name": "Laptop gaming Acer Aspire 7 A715 43G R8GA",
+      "old_price":"22,990,000₫",
+      "new_price": "19,990,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/r5-3050_1ca8d2e294ca4a3c8c875ac518beb714_large.png",
+      "new_productt_percent": "-13%"
+    },
+    {
+      "id": "7",
+      "name": "Laptop gaming Acer Predator Helios 300 PH315 55 751D",
+      "old_price":"59,990,000₫",
+      "new_price": "48,990,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/751d_326f3f25652a42faa8c5abdd8d606236_large.png",
+      "new_productt_percent": "-18%"
+    },
+    {
+      "id": "8",
+      "name": "Laptop gaming HP Victus 16 d0294TX 5Z9R5PA",
+      "old_price":"27,990,000₫",
+      "new_price": "19,990,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/d0294tx-5z9r5pa_b415b1ee04a744df8494fab739ad4c03_large.png",
+      "new_productt_percent": "-29%"
+    },
+    {
+      "id": "9",
+      "name": "Laptop gaming GIGABYTE G5 KD 52VN123SO",
+      "old_price":"26,990,000₫",
+      "new_price": "23,990,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/i5-3060_94f31cf3740d4169b925ea1b318f2e38_large.png",
+      "new_productt_percent": "-11%"
+    },
+    {
+      "id": "10",
+      "name": "Laptop gaming ASUS TUF A15 FA506IHRB HN080W",
+      "old_price":"18,990,000₫",
+      "new_price": "16,990,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/gearvn-laptop-gaming-asus-tuf-a15-fa506ihrb-hn080w-1_0986bab890c24900a834168da1c86abf_large.png",
+      "new_productt_percent": "-11%"
+    }
+  ],
+  "Product_Keyboard":[
+    {
+      "id": "1",
+      "name": "Bàn phím cơ AKKO 3098N Multi-modes Black & Cyan",
+      "old_price":"",
+      "new_price": "2,990,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/thumbphim_c1739cff1fd34b79a18cfe14275ea346_large.png",
+      "new_productt_percent": ""
+    },
+    {
+      "id": "2",
+      "name": "Bàn phím cơ AKKO PC75B Plus v2 Black Gold",
+      "old_price":"",
+      "new_price": "2,990,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/thumbphim_157da9b59bd64aa89556ec9bafac9848_large.png",
+      "new_productt_percent": ""
+    },
+    {
+      "id": "3",
+      "name": "Bàn phím cơ AKKO PC98B Plus Black Gold",
+      "old_price":"",
+      "new_price": "3,090,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/thumbphim_3f8efda820564e1bad6716b127f5894d_large.png",
+      "new_productt_percent": ""
+    },
+    {
+      "id": "4",
+      "name": "Bàn phím cơ AKKO 3098N Multi-modes Blue On White",
+      "old_price":"",
+      "new_price": "2,990,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/thumbphim_9a02ee4b8aef40cfa7d79511fb029d37_large.png",
+      "new_productt_percent": ""
+    },
+    {
+      "id": "5",
+      "name": "Bàn phím cơ Fuhlen H95S SAO LA 3 Mode Wireless",
+      "old_price":"",
+      "new_price": "2,590,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/thumbphim_1834c69c1f5e4423beef89183f86c09d_large.png",
+      "new_productt_percent": ""
+    },
+    {
+      "id": "6",
+      "name": "Bàn phím cơ Fuhlen H75S SAO LA 3 Mode Wireless",
+      "old_price":"",
+      "new_price": "2,590,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/gearvn-ban-phim-co-fuhlen-h75s-sao-la-3-mode-wireless-1_54df3ee7527845a4a93062a77f6aab30_large.png",
+      "new_productt_percent": ""
+    },
+    {
+      "id": "7",
+      "name": "Bàn phím cơ Fuhlen H95S Panda 3 Mode Wireless",
+      "old_price":"2,490,000₫",
+      "new_price": "2,290,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/thumbphim_5cb6506721034181ad844352297bc6ab_large.png",
+      "new_productt_percent": "-8%"
+    },
+    {
+      "id": "8",
+      "name": "Bàn phím cơ Fuhlen H75S Panda 3 Mode Wireless",
+      "old_price":"2,490,000₫",
+      "new_price": "2,290,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/gearvn-ban-phim-co-fuhlen-h75s-panda-3-mode-wireless-1_6f338319486d4754a4a870debae0cf14_large.png",
+      "new_productt_percent": "-8%"
+    },
+    {
+      "id": "9",
+      "name": "Bàn phím Logitech G715 TKL Off White",
+      "old_price":"4,690,000₫",
+      "new_price": "4,399,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/g715-gallery-2_7af4effd78704121b18c73e248e8c837_large.png",
+      "new_productt_percent": "-6%"
+    },
+    {
+      "id": "10",
+      "name": "Bàn phím Logitech Mechanical Gaming G413 SE",
+      "old_price":"1,899,000₫",
+      "new_price": "1,590,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/ban_phim_logitech_mechanical_gaming_g413_se_885f68b74d0841328f2dda07f41ccb56_large.png",
+      "new_productt_percent": "-16%"
+    }
+  ],
+  "Product_Mouses": [
+    {
+      "id": "1",
+      "name": "Chuột Logitech G705 Off White",
+      "old_price":"2,490,000₫",
+      "new_price": "2,379,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/g705-gallery-3_de00421261634884ae13a5b56cd374ff_large.png",
+      "new_productt_percent": "-4%"
+    },
+    {
+      "id": "2",
+      "name": "Chuột Logitech G102 Lightsync RGB Black",
+      "old_price":"599,000₫",
+      "new_price": "400,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/artboard_1_2ff4ba55c7be43a89f8ea1b2c2e577d6_large.png",
+      "new_productt_percent": "-33%"
+    },
+    {
+      "id": "3",
+      "name": "Chuột Logitech G102 Lightsync RGB White",
+      "old_price":"599,000₫",
+      "new_price": "400,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/artboard_1_45df773394834f7ab2b99f10dbded46c_large.png",
+      "new_productt_percent": "-33%"
+    },
+    {
+      "id": "4",
+      "name": "Chuột Logitech G402 Hyperion",
+      "old_price":"999,000₫",
+      "new_price": "659,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/artboard_1_da260270af0547c39559266fe9f44cb5_large.png",
+      "new_productt_percent": "-34%"
+    },
+    {
+      "id": "5",
+      "name": "Chuột Logitech G502 Hero",
+      "old_price":"1,590,000₫",
+      "new_price": "990,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/chuot_logitech_g502_hero_d6e48e0417af41009ba5c31607711b08_large.png",
+      "new_productt_percent": "-38%"
+    },
+    {
+      "id": "6",
+      "name": "Chuột Logitech G502 X Black",
+      "old_price":"1,899,000₫",
+      "new_price": "1,790,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/g502x-corded-gallery-1-black_f0e0cd7830324d7aa9ac02b80e1d4434_large.png",
+      "new_productt_percent": "-6%"
+    },
+    {
+      "id": "7",
+      "name": "Chuột Logitech G502 X White",
+      "old_price":"1,899,000₫",
+      "new_price": "1,790,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/g502x-corded-gallery-1-white_d7fc0437d0fc436ba97c48ed06840680_large.png",
+      "new_productt_percent": "-6%"
+    },
+    {
+      "id": "8",
+      "name": "Chuột Logitech G502 X Plus LightSpeed Black",
+      "old_price":"",
+      "new_price": "3,890,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/g502x-plus-gallery-2-black_1db5bbb43d2f443ea2eaf758a6f97e77_large.png",
+      "new_productt_percent": ""
+    },
+    {
+      "id": "9",
+      "name": "Chuột Logitech G502 X Plus LightSpeed White",
+      "old_price":"3,890,000₫",
+      "new_price": "3,590,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/g502x-plus-gallery-2-white_69229c9ba5534ad5bfae7d827037a28f_large.png",
+      "new_productt_percent": "-8%"
+    },
+    {
+      "id": "10",
+      "name": "Chuột Logitech G Pro X Superlight Wireless Black",
+      "old_price":"3,490,000₫",
+      "new_price": "2,890,000₫",
+      "img": "https://product.hstatic.net/1000026716/product/gearvn-chuot-logitech-g-pro-x-superlight-wireless-black-666_83650815ce2e486f9108dbbb17c29159_large.jpg",
+      "new_productt_percent": "-17%"
+    }
+  ]
+}
