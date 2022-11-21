@@ -13,6 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+    <!--chỉnh sửa-->
+    <link rel="stylesheet" href="assets/css/showproduct.css">
+    <link rel="stylesheet" href="assets/css/slidecss.css">
+     <!--chỉnh sửa-->
+
+
 </head>
 <body>
     <!-- Navbar -->
@@ -30,14 +38,24 @@
                         Hướng dẫn thanh toán
                     </div>                   
                 </div>
+
+
+                <!--chỉnh sửa--> 
                 <div class="navbar__header-search">
-                    <div class="navbar__header-search-box">
-                        <span class="navbar__header-search-txt">Bạn cần tìm gì ?</span>        
-                    </div>
+                    
+              <input type="search" id="search-input" placeholder="Bạn cần tìm gì ?" 
+                            class="navbar__header-search-box"  class="navbar__header-search-txt"/>
+                            
+                            
                     <div class="navbar__header-search-box-icon">
-                        <i class="navbar__header-search-icon fa-solid fa-magnifying-glass"></i>
+                        
+                        <button id="search" class="navbar__header-search-icon fa-solid fa-magnifying-glass"></button>
                     </div>
-                </div>
+                 </div>
+            <!--chỉnh sửa-->
+
+
+            </div>
             </div>          
             <div class="navbar__user">         
                     <div class="navbar__user-item navbar__user-item-txt navbar__user-order">
@@ -54,16 +72,930 @@
                     </div>                     
             </div>
         </div>
+
+
+
+             <!--chỉnh sửa-->   
         <div class="navbar__list-item">
             <div class="navbar__list-item-box">
                 <div class="navbar__list-item-icon">
                     <i class="fa-solid fa-list-ul"></i>
                 </div>
-                <div class="navbar__list-item-txt">
+                <div href=" "class="navbar__list-item-txt" >
                     Danh mục sản phẩm
                 </div>
             </div>
-        </div>
-    </div>
+
+            <div>
+                <div style="margin-left:193px ; float:left">
+                
+                    <div style=" height:364px; width: 233px ; float:left">
+                        <div id="buttons">
+                            <button class="button-value" onclick="filterProduct('LaptopVanPhong')">Laptop văn phòng</button>
+                            <button class="button-value" onclick="filterProduct('LaptopGaming')">Laptop gaming</button>    
+                            <button class="button-value" onclick="filterProduct('Banphim')">Bàn phím</button>
+                            <button class="button-value" onclick="filterProduct('Chuot')">Chuột & Lót chuột</button>
+                            <button class="button-value" onclick="filterProduct('Tainghe')">Tai nghe</button>
+                            <button class="button-value" onclick="filterProduct('Loa')">Loa</button>
+                            <button class="button-value" onclick="filterProduct('Microphone')">Microphone</button>
+                            <button class="button-value" onclick="filterProduct('Detannhiet')">Đế tản nhiệt</button>
+                            <button class="button-value" onclick="filterProduct('tuichongsoc')">Túi chống sốc</button>
+                        </div>
+                       
+                       
+                    </div>
+                </div>
+        
+               <div style="height:364px ; width:800px ; margin-right:193px; margin-left:440px" >
+              <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                       
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="Pictures/slide1.webp" style="width:100% ; height:400px">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="Pictures/slide2.webp" style="width:100% ; height:400px">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="Pictures/slide3.webp" style="width:100% ; height:400px">
+                        </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <script src="./slide.js"></script>
+            </div>
+
+
+
+            <div>
+                    <script>
+                        //Mảng lưu giá trị
+                        var arr = [
+            {
+                Ten:'Laptop Lenovo IdeaPad Gaming 3 15IHU6 82K101B5VN',
+                TenLoai:'LaptopGaming',
+                Gia:'22,990,000 đồng',
+                GiaSo: 22990000,
+                ThuongHieu:'Lenovo',
+                Hinh:'Pictures/gaming1.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop gaming Acer Nitro 5 Eagle AN515 57 54MV',
+                TenLoai:'LaptopGaming',
+                Gia:'25,990,000 đồng',
+                GiaSo: 25990000,
+                ThuongHieu:'Acer',
+                Hinh:'Pictures/gaming2.jpg',
+                LinkChiTiet: 'https://youtu.be/9bZkp7q19f0'
+            },
+            {
+                Ten:'Laptop gaming Acer Nitro 5 Tiger AN515 58 773Y',
+                TenLoai:'LaptopGaming',
+                Gia:'32,990,000 đồng',
+                GiaSo: 32990000,
+                ThuongHieu:'Acer',
+                Hinh:'Pictures/gaming3.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=Zi_XLOBDo_Y'
+            },
+            {
+                Ten:'Laptop gaming MSI Katana GF66 11UC 224VN',
+                TenLoai:'LaptopGaming',
+                Gia:'29,990,000 đồng',
+                GiaSo: 29990000,
+                ThuongHieu:'MSI',
+                Hinh:'Pictures/gaming4.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop gaming Asus TUF Dash F15 FX517ZE HN888W',
+                TenLoai:'LaptopGaming',
+                Gia:'31,990,000 đồng',
+                GiaSo: 31990000,
+                ThuongHieu:'Asus',
+                Hinh:'Pictures/gaming5.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop gaming Asus TUF Dash F15 FX517ZC HN077W',
+                TenLoai:'LaptopGaming',
+                Gia:'27,990,000 đồng',
+                GiaSo: 27990000,
+                ThuongHieu:'Asus',
+                Hinh:'Pictures/gaming6.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop gaming MSI GF63 Thin 11UD 473VN',
+                TenLoai:'LaptopGaming',
+                Gia:'22,990,000 đồng',
+                GiaSo: 22990000,
+                ThuongHieu:'MSI',
+                Hinh:'Pictures/gaming7.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop gaming Acer Aspire 7 A715 43G R8GA',
+                TenLoai:'LaptopGaming',
+                Gia:'21,990,000 đồng',
+                GiaSo: 21990000,
+                ThuongHieu:'Acer',
+                Hinh:'Pictures/gaming8.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop gaming HP Victus 16 d0294TX 5Z9R5PA',
+                TenLoai:'LaptopGaming',
+                Gia:'27,990,000 đồng',
+                GiaSo: 27990000,
+                ThuongHieu:'HP',
+                Hinh:'Pictures/gaming9.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop Gaming MSI Bravo 15 B5DD 276VN',
+                TenLoai:'LaptopGaming',
+                Gia:'22,490,000 đồng',
+                GiaSo: 22490000,
+                ThuongHieu:'MSI',
+                Hinh:'Pictures/gaming10.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop gaming Lenovo IdeaPad Gaming 3 15IAH7 82S900V3VN',
+                TenLoai:'LaptopGaming',
+                Gia:'27,290,000 đồng',
+                GiaSo: 27290000,
+                ThuongHieu:'Lenovo',
+                Hinh:'Pictures/gaming11.png',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop gaming ASUS TUF A15 FA506ICB HN355W',
+                TenLoai:'LaptopGaming',
+                Gia:'20,990,000 đồng',
+                GiaSo: 20990000,
+                ThuongHieu:'ASUS',
+                Hinh:'Pictures/gaming12.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop gaming GIGABYTE G5 ME 51VN263SH',
+                TenLoai:'LaptopGaming',
+                Gia:'26,490,000 đồng',
+                GiaSo: 26490000,
+                ThuongHieu:'GIGABYTE',
+                Hinh:'Pictures/gaming13.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop gaming GIGABYTE G5 KE 52VN263SH',
+                TenLoai:'LaptopGaming',
+                Gia:'27,990,000 đồng',
+                GiaSo: 27990000,
+                ThuongHieu:'GIGABYTE',
+                Hinh:'Pictures/gaming14.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop Gaming ASUS ROG Strix G15 G513IH HN015W',
+                TenLoai:'LaptopGaming',
+                Gia:'23,990,000 đồng',
+                GiaSo: 23990000,
+                ThuongHieu:'ASUS',
+                Hinh:'Pictures/gaming15.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yXQViqx6GMY'
+            },
+            {
+                Ten:'Laptop gaming Acer Predator Helios 300 PH315 55 751D',
+                TenLoai:'LaptopGaming',
+                Gia:'59,990,000 đồng',
+                GiaSo: 59990000,
+                ThuongHieu:'Acer',
+                Hinh:'Pictures/gaming16.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop MSI Modern 14 B11MOU 1028VN',
+                TenLoai:'LaptopVanPhong',
+                Gia:'14,990,000 đồng',
+                GiaSo: 14990000,
+                ThuongHieu:'MSI',
+                Hinh:'Pictures/office1.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop MSI Modern 14 B5M 203VN',
+                TenLoai:'LaptopVanPhong',
+                Gia:'12,990,000 đồng',
+                GiaSo: 12990000,
+                ThuongHieu:'MSI',
+                Hinh:'Pictures/office2.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA',
+            },
+            {
+                Ten:'Laptop ASUS Vivobook 15X OLED A1503ZA L1421W',
+                TenLoai:'LaptopVanPhong',
+                Gia:'20,490,000 đồng',
+                GiaSo: 20490000,
+                ThuongHieu:'ASUS',
+                Hinh:'Pictures/office3.gif',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop Dell Vostro 5410 V4I5214W1',
+                TenLoai:'LaptopVanPhong',
+                Gia:'23,690,000 đồng',
+                GiaSo: 23690000,
+                ThuongHieu:'Dell',
+                Hinh:'Pictures/office4.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop Dell Inspiron 15 3511 P112F001EBL',
+                TenLoai:'LaptopVanPhong',
+                Gia:'14,490,000 đồng',
+                GiaSo: 14490000,
+                ThuongHieu:'Dell',
+                Hinh:'Pictures/office5.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop Acer Aspire 3 A315 59 381E',
+                TenLoai:'LaptopVanPhong',
+                Gia:'13,990,000 đồng',
+                GiaSo: 13990000,
+                ThuongHieu:'Acer',
+                Hinh:'Pictures/office6.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop HP Pavilion 15 EG2063TU 6K791PA',
+                TenLoai:'LaptopVanPhong',
+                Gia:'14,990,000 đồng',
+                GiaSo: 14990000,
+                ThuongHieu:'HP',
+                Hinh:'Pictures/office7.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop GIGABYTE U4 UD 50S1823SO',
+                TenLoai:'LaptopVanPhong',
+                Gia:'25,490,000 đồng',
+                GiaSo: 25490000,
+                ThuongHieu:'GIGABYTE',
+                Hinh:'Pictures/office8.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop Lenovo IdeaPad 5 Pro 14ACN6 82L700L7VN',
+                TenLoai:'LaptopVanPhong',
+                Gia:'19,990,000 đồng',
+                GiaSo: 19990000,
+                ThuongHieu:'Lenovo',
+                Hinh:'Pictures/office9.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop HP Envy 13 BA1537TU 4U6P0PA',
+                TenLoai:'LaptopVanPhong',
+                Gia:'21,590,000 đồng',
+                GiaSo: 21590000,
+                ThuongHieu:'HP',
+                Hinh:'Pictures/office10.png',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop ASUS ExpertBook Flip B5302FEA LF0749W',
+                TenLoai:'LaptopVanPhong',
+                Gia:'22,990,000 đồng',
+                GiaSo: 22990000,
+                ThuongHieu:'ASUS',
+                Hinh:'Pictures/office11.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop Lenovo Yoga Slim 7 14ACN6 82N7008XVN',
+                TenLoai:'LaptopVanPhong',
+                Gia:'28,490,000 đồng',
+                GiaSo: 28490000,
+                ThuongHieu:'Lenovo',
+                Hinh:'Pictures/office12.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop LG Gram 2021 14ZD90P G.AX56A5',
+                TenLoai:'LaptopVanPhong',
+                Gia:'24,990,000 đồng',
+                GiaSo: 24990000,
+                ThuongHieu:'LG',
+                Hinh:'Pictures/office13.png',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop LG Gram 2022 14Z90Q G.AJ32A5',
+                TenLoai:'LaptopVanPhong',
+                Gia:'25,990,000 đồng',
+                GiaSo: 25990000,
+                ThuongHieu:'LG',
+                Hinh:'Pictures/office14.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop ASUS Zenbook 14 Flip OLED UP5401ZA KN005W',
+                TenLoai:'LaptopVanPhong',
+                Gia:'26,590,000 đồng',
+                GiaSo: 26590000,
+                ThuongHieu:'ASUS',
+                Hinh:'Pictures/office15.png',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Laptop ASUS Zenbook 14 OLED UX3402ZA KM219W',
+                TenLoai:'LaptopVanPhong',
+                Gia:'26,590,000 đồng',
+                GiaSo: 26590000,
+                ThuongHieu:'ASUS',
+                Hinh:'Pictures/office16.png',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Bàn phím cơ AKKO 3098N Multi-modes Black Gold (TTC switch)',
+                TenLoai:'Banphim',
+                Gia:'2,990,000 đồng',
+                GiaSo: 2990000,
+                ThuongHieu:'AKKO',
+                Hinh:'Pictures/key1.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Bàn phím cơ Leopold FC900R Bluetooth White Blue Star',
+                TenLoai:'Banphim',
+                Gia:'3,500,000 đồng',
+                GiaSo: 3500000,
+                ThuongHieu:'Leopold',
+                Hinh:'Pictures/key2.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Bàn phím cơ Fuhlen D87s RGB',
+                TenLoai:'Banphim',
+                Gia:'850,000 đồng',
+                GiaSo: 850000,
+                ThuongHieu:'Fuhlen',
+                Hinh:'Pictures/key3.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Bàn phím cơ AKKO 3108SP Pink Akko Switch V2',
+                TenLoai:'Banphim',
+                Gia:'750,000 đồng',
+                GiaSo: 750000,
+                ThuongHieu:'AKKO',
+                Hinh:'Pictures/key4.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Bàn phím AKKO 3084 v2 RGB Black',
+                TenLoai:'Banphim',
+                Gia:'1,650,000 đồng',
+                GiaSo: 1650000,
+                ThuongHieu:'AKKO',
+                Hinh:'Pictures/key5.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Bàn phím Mistel X8 Nimitz',
+                TenLoai:'Banphim',
+                Gia:'2,990,000 đồng',
+                GiaSo: 2990000,
+                ThuongHieu:'Mistel',
+                Hinh:'Pictures/key6.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Bàn phím iKBC CD87 Vintage',
+                TenLoai:'Banphim',
+                Gia:'1,990,000 đồng',
+                GiaSo: 1990000,
+                ThuongHieu:'iKBC',
+                Hinh:'Pictures/key7.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Bàn phím iKBC CD108 Vintage',
+                TenLoai:'Banphim',
+                Gia:'1,800,000 đồng',
+                GiaSo: 1800000,
+                ThuongHieu:'iKBC',
+                Hinh:'Pictures/key8.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Bàn phím Corsair K60 Pro SE RGB',
+                TenLoai:'Banphim',
+                Gia:'2,490,000 đồng',
+                GiaSo: 2490000,
+                ThuongHieu:'Corsair',
+                Hinh:'Pictures/key9.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Bàn phím Logitech G512 GX RGB (Clicky)',
+                TenLoai:'Banphim',
+                Gia:'2,990,000 đồng',
+                GiaSo: 2990000,
+                ThuongHieu:'Logitech',
+                Hinh:'Pictures/key10.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Bàn phím Logitech K120 (chuyên văn phòng)',
+                TenLoai:'Banphim',
+                Gia:'170,000 đồng',
+                GiaSo: 170000,
+                ThuongHieu:'Logitech',
+                Hinh:'Pictures/key11.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Bàn phím Logitech G913 TKL Lightspeed Wireless',
+                TenLoai:'Banphim',
+                Gia:'5,440,000 đồng',
+                GiaSo: 5440000,
+                ThuongHieu:'Logitech',
+                Hinh:'Pictures/key12.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Chuột có dây MSI Clutch GM08',
+                TenLoai:'Chuot',
+                Gia:'599,000 đồng',
+                GiaSo: 599000,
+                ThuongHieu:'MSI',
+                Hinh:'Pictures/mouse1.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Chuột không dây Razer DeathAdder V3 Pro Wireless',
+                TenLoai:'Chuot',
+                Gia:'3,890,000 đồng',
+                GiaSo: 3890000,
+                ThuongHieu:'Razer',
+                Hinh:'Pictures/mouse2.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Chuột có dây Steelseries Rival 600',
+                TenLoai:'Chuot',
+                Gia:'1,990,000 đồng',
+                GiaSo: 1990000,
+                ThuongHieu:'Steelseries',
+                Hinh:'Pictures/mouse3.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Chuột không dây Razer DeathAdder V3 Pro White Wireless',
+                TenLoai:'Chuot',
+                Gia:'3,890,000 đồng',
+                GiaSo: 3890000,
+                ThuongHieu:'Razer',
+                Hinh:'Pictures/mouse4.png',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Chuột đa năng HyperX Pulsefire Haste Black Wireless',
+                TenLoai:'Chuot',
+                Gia:'2,190,000 đồng',
+                GiaSo: 2190000,
+                ThuongHieu:'HyperX',
+                Hinh:'Pictures/mouse5.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Chuột đa năng Corsair Sabre RGB Pro Wireless',
+                TenLoai:'Chuot',
+                Gia:'2,690,000 đồng',
+                GiaSo: 2690000,
+                ThuongHieu:'Corsair',
+                Hinh:'Pictures/mouse6.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Chuột có dây Logitech G102 Lightsync RGB Black',
+                TenLoai:'Chuot',
+                Gia:'599,000 đồng',
+                GiaSo: 599000,
+                ThuongHieu:'Logitech',
+                Hinh:'Pictures/mouse7.jpg'
+            },
+            {
+                Ten:'Chuột không dây Logitech M325 Wireless',
+                TenLoai:'Chuot',
+                Gia:'499,000 đồng',
+                GiaSo: 499000,
+                ThuongHieu:'Logitech',
+                Hinh:'Pictures/mouse8.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Chuột không dây DareU EM901X RGB Superlight Wireless Black',
+                TenLoai:'Chuot',
+                Gia:'799,000 đồng',
+                GiaSo: 799000,
+                ThuongHieu:'DareU',
+                Hinh:'Pictures/mouse9.jpg'
+            },
+            {
+                Ten:'Chuột không dây Dare-U A918 Wireless - BLACK',
+                TenLoai:'Chuot',
+                Gia:'740,000 đồng',
+                GiaSo: 740000,
+                ThuongHieu:'DareU',
+                Hinh:'Pictures/mouse10.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Chuột không dây Steelseries Prime Wireless',
+                TenLoai:'Chuot',
+                Gia:'3,250,000 đồng',
+                GiaSo: 3250000,
+                ThuongHieu:'Steelseries',
+                Hinh:'Pictures/mouse11.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Chuột có dây Gaming ASUS ROG Gladius II Core',
+                TenLoai:'Chuot',
+                Gia:'1,090,000 đồng',
+                GiaSo: 1090000,
+                ThuongHieu:'ASUS',
+                Hinh:'Pictures/mouse12.png',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Lót chuột Dare-U ESP108 Queen',
+                TenLoai:'Chuot',
+                Gia:'250,000 đồng',
+                GiaSo: 250000,
+                ThuongHieu:'DareU',
+                Hinh:'Pictures/lot1.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Lót chuột DareU ESP101 Black',
+                TenLoai:'Chuot',
+                Gia:'150,000 đồng',
+                GiaSo: 150000,
+                ThuongHieu:'DareU',
+                Hinh:'Pictures/lot2.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Lót chuột Steelseries Qck Mini',
+                TenLoai:'Chuot',
+                Gia:'200,000 đồng',
+                GiaSo: 200000,
+                ThuongHieu:'Steelseries',
+                Hinh:'Pictures/lot3.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Lót chuột Logitech Studio Series Blue Grey',
+                TenLoai:'Chuot',
+                Gia:'249,000 đồng',
+                GiaSo: 249000,
+                ThuongHieu:'Logitech',
+                Hinh:'Pictures/lot4.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Lót chuột Corsair MM100',
+                TenLoai:'Chuot',
+                Gia:'250,000 đồng',
+                GiaSo: 250000,
+                ThuongHieu:'Corsair',
+                Hinh:'Pictures/lot5.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Lót chuột Razer Pro Glide',
+                TenLoai:'Chuot',
+                Gia:'300,000 đồng',
+                GiaSo: 300000,
+                ThuongHieu:'Razer',
+                Hinh:'Pictures/lot6.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Lót chuột ASUS TUF Gaming P1',
+                TenLoai:'Chuot',
+                Gia:'350,000 đồng',
+                GiaSo: 350000,
+                ThuongHieu:'ASUS',
+                Hinh:'Pictures/lot7.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Lót chuột Cougar Arena Extend - Black',
+                TenLoai:'Chuot',
+                Gia:'430,000 đồng',
+                GiaSo: 430000,
+                ThuongHieu:'Cougar',
+                Hinh:'Pictures/lot8.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Lót chuột HyperX FURY S - Large',
+                TenLoai:'Chuot',
+                Gia:'490,000 đồng',
+                GiaSo: 490000,
+                ThuongHieu:'HyperX',
+                Hinh:'Pictures/lot9.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Lót chuột AKKO World Tour London',
+                TenLoai:'Chuot',
+                Gia:'399,000 đồng',
+                GiaSo: 399000,
+                ThuongHieu:'AKKO',
+                Hinh:'Pictures/lot10.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Lót chuột Havit HV-MP861',
+                TenLoai:'Chuot',
+                Gia:'399,000 đồng',
+                GiaSo: 399000,
+                ThuongHieu:'Havit',
+                Hinh:'Pictures/lot11.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Lót chuột Rapoo V1',
+                TenLoai:'Chuot',
+                Gia:'150,000 đồng',
+                GiaSo: 150000,
+                ThuongHieu:'Rapoo',
+                Hinh:'Pictures/lot12.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Tai nghe có dây Gaming Logitech G Pro Gen 2',
+                TenLoai:'Tainghe',
+                Gia:'2,900,000 đồng',
+                GiaSo: 2900000,
+                ThuongHieu:'Logitech',
+                Hinh:'Pictures/tai1.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Tai nghe không dây Logitech G435 Lightspeed Wireless Black',
+                TenLoai:'Tainghe',
+                Gia:'1,590,000 đồng',
+                GiaSo: 1590000,
+                ThuongHieu:'Logitech',
+                Hinh:'Pictures/tai2.png',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Tai nghe có dây Razer Kraken X - Black',
+                TenLoai:'Tainghe',
+                Gia:'890,000 đồng',
+                GiaSo: 890000,
+                ThuongHieu:'Razer',
+                Hinh:'Pictures/tai3.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Tai nghe đa năng Razer Barracuda X 2022',
+                TenLoai:'Tainghe',
+                Gia:'2,599,000 đồng',
+                GiaSo: 2599000,
+                ThuongHieu:'Razer',
+                Hinh:'Pictures/tai4.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Tai nghe có dây DareU EH416 RGB',
+                TenLoai:'Tainghe',
+                Gia:'590,000 đồng',
+                GiaSo: 590000,
+                ThuongHieu:'DareU',
+                Hinh:'Pictures/tai5.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Tai nghe không dây DareU A710 RGB Wireless',
+                TenLoai:'Tainghe',
+                Gia:'1,499,000 đồng',
+                GiaSo: 1499000,
+                ThuongHieu:'DareU',
+                Hinh:'Pictures/tai6.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Tai nghe không dây SteelSeries Arctis 1 Wireless',
+                TenLoai:'Tainghe',
+                Gia:'2,950,000 đồng',
+                GiaSo: 2950000,
+                ThuongHieu:'SteelSeries',
+                Hinh:'Pictures/tai7.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Tai nghe có dây SteelSeries Arctis 3 White Edition',
+                TenLoai:'Tainghe',
+                Gia:'1,790,000 đồng',
+                GiaSo: 1790000,
+                ThuongHieu:'SteelSeries',
+                Hinh:'Pictures/tai8.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Tai nghe có dây ASUS TUF Gaming H3',
+                TenLoai:'Tainghe',
+                Gia:'1,090,000 đồng',
+                GiaSo: 1090000,
+                ThuongHieu:'ASUS',
+                Hinh:'Pictures/tai9.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Tai nghe không dây ASUS TUF H3 Wireless',
+                TenLoai:'Tainghe',
+                Gia:'2,590,000 đồng',
+                GiaSo: 2590000,
+                ThuongHieu:'ASUS',
+                Hinh:'Pictures/tai10.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Tai nghe có dây Corsair HS55 Surround Carbon',
+                TenLoai:'Tainghe',
+                Gia:'2,190,000 đồng',
+                GiaSo: 2190000,
+                ThuongHieu:'Corsair',
+                Hinh:'Pictures/tai11.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Tai nghe không dây Corsair HS80 White RGB Wireless',
+                TenLoai:'Tainghe',
+                Gia:'3,450,000 đồng',
+                GiaSo: 3450000,
+                ThuongHieu:'Corsair',
+                Hinh:'Pictures/tai12.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Đế Tản Nhiệt Havit F2072',
+                TenLoai:'Detannhiet',
+                Gia:'449,000 đồng',
+                GiaSo: 449000,
+                ThuongHieu:'Havit',
+                Hinh:'Pictures/khac1.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Đế Tản Nhiệt COOLERMASTER ERGOSTAND LITE',
+                TenLoai:'Detannhiet',
+                Gia:'690,000 đồng',
+                GiaSo: 690000,
+                ThuongHieu:'COOLERMASTER',
+                Hinh:'Pictures/khac2.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Loa Logitech G560 LIGHTSYNC RGB',
+                TenLoai:'Loa',
+                Gia:'5,490,000 đồng',
+                GiaSo: 5490000,
+                ThuongHieu:'Logitech',
+                Hinh:'Pictures/khac3.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Loa Microlab M-108BT',
+                TenLoai:'Loa',
+                Gia:'720,000 đồng',
+                GiaSo: 720000,
+                ThuongHieu:'Microlab',
+                Hinh:'Pictures/khac4.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Micro HyperX Streamer Bundle',
+                TenLoai:'Microphone',
+                Gia:'2,790,000 đồng',
+                GiaSo: 2790000,
+                ThuongHieu:'HyperX',
+                Hinh:'Pictures/khac5.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Micro Kingston HyperX SoloCast White',
+                TenLoai:'Microphone',
+                Gia:'1,690,000 đồng',
+                GiaSo: 1690000,
+                ThuongHieu:'HyperX',
+                Hinh:'Pictures/khac6.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Túi chống sốc TOMTOC 360 Protective MACBOOK Air/Retina13-A13-C01D',
+                TenLoai:'tuichongsoc',
+                Gia:'690,000 đồng',
+                GiaSo: 690000,
+                ThuongHieu:'MACBOOK',
+                Hinh:'Pictures/khac7.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            {
+                Ten:'Túi chống sốc TOMTOC 360 Protective MACBOOK PRO 13 A13-C02B',
+                TenLoai:'tuichongsoc',
+                Gia:'790,000 đồng',
+                GiaSo: 790000,
+                ThuongHieu:'MACBOOK',
+                Hinh:'Pictures/khac8.jpg',
+                LinkChiTiet: 'https://www.youtube.com/watch?v=yPYZpwSpKmA'
+            },
+            ];
+                    </script>
+                        
+                    <!--Lọc và tìm sản phẩm-->
+                <div style="margin-right: 190px; margin-left: 190px ; margin-top:100px">
+                     <div id="products1">
+                        <script src="./listproduct.js"></script>
+
+                     </div>
+                      <!--Lọc và tìm sản phẩm-->
+                    
+
+                    <!--Trang chủ-->
+                        <div>
+                        <div class="introduce">Laptop văn phòng nổi bật</div>
+                    <div id="list1">
+                        <script src="TrangchuJS/trangchu1.js"></script> 
+                     
+                        </div>
+                    </div>
+
+                    <div>
+                    <div class="introduce">Laptop gaming nổi bật</div>
+                        <div id="list2" >
+                        <script src="TrangchuJS/trangchu2.js"></script>
+                       
+                        </div>  
+                    </div>
+
+                    <div>
+                        <div class="introduce">Bàn phím nổi bật</div>
+                            <div id="list3" >
+                            <script src="TrangchuJS/trangchu3.js"></script>
+                           
+                            </div>  
+                    </div>
+
+                    <div>
+                        <div class="introduce">Chuột & Lót chuột nổi bật</div>
+                            <div id="list4" >
+                            <script src="TrangchuJS/trangchu4.js"></script>
+                           
+                            </div>  
+                    </div>
+
+                    <div>
+                        <div class="introduce">Tai nghe nổi bật</div>
+                            <div id="list5" >
+                            <script src="TrangchuJS/trangchu5.js"></script>
+                           
+                            </div>  
+                    </div>
+                        <!--Trang chủ-->
+
+                </div>
+                </div>
+            </div>
+
+        <!--chỉnh sửa-->
+       
+    
+    
 </body>
+        
 </html>
