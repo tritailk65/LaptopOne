@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#list1  /*Trang chủ*/
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+   
+}
+#list2 /*Trang chủ*/
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+#list3 /*Trang chủ*/
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#list4 /*Trang chủ*/
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#list5 /*Trang chủ*/
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.lt 
+{  
+    border: 1px solid darkcyan;
+    margin: 5px 5px;
+    text-align: center;
+}
+.lt img
+{
+    max-width: 100%;
+    height: 175px;
+    margin-top: 5px;
+}
+.lt img:hover
+{
+   filter: opacity(70%);
+}
+.product-cat   
+{
+    text-align: left;
+    font-size: 12px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#e90e0e;
+}
+a.product-name 
+{
+    display: block;
+    text-decoration: none ;
+    font-size: 16px;
+    font-weight: bold;
+    color:#000000;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+a.product-name:hover
+{
+    color:blue;
+    overflow: visible;
+    white-space: pre-line;
+}
+.product-price
+{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color:#ff0000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.introduce 
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 350px;
+    font-size: 20px;
+    color:yellow;
+    background-color:#e90e0e;
+}
+
+/*
+
+*/
+.button-value {
+    border: 1px solid #6759ff;
+    text-align: left;
+    padding: 10px 10px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: transparent;
+    color: #6759ff;
+    cursor: pointer;
+}
+.button-value:hover{
+    color:aliceblue;
+    background-color: red;
+}
+
+.active {
+    background-color: #4d3ef1;
+    color: #ffffff;
+  }
+
+  #products1 {
+    display: grid;
+    grid-template-columns:  33% 33% 33%;
+ 
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /*css phần Lọc */
+  .card {
+  border: 1px solid darkcyan;
+  margin: 5px 5px;
+  text-align: center;
+  height: 395px;
+  }
+  .image-container {
+    text-align: center;
+  }
+  .image-container img {
+     max-width: 100%;
+     height: 300px;
+     margin-top: 5px;
+  }
+  .image-container img:hover
+{
+   filter: opacity(70%);
+}
+  .container {
+    text-align: center;
+    padding-top: 1em;
+    color: #110f29;
+  }
+  .container a {
+    display: block;
+    text-decoration: none ;
+    font-size: 16px;
+    font-weight: bold;
+    color:#000000;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+   
+  }
+  .container a:hover
+{
+    color:blue;
+    overflow: visible;
+    white-space: pre-line;
+    cursor: pointer;
+}
+
+  .container h6 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color:#ff0000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .hide {
+    display: none;
+  }
+  @media screen  {
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: 100px;
+    }
+    .card {
+      max-width: 100%;
+    
+      margin-top: 1em;
+    }
+    #products1 {
+      grid-template-columns: 33% 33% 33%;
+     
+    }
+  }
+
+  
+
