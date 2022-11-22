@@ -1,10 +1,26 @@
-const url="http://localhost:3000/Product_LaptopVanPhong"
+const urlOffice="http://localhost:3000/Product_LaptopVanPhong"
+const urlGaming="http://localhost:3000/Product_LaptopGaming"
+const urlKeyboard="http://localhost:3000/Product_Keyboard"
+const urlMouse="http://localhost:3000/Product_Mouses"
 function UpLoad(product){
-    var upload=document.getElementById('content-home')
+    var upload=document.getElementById('uploaddata')
     var id=product.getAttribute("value")
+    var origin=product.getAttribute("origin")
+    if(origin==="Office"){
+        url=urlOffice
+    }
+    if(origin==="Gaming"){
+        url=urlGaming
+    }
+    if(origin==="Keyboard"){
+        url=urlKeyboard
+    }
+    if(origin==="Mouse"){
+        url=urlMouse
+    }
     fetch(url)
-    .then(response => response.json())
-    .then(data =>{
+        .then(response => response.json())
+        .then(data =>{
         data.forEach(item => {
             if(item.id==id){
     upload.innerHTML=`<div class="productdetails">
@@ -106,7 +122,9 @@ function UpLoad(product){
         </div>`
     }
         });
-    });
+    })
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 function upload(){
     const str =
@@ -123,4 +141,27 @@ function upload(){
     </div>\
     </div>";
     document.getElementById('uploaddata').innerHTML=str;
+}
+function getProduct(callback,product){
+    var origin = product.getAttribute("origin")
+    if(origin.equals("Office")){
+    fetch(urlOffice)
+        .then(response => response.json())
+        .then(callback(id))
+    }
+    if(origin.equals("Gaming")){
+    fetch(urlGaming)
+        .then(response => response.json())
+        .then(callback)
+    }
+    if(origin.equals("Keybroad")){
+    fetch(urlKeyboard)
+        .then(response => response.json())
+        .then(callback)
+    }
+    if(origin.equals("Mouse")){
+    fetch(urlMouse)
+        .then(response => response.json())
+        .then(callback)
+    }
 }
