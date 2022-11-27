@@ -18,13 +18,11 @@
 
 .navbar__header-logo {
     display: block;
-    /* background-image: url(https://macone.vn/wp-content/uploads/2019/08/Logo-MacOne.png); */
     margin-left: 124px;
     width: 260px;
     height: 74px;
-    /* background-size: cover; */
-    background-color: green;
-    margin-top: 4px;
+    margin-top: 6px;
+    background-image: cover;
 }
 
 .navbar__help-and-search{
@@ -155,7 +153,7 @@
 .navbar__list-item-box {
     display: flex;
     height: 38px;
-    width: 258px;
+    width: 246px;
     margin-left: 167px;
     background-color: rgb(190, 0, 0);
     cursor: pointer;
@@ -292,7 +290,7 @@
 
 .feature-product{
     position: relative;
-    height: 860px;
+    height: 815px;
     width: 100%;
     padding: 0 155px;
     padding-top: 10px;
@@ -693,13 +691,7 @@
     margin-bottom: 20px;
     font-weight: 1000;
 }
-.productdetails__header--information--content--info{
-    background-color: rgb(163, 163, 163);
-    width: 40%;
-    height: 150px;
-    margin-bottom: 100px;
-    font-weight: 1000;
-}
+
 .productdetails__header--information--content--info--details2{
     margin-left: 20px;
 }
@@ -722,8 +714,6 @@
     width: 60%;
     height: 100%;
     margin: 0px 150px;
-    border: solid rgb(240, 240, 240);
-    background-color: rgb(247, 247, 247);
 }
 .productdetails__details--table{
     border: solid black;
