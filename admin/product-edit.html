@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/ui-forms.html" />
+
+	<title>Product edit | LaptopOne Admin</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="admin.html">
+          <span class="align-middle">LaptopOne Admin</span>
+        </a>
+
+				<ul class="sidebar-nav">
+						<li class="sidebar-header">
+							
+						</li>
+	
+						<li class="sidebar-item">
+							<a class="sidebar-link" href="admin.html">
+				  <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+				</a>
+						</li>
+	
+						<li class="sidebar-item">
+							<a class="sidebar-link" href="users-management.html">
+					<i class="align-middle" data-feather="user"></i> <span class="align-middle">Users Management</span>
+				</a>
+						</li>
+	
+						<li class="sidebar-item active">
+							<a class="sidebar-link" href="product-management.html">
+				<i class="align-middle me-2" data-feather="box"></i> <span class="align-middle">Products management</span>
+				</a>
+						</li>
+	
+						<li class="sidebar-item">
+							<a class="sidebar-link" href="recipt-management.html">
+				<i class="align-middle me-2" data-feather="truck"></i> <span class="align-middle">Recipt management</span>
+				</a>
+						</li>
+				</ul>
+
+			</div>
+		</nav>
+
+        <div class="main">
+
+			<!-- main nav-bar -->
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+          		<i class="hamburger align-self-center"></i>
+        		</a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+	
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+                			<i class="align-middle" data-feather="settings"></i>
+             				</a>
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                			<img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">Administrator</span>
+              				</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="#">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<div style="display:flex; justify-content: space-between;" class="mb-3">
+						<h1 class="h3 d-inline align-middle">Forms sửa thông tin sản phẩm</h1>
+                        <button style="margin-right: 30px;" class="btn btn-primary">Sửa</button> 
+					</div>
+
+                    <!-- Form-edit left -->
+					<div class="row">
+						<div class="col-12 col-lg-6">
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">ID Sản phẩm</h5>
+								</div>
+								<div class="card-body">
+									<input type="text" class="form-control" value="1" readonly>
+								</div>
+							</div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Tên sản phẩm</h5>
+								</div>
+								<div class="card-body">
+									<input type="text" class="form-control" value="Laptop MSI Modern 14 C5M 030VN">
+								</div>
+							</div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Giá cũ</h5>
+								</div>
+								<div class="card-body">
+									<input type="text" class="form-control" value="15,990,000₫">
+								</div>
+							</div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Giá mới</h5>
+								</div>
+								<div class="card-body">
+									<input type="text" class="form-control" value="14,990,000₫">
+								</div>
+							</div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Link ảnh chính</h5>
+								</div>
+								<div class="card-body">
+                                    <textarea class="form-control" rows="2">https://product.hstatic.net/1000026716/product/gearvn-laptop-msi-modern-14-c5m-030vn-1_72da5dd73e7b418389a915198f564fa6_large.png</textarea>
+								</div>
+							</div>
+                            
+                            <!-- chỉnh sửa 5 ảnh nhỏ -->
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Link ảnh phụ</h5>
+								</div>
+								<div class="card-body">
+									<div class="mb-3">
+										<label class="form-label">Ảnh 1</label>
+										<textarea class="form-control" rows="2">https://product.hstatic.net/1000026716/product/gearvn-laptop-msi-modern-14-c5m-030vn-1_72da5dd73e7b418389a915198f564fa6_large.png</textarea>
+									</div>
+									<div class="mb-3">
+										<label class="form-label">Ảnh 2</label>
+										<textarea class="form-control" rows="2">https://product.hstatic.net/1000026716/product/gearvn-laptop-msi-modern-14-c5m-030vn-1_72da5dd73e7b418389a915198f564fa6_large.png</textarea>
+									</div>
+									<div class="mb-3">
+										<label class="form-label">Ảnh 3</label>
+										<textarea class="form-control" rows="2">https://product.hstatic.net/1000026716/product/gearvn-laptop-msi-modern-14-c5m-030vn-1_72da5dd73e7b418389a915198f564fa6_large.png</textarea>
+									</div>
+                                    <div class="mb-3">
+										<label class="form-label">Ảnh 4</label>
+										<textarea class="form-control" rows="2">https://product.hstatic.net/1000026716/product/gearvn-laptop-msi-modern-14-c5m-030vn-1_72da5dd73e7b418389a915198f564fa6_large.png</textarea>
+									</div>
+                                    <div class="mb-3">
+										<label class="form-label">Ảnh 5</label>
+										<textarea class="form-control" rows="2">https://product.hstatic.net/1000026716/product/gearvn-laptop-msi-modern-14-c5m-030vn-1_72da5dd73e7b418389a915198f564fa6_large.png</textarea>
+									</div>
+								</div>
+							</div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">CPU</h5>
+								</div>
+								<div class="card-body">
+									<input type="text" class="form-control" value="Intel Core i3-1215U 1.2GHz up to 4.4GHz 10MB">
+								</div>
+							</div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Ram</h5>
+								</div>
+								<div class="card-body">
+									<input type="text" class="form-control" value="8GB (4x2) DDR4 3200MHz (2x SO-DIMM socket, up to 16GB SDRAM)">
+								</div>
+							</div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Hardware</h5>
+								</div>
+                                <div class="card-body">
+									<input type="text" class="form-control" value="256 GB PCIe NVMe M.2 SSD (1 slot)">
+								</div>
+						    </div>
+
+                        </div>
+
+						<div class="col-12 col-lg-6">
+                            
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Card màn hình</h5>
+								</div>
+                                <div class="card-body">
+									<input type="text" class="form-control" value="Intel UHD Graphics">
+								</div>
+						    </div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Màn hình</h5>
+								</div>
+                                <div class="card-body">
+									<input type="text" class="form-control" value="15.6 inch FHD (1920 x 1080) IPS, micro-edge, BrightView, 250 nits, 45% NTSC">
+								</div>
+						    </div>
+
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Cổng giao tiếp</h5>
+								</div>
+                                <div class="card-body">
+									<input type="text" class="form-control" value="1x SuperSpeed USB Type-C 10Gbps signaling rate (USB Power Delivery, DisplayPort 1.4, HP Sleep and Charge)/2x SuperSpeed USB Type-A 5Gbps signaling rate/1x HDMI 2.1/1x headphone/microphone combo/1x AC smart pin">
+								</div>
+						    </div>
+                        
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Bàn phím</h5>
+								</div>
+                                <div class="card-body">
+									<input type="text" class="form-control" value="Không LED">
+								</div>
+						    </div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">SDcard</h5>
+								</div>
+                                <div class="card-body">
+									<input type="text" class="form-control" value="None">
+								</div>
+						    </div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Audio</h5>
+								</div>
+                                <div class="card-body">
+									<input type="text" class="form-control" value="B&O, Dual Speakers, HP Audio Boost">
+								</div>
+						    </div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Bluetooth</h5>
+								</div>
+                                <div class="card-body">
+									<input type="text" class="form-control" value="v5.2">
+								</div>
+						    </div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Webcam</h5>
+								</div>
+                                <div class="card-body">
+									<input type="text" class="form-control" value="HP Wide Vision 720p HD camera with temporal noise reduction and integrated dual array digital microphones">
+								</div>
+						    </div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Hệ điều hành</h5>
+								</div>
+                                <div class="card-body">
+									<input type="text" class="form-control" value="Windows 11 Home">
+								</div>
+						    </div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Pin</h5>
+								</div>
+                                <div class="card-body">
+									<input type="text" class="form-control" value="3 Cell 43WHr">
+								</div>
+						    </div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Trọng lượng</h5>
+								</div>
+                                <div class="card-body">
+									<input type="text" class="form-control" value="1.74 kg">
+								</div>
+						    </div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Màu sắc</h5>
+								</div>
+                                <div class="card-body">
+									<input type="text" class="form-control" value="Windows 11 Home">
+								</div>
+						    </div>
+
+                            <div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Kích cỡ</h5>
+								</div>
+                                <div class="card-body">
+									<input type="text" class="form-control" value="36.02 x 23.4 x 1.79 cm">
+								</div> 
+						    </div>
+
+
+
+                        </div>
+			        </div>
+                    </div>
+					</div>
+				</div>
+                
+			</main>
+
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+
+</html>
