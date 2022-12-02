@@ -735,10 +735,10 @@
 .customer-form{
     display: none;
     position: fixed;
-    top: 158px;
+    top: 10px;
     left: 452px;
     width: 600px;
-    height: 425px;
+    height: 100%;
     background-color: var(--white-color);
     z-index: 1001;
     border-radius: 6px ;
@@ -766,16 +766,49 @@
     cursor: pointer;
     margin-left: 165px;
 }
-.Customer_control{
-    display: block;
-    align-items: center;
-    text-align: center;
-    height: 100px;
-}
 .customer_close-btn{
     background-color: #a4a4a4;
+    margin-right: 10px;
 }
 
 .customer_close-btn:hover{
     background-color: #878787;
+}
+.customer_close-btn{
+    display: block;
+    float: right;
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.5;
+    cursor: pointer;
+    background-color: brown;
+}
+.save_btn{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2;
+    background-color: rgb(249, 53, 85);
+    color: var(--white-color);
+    float: left;
+    width: 40%;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+.logout_btn{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    float: left;
+    line-height: 2;
+    width: 40%;
+    background-color: rgb(101, 49, 255);
+    color: var(--white-color);
+    cursor: pointer;
+    margin-top: 10px;
 }

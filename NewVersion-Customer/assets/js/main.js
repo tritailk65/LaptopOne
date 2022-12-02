@@ -608,33 +608,33 @@ function SignUp() {
 }
 ///Giữ lại tên tài khoản
 function setAccount(user,id){
-    if(user.includes("Admin")){
+    if(user == null){
     document.getElementById("User").innerHTML=`<div class="navbar__user-item navbar__user-item-txt navbar__user-order">
         <i class="navbar__user-icon fa-solid fa-truck-fast"></i>
         Tra cứu đơn hàng
     </div>
-    <div onclick="openAdmin()" class="navbar__user-item navbar__user-item-txt navbar__user-id" value="${user}">
-        <i class="navbar__user-icon fa-solid fa-user"></i>
-        ${user}
-    </div>
-    <div class="navbar__user-item navbar__user-item-txt navbar__user-cart" onclick="Cart()">
-        <i class="navbar__user-icon fa-solid fa-cart-shopping"></i>
-        Giỏ hàng
-    </div>`}
-    else if(user== null){
-    document.getElementById("User").innerHTML=`<div class="navbar__user-item navbar__user-item-txt navbar__user-order">
-        <i class="navbar__user-icon fa-solid fa-truck-fast"></i>
-        Tra cứu đơn hàng
-    </div>
-    <div class="navbar__user-item navbar__user-item-txt navbar__user-id" value="">
+    <div onclick="SignUpOpen()" class="navbar__user-item navbar__user-item-txt navbar__user-id" value="">
         <i class="navbar__user-icon fa-solid fa-user"></i>
         Tài khoản của tôi
     </div>
-    <div class="navbar__user-item navbar__user-item-txt navbar__user-cart" onclick="Cart()">
+    <div onclick="Cart()" class="navbar__user-item navbar__user-item-txt navbar__user-cart" onclick="Cart()">
         <i class="navbar__user-icon fa-solid fa-cart-shopping"></i>
         Giỏ hàng
     </div>`
     }
+    else if(user.includes("Admin")){
+        document.getElementById("User").innerHTML=`<div class="navbar__user-item navbar__user-item-txt navbar__user-order">
+            <i class="navbar__user-icon fa-solid fa-truck-fast"></i>
+            Tra cứu đơn hàng
+        </div>
+        <div onclick="openAdmin()" class="navbar__user-item navbar__user-item-txt navbar__user-id" value="${user}">
+            <i class="navbar__user-icon fa-solid fa-user"></i>
+            ${user}
+        </div>
+        <div class="navbar__user-item navbar__user-item-txt navbar__user-cart" onclick="Cart()">
+            <i class="navbar__user-icon fa-solid fa-cart-shopping"></i>
+            Giỏ hàng
+        </div>`}
     else{
         document.getElementById("User").innerHTML=`<div class="navbar__user-item navbar__user-item-txt navbar__user-order">
         <i class="navbar__user-icon fa-solid fa-truck-fast"></i>
@@ -838,6 +838,13 @@ function DetailCustomer(customer){
     <div onclick="CustomerClose()" class="customer_close-btn btn">x</div>
     <div class="customer-form_label">THÔNG TIN TÀI KHOẢN KHÁCH HÀNG</div>
     <div class="form-group">
+        <label for="uname" class="form-label">ID tài khoản</label>
+        <br>
+        <input class="form-input" id="id" name="id" type="text" value="${data.id}" readonly>\
+        <br>
+        <span class="form-message"></span>
+    </div>
+    <div class="form-group">
         <label for="uname" class="form-label">Tên tài khoản</label>
         <br>
         <input class="form-input" id="uname" name="uname" type="text" value="${data.Username}" readonly>\
@@ -847,7 +854,7 @@ function DetailCustomer(customer){
     <div class="form-group">
         <label for="pwd" class="form-label">Mật khẩu</label>
         <br>
-        <input class="form-input" id="pwd" name="pwd" type="text" value="${data.Password}" readonly>
+        <input class="form-input" id="pwd" name="pwd" type="password" value="${data.Password}" readonly>
         <br>
         <span class="form-message"></span>
     </div>
@@ -873,7 +880,7 @@ function DetailCustomer(customer){
         <span class="form-message"></span>
     </div>
     <div class="Customer_control">
-        <div class="save_btn btn" onclick="SaveDetail(this) id_customer="${data.id}">Lưu thông tin</div>
+        <div class="save_btn btn" onclick="SaveDetail()">Lưu thông tin</div>
         <div class="logout_btn btn" onclick="LogOut()">Đăng xuất</div>
     </div>
 </form>`
@@ -888,15 +895,15 @@ function DetailCustomer(customer){
 function CustomerClose() {
     document.querySelector('.customer').style.display = 'none';
 }
-function SaveDetail(customer){
-    var id_customer=customer.getAttribute("id_customer")
-    var username=document.customerForm.unam.value
+function SaveDetail(){
+    var id=document.customerForm.id.value
+    var username=document.customerForm.uname.value
     var password=document.customerForm.pwd.value
     var customer_name=document.customerForm.cus.value
     var phonenumber=document.customerForm.num.value
     var address=document.customerForm.adr.value
     var detail={
-        id: id_customer,
+        id: id,
         Username: username,
         Password: password,
         Permission: "Customer",
