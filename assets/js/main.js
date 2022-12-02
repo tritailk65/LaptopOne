@@ -494,6 +494,8 @@ function backHome () {
 function Register() {
     var usertxt = document.RegisterForm.uname
     var user = usertxt.value
+    var pass = document.RegisterForm.pwd.value
+    var repass = document.RegisterForm.repwd.value
     var flag = false
     var length
     fetch(userURL)
@@ -504,52 +506,46 @@ function Register() {
                     alert("Tài khoản đã tồn tại")
                     flag = true
                 }
-
             });
-            length = data.length()
+            length = data.length
+            setTimeout(() => {
+                if (flag === false) {
+                    if (user == ""&&pass==""&&repass=="") {
+                        alert("Hãy điền đầy đủ thông tin")}
+                    else if (user== "") {
+                            alert("Hãy điền tên tài khoản")
+                        }
+                    else if (pass== "") {
+                            alert("Hãy điền mật khẩu")
+                        }
+                    else if (repass== "") {
+                            alert("Hãy điền lại mật khẩu")
+                        }
+                    else if (pass === repass) {
+                        const json = {
+                            id: length + 1,
+                            Username: user,
+                            Password: repass,
+                            Permission: 'Customer'
+                        }
+                        const post = {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(json)
+                        }
+                        fetch(userURL, post)
+                            .then(response => response.json())
+                            .then(data => console.log(data))
+                            alert("Đăng ký thành công")
+                            //Xử lý cho form đăng ký tự động tắt
+                    } else {
+                        alert("Mật khẩu không trùng khớp")
+                    }
+                }
+            }, 100);
         })
-    if (flag === false) {
-        var passtxt = document.RegisterForm.pwd.value
-        var repasstxt = document.RegisterForm.repwd.value
-        var pass = passtxt.value
-        var repass = repasstxt.value
-        if (user.trim() == "" || pass.trim() == "" || repass.trim() == "") {
-            if (user.trim() == "") {
-                alert("Hãy điền tên tài khoản")
-                user.focus()
-            }
-            if (pass.trim() == "") {
-                alert("Hãy điền mật khẩu")
-                pass.focus()
-            }
-            if (repass.trim() == "") {
-                alert("Hãy điền lại mật khẩu")
-                repass.focus()
-            }
-        } else if (pass === repass) {
-            const json = {
-                id: length + 1,
-                Username: user,
-                Password: pass,
-                Permission: 'Customer'
-            }
-            const post = {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(json)
-            }
-            fetch(userURL, post)
-                .then(response => response.json())
-                .then(data => console.log(data))
-            document.querySelector('.register-form').style.display = 'none';
-            document.querySelector('.modal').style.display = 'none';
-            alert("Đăng ký thành công")
-        } else {
-            alert("Mật khẩu không trùng khớp")
-        }
-    }
 }
 
 function SignUp() {
@@ -623,3 +619,82 @@ function LogOut() {
 openAdmin = () => {
     window.open('./admin/admin.html')
 }
+
+function SearchProduct(product,origin){
+    return `<div class="product-detail" value="${product.id}" origin="${origin}" onclick="UpLoad(this)">
+        <div class="new-product-img">
+            <img class="new-product-thumbnail"
+            src="${product.img}" alt="" />
+        </div>
+        <div class="new-product-percent">${product.new_productt_percent}</div>               
+        <h2 class="new-product-name">${product.name}</h2>
+        <del>${product.old_price}</del><br/>
+        <span class="new-product-sale">${product.new_price}</span>
+        </div>`;
+}
+
+function Search(){
+var detail=document.getElementById("Search").value
+console.log(detail)
+var product=""
+fetch(lapOfficeApi)
+.then(res=> res.json())
+.then(data => { console.log(detail)
+    data.forEach(item => {
+        var name=item.name
+        console.log(name)
+        if(name.includes(detail)){
+            console.log(item)
+            product+=SearchProduct(item,"Office")
+        }
+    });
+})
+fetch(lapGamingApi)
+.then(res=> res.json())
+.then(data => {
+    data.forEach(item => {
+        var name=item.name
+        console.log(name)
+        if(name.includes(detail)){
+            product+=SearchProduct(item,"Gaming")
+        }
+    });
+})
+fetch(keyboardApi)
+.then(res=> res.json())
+.then(data => {
+    data.forEach(item => {
+        var name=item.name
+        console.log(name)
+        if(name.includes(detail)){
+            product+=SearchProduct(item,"Keyboard")
+        }
+    });
+})
+fetch(mouseApi)
+.then(res=> res.json())
+.then(data => {
+    data.forEach(item => {
+        var name=item.name
+        console.log(name)
+        if(name.includes(detail)){
+            product+=SearchProduct(item,"Mouse")
+        }
+    });
+})
+fetch(headphoneApi)
+.then(res=> res.json())
+.then(data => {
+    data.forEach(item => {
+        var name=item.name
+        console.log(name)
+        if(name.includes(detail)){
+            product+=SearchProduct(item,"Headphone")
+        }
+    });
+})
+var timeout=setTimeout(function(){
+    document.getElementById("content-home").innerHTML=product
+},100)
+}
+var list = []

@@ -99,7 +99,7 @@ function UpLoad(product){
                     </tr>
                     <tr>
                         <td>Bàn phím:</td>
-                        <td>${item.Keyboard}</td>
+                        <td>${item.keyboard}</td>
                     </tr>
                     <tr>
                         <td>Đọc thẻ nhớ:</td>
