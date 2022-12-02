@@ -837,7 +837,7 @@ function DetailCustomer(customer){
     var textHTLM = `<form class="customer-form" name="customerForm" id="customer-form"> 
     <div onclick="CustomerClose()" class="customer_close-btn btn">x</div>
     <div class="customer-form_label">THÔNG TIN TÀI KHOẢN KHÁCH HÀNG</div>
-    <div class="form-group">
+    <div class="form-group" id="dataid">
         <label for="uname" class="form-label">ID tài khoản</label>
         <br>
         <input class="form-input" id="id" name="id" type="text" value="${data.id}" readonly>\
@@ -851,14 +851,14 @@ function DetailCustomer(customer){
         <br>
         <span class="form-message"></span>
     </div>
-    <div class="form-group">
+    <div class="form-group" id="datapass">
         <label for="pwd" class="form-label">Mật khẩu</label>
         <br>
         <input class="form-input" id="pwd" name="pwd" type="password" value="${data.Password}" readonly>
         <br>
         <span class="form-message"></span>
     </div>
-    <div class="form-group">
+    <div class="form-group" >
         <label for="pwd" class="form-label">Tên khách hàng</label>
         <br>
         <input class="form-input" id="cus" name="cus" type="text" value="${data.Customer}">
@@ -885,6 +885,8 @@ function DetailCustomer(customer){
     </div>
 </form>`
     document.getElementById('customer').innerHTML = textHTLM;
+    document.getElementById('dataid').style.display="none"
+    document.getElementById('datapass').style.display="none"
     })
     setTimeout(() => {
     document.querySelector('.customer').style.display = "block";
