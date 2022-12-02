@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaptopOne</title>
+    <link rel="shortcut icon" href="./assets/icon/laptop.png" />
+    <link rel="stylesheet" href="./https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+    <!-- Link reset css normal -->
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/ProductDetails.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+</head>
+<body>
+
+    <div id="container">
+
+        <div class="navbar">
+        <div class="navbar__header">
+            <div onclick="backHome()" class="navbar__header-logo">
+                <img src="./assets/icon/logo_fit.png" alt="">
+            </div>
+            <div class="navbar__help-and-search">
+                <div class="navbar__header-help">
+                    <div class="navbar__header-help-buy btn">
+                        Hướng dẫn mua hàng
+                    </div>
+                    <div class="navbar__header-help-cash btn">
+                        Hướng dẫn thanh toán
+                    </div>                   
+                </div>
+                <div class="navbar__header-search">
+                    <div class="navbar__header-search-box">
+                        <input type="text" class="navbar__header-search-txt" placeholder="Bạn cần tìm gì ?" id="Search">        
+                    </div>
+                    <div class="navbar__header-search-box-icon" onclick="Search()">
+                        <i class="navbar__header-search-icon fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>          
+            <div class="navbar__user" id="User">         
+                    <div class="navbar__user-item navbar__user-item-txt navbar__user-order">
+                        <i class="navbar__user-icon fa-solid fa-truck-fast"></i>
+                        Tra cứu đơn hàng
+                    </div>
+                    <div onclick="SignUpOpen()" class="navbar__user-item navbar__user-item-txt navbar__user-id">
+                        <i class="navbar__user-icon fa-solid fa-user"></i>
+                        Tài khoản của tôi
+                    </div>
+                    <div onclick="Cart()" class="navbar__user-item navbar__user-item-txt navbar__user-cart">
+                        <i class="navbar__user-icon fa-solid fa-cart-shopping"></i>
+                        Giỏ hàng
+                    </div>                     
+            </div>
+        </div>
+        <div class="navbar__list-item">
+            <div  id="hoverProduct" class="navbar__list-item-box">
+                <div class="navbar__list-item-icon">
+                    <i class="fa-solid fa-list-ul"></i>
+                </div>
+                <div class="navbar__list-item-txt">
+                    Danh mục sản phẩm
+                </div>
+            </div>
+            <div class="navbar__list-item-box-hover navbar__list-item-box">
+                <div  class="list">
+                    <div class="list__item">
+                        <i class="list__item-icon fa-solid fa-laptop"></i>
+                        <div class="list__item-txt">Laptop văn phòng</div>
+                    </div>
+                    <div class="list__item">
+                        <i class="list__item-icon fa-solid fa-laptop"></i>
+                        <div class="list__item-txt">Laptop gaming</div>
+                    </div>
+                    <div class="list__item">
+                        <i class="list__item-icon fa-regular fa-keyboard"></i>
+                        <div class="list__item-txt">Bàn phím</div>
+                    </div>
+                    <div class="list__item">
+                        <i class="list__item-icon fa-solid fa-computer-mouse"></i>
+                        <div class="list__item-txt">Chuột & Lót chuột</div>
+                    </div>
+                    <div class="list__item">
+                        <i class="list__item-icon fa-solid fa-headphones"></i>
+                        <div class="list__item-txt">Tai nghe</div>
+                    </div>
+                    <div class="list__item">
+                        <i class="list__item-icon fa-brands fa-usb"></i>
+                        <div class="list__item-txt">Khác</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div SignUpOpen() id="modal" class="modal">
+        </div>
+        <!-- Phần khách hàng -->
+        <div DetailCustomer(this) class="customer" id="customer">
+        </div>
+
+        <div id="content" class="content">
+
+            <div id="content-home">
+            
+            <div class="content-top">
+                <div class="list">
+                    <div class="list__item">
+                        <i class="list__item-icon fa-solid fa-laptop"></i>
+                        <div class="list__item-txt">Laptop văn phòng</div>
+                    </div>
+                    <div class="list__item">
+                        <i class="list__item-icon fa-solid fa-laptop"></i>
+                        <div class="list__item-txt">Laptop gaming</div>
+                    </div>
+                    <div class="list__item">
+                        <i class="list__item-icon fa-regular fa-keyboard"></i>
+                        <div class="list__item-txt">Bàn phím</div>
+                    </div>
+                    <div class="list__item">
+                        <i class="list__item-icon fa-solid fa-computer-mouse"></i>
+                        <div class="list__item-txt">Chuột & Lót chuột</div>
+                    </div>
+                    <div class="list__item">
+                        <i class="list__item-icon fa-solid fa-headphones"></i>
+                        <div class="list__item-txt">Tai nghe</div>
+                    </div>
+                    <div class="list__item">
+                        <i class="list__item-icon fa-brands fa-usb"></i>
+                        <div class="list__item-txt">Khác</div>
+                    </div>
+                </div>
+                
+                <div class="ad-mid">
+                    <a href="">
+                        <img class="w-100" src="https://theme.hstatic.net/1000026716/1000440777/14/slideshow_4.jpg?v=29472" alt="...">
+                    </a>
+                </div>
+
+                <div class="ad-right">
+                    <div class="store">
+                        <h3 class="store-head">Hệ thống các cửa hàng</h3>
+                        <div class="store-item">
+                            <i class="store-icon fa-solid fa-location-dot"></i>
+                            <ul class="store-list">585 Điện Biên Phủ, Phường 1, Quận 3, Việt Nam</ul>
+                        </div>
+                        <div class="store-item">
+                            <i class="store-icon fa-solid fa-location-dot"></i>
+                            <ul class="store-list">609 Lê Hồng Phong, Phường 10, Quận 10, Việt Nam</ul>
+                        </div>
+                    </div>
+                    <div class="ad-min">
+                        <a href="">
+                            <img class="w-100" src="https://cdn2.cellphones.com.vn/690x300/https://dashboard.cellphones.com.vn/storage/zenbook%2014.png" alt="...">
+                        </a>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!-- Laptop văn phòng -->
+            <div class="container-product">
+                <div class="feature-product">
+                    <div class="product-name">
+                        <div  onclick='containerHomeClose()' class="product-name__item">
+                            <h3 class="product-name__txt">Laptop văn phòng nổi bật</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Asus</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Acer</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Hp</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Dell</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Lenovo</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">LG</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Huawei</h3>
+                        </div>
+                    </div>
+                    <div id="LapVanPhong_Recommend" class="product-box"></div>               
+                    <div class="product-page">
+                        <div onclick="Section_Office_1()" class="product-page__button">1</div>
+                        <div onclick="Section_Office_2()" class="product-page__button">2</div>
+                        <div onclick="Section_Office_3()" class="product-page__button">3</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Laptop gaming -->
+            <div class="content-product">
+                <div class="feature-product">
+                    <div class="product-name">
+                        <div class="product-name__item">
+                            <h3 class="product-name__txt">Laptop gaming nổi bật</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Asus</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Acer</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Hp</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Dell</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Lenovo</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">LG</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Huawei</h3>
+                        </div>
+                    </div>
+                    <div id="LapGaming_Recommend" class="product-box"></div>            
+                    <div class="product-page">
+                        <div onclick="Section_Gaming_1()" class="product-page__button">1</div>
+                        <div onclick="Section_Gaming_2()" class="product-page__button">2</div>
+                        <div onclick="Section_Gaming_3()" class="product-page__button">3</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bàn phím -->
+            <div class="content-product">
+                <div class="feature-product">
+                    <div class="product-name">
+                        <div class="product-name__item">
+                            <h3 class="product-name__txt">Bàn phím nổi bật</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Akko</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Logitech</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Razer</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Corsair</h3>
+                        </div>
+                    </div>
+                    <div id ="Keyboard_Recommend" class="product-box"></div>            
+                    <div class="product-page">
+                        <div onclick="Section_Keyboard_1()" class="product-page__button">1</div>
+                        <div onclick="Section_Keyboard_2()" class="product-page__button">2</div>
+                        <div onclick="Section_Keyboard_3()" class="product-page__button">3</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chuột và lót chuột -->
+            <div class="content-product">
+                <div class="feature-product">
+                    <div class="product-name">
+                        <div class="product-name__item">
+                            <h3 class="product-name__txt">Chuột & Lót chuột nổi bật</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Akko</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Logitech</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Razer</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Corsair</h3>
+                        </div>
+                    </div>
+                    <div id="Mouse_Recommend" class="product-box"></div>
+                    <div class="product-page">
+                        <div onclick="Section_Mouses_1()" class="product-page__button">1</div>
+                        <div onclick="Section_Mouses_2()" class="product-page__button">2</div>
+                        <div onclick="Section_Mouses_3()" class="product-page__button">3</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tai nghe -->
+            <div class="content-product">
+                <div class="feature-product">
+                    <div class="product-name">
+                        <div class="product-name__item">
+                            <h3 class="product-name__txt">Tai nghe nổi bật</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Akko</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Logitech</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Razer</h3>
+                        </div>
+                        <div class="product-name__item">
+                            <h3 class="product-name__brand">Corsair</h3>
+                        </div>
+                    </div>
+                    <div id="Headphone_Recommend" class="product-box"></div>
+                    <div class="product-page">
+                        <div onclick="Section_Headphones_1()" class="product-page__button">1</div>
+                        <div onclick="Section_Headphones_2()" class="product-page__button">2</div>
+                        <div onclick="Section_Headphones_3()" class="product-page__button">3</div>
+                    </div>
+                </div>
+            </div>  
+            </div> 
+
+        </div>
+
+        <div class="footer">
+            <div class="footer-head">
+                <div class="footer-head__col">
+                    <h3 class="footer-head__col-heading">Tin tức</h3>
+                    <p class="footer-head__col-item">Giới thiệu</p>
+                    <p class="footer-head__col-item">Tin tức</p>
+                    <p class="footer-head__col-item">Khuyến mãi</p>
+                    <p class="footer-head__col-item">Tuyển dụng</p>
+                    <p class="footer-head__col-item">Quan hệ cổ đông</p>
+                </div>
+                <div class="footer-head__col">
+                    <h3 class="footer-head__col-heading">Hỗ trợ mua hàng</h3>
+                    <p class="footer-head__col-item">Hỗ trợ mua hàng trực tuyến</p>
+                    <p class="footer-head__col-item">Các hình thức thanh toán</p>
+                    <p class="footer-head__col-item">Hướng dẫn mua hàng trực tuyến</p>
+                    <p class="footer-head__col-item">Phát hành hóa đơn</p>
+                </div>
+                <div class="footer-head__col">
+                    <h3 class="footer-head__col-heading">Chính sách chung</h3>
+                    <p class="footer-head__col-item">Giới thiệu công ty</p>
+                    <p class="footer-head__col-item">Chính sách đổi trả</p>
+                    <p class="footer-head__col-item">Chính sách bảo hành</p>
+                </div>
+                <div class="footer-head__col">
+                    <h3 class="footer-head__col-heading">Liên hệ</h3>
+                    <p class="footer-head__col-item">1800 3453</p>
+                </div>
+            </div>
+
+            <div class="footer-help">
+                <div class="footer-help__col">
+                    <h3 class="footer-help__col-heading">Hỗ trợ thanh toán:</h3>
+                    <a class="footer-help__cash-img" href="">
+                        <img class="w-100" src="http://mauweb.monamedia.net/trananh/wp-content/uploads/2017/12/thanhtoan.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="footer-help__col">
+                    <h3 class="footer-help__col-heading">Dịch vụ giao hàng:</h3>
+                    <a href="" class="footer-help__ship-img">
+                        <img src="http://mauweb.monamedia.net/trananh/wp-content/uploads/2017/12/trananh-ship.png" alt="" class="w-100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-reserved">
+                © All rights reserved.
+            </div>
+        </div> 
+
+    </div>
+    
+    
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./assets/js/ProductDetails.js"></script>
+    <script src="./assets/js/upload.js"></script>
+    <script src="./assets/js/cart.js"></script>
+</body>
+</html> 
