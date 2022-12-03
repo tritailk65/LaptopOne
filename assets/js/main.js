@@ -923,7 +923,7 @@ function Cart() {
                         table += `<tbody>
                         <tr >
                         <td  id="tensp">${data[j].name}</td>
-                        <td styles="padding-left=20px;"><img src="${data[j].img} id="image" ></td>
+                        <td ><img src="${data[j].img} id="image" ></td>
                         <td "><input type="number" name="quantity" value="${quantity_product1}" min="1" max="10" id="soluong" class="sl"  style="text-align:center;"</td>
                         <td id="giatien" class="price">${data[j].new_price}</td>
                         <td><button class="btn-remove" onclick="remove_Cart(this)"  id_product="${data[j].id}" origin="${origin_product1}" customer="">Xóa</button></td>
