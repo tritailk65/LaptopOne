@@ -165,6 +165,8 @@ function start() {
     getProductMouses(renderMouses1)
     getProductHeadphones(renderHeadphones1)
     //Phần reset lại web mà tài khoản ko bị mất
+    // localStorage.removeItem("username")
+    // localStorage.removeItem("id")
     let account=localStorage.getItem("username")
     let id=localStorage.getItem("id")
     setAccount(account,id)
@@ -609,7 +611,7 @@ function SignUp() {
 ///Giữ lại tên tài khoản
 function setAccount(user,id){
     if(user == null){
-    document.getElementById("User").innerHTML=`<div class="navbar__user-item navbar__user-item-txt navbar__user-order">
+    document.getElementById("User").innerHTML=`<div onclick="SignUpOpen()" class="navbar__user-item navbar__user-item-txt navbar__user-order">
         <i class="navbar__user-icon fa-solid fa-truck-fast"></i>
         Tra cứu đơn hàng
     </div>
@@ -617,7 +619,7 @@ function setAccount(user,id){
         <i class="navbar__user-icon fa-solid fa-user"></i>
         Tài khoản của tôi
     </div>
-    <div onclick="Cart()" class="navbar__user-item navbar__user-item-txt navbar__user-cart" onclick="Cart()">
+    <div onclick="SignUpOpen()" class="navbar__user-item navbar__user-item-txt navbar__user-cart" onclick="Cart()">
         <i class="navbar__user-icon fa-solid fa-cart-shopping"></i>
         Giỏ hàng
     </div>`
@@ -652,6 +654,7 @@ function setAccount(user,id){
 }
 function LogOut() {
     localStorage.removeItem("username")
+    localStorage.removeItem("id")
     var str = ` <div class="navbar__user-item navbar__user-item-txt navbar__user-order">
             <i class="navbar__user-icon fa-solid fa-truck-fast"></i>
             Tra cứu đơn hàng
@@ -923,4 +926,481 @@ function SaveDetail(){
     setTimeout(() => {
         document.querySelector('.customer').style.display = 'none';
     }, 100);
+}
+function renderContent(){
+    var str=`<div id="content-home">
+            
+    <div class="content-top">
+        <div class="list">
+            <div class="list__item">
+                <i class="list__item-icon fa-solid fa-laptop"></i>
+                <div class="list__item-txt">Laptop văn phòng</div>
+            </div>
+            <div class="list__item">
+                <i class="list__item-icon fa-solid fa-laptop"></i>
+                <div class="list__item-txt">Laptop gaming</div>
+            </div>
+            <div class="list__item">
+                <i class="list__item-icon fa-regular fa-keyboard"></i>
+                <div class="list__item-txt">Bàn phím</div>
+            </div>
+            <div class="list__item">
+                <i class="list__item-icon fa-solid fa-computer-mouse"></i>
+                <div class="list__item-txt">Chuột & Lót chuột</div>
+            </div>
+            <div class="list__item">
+                <i class="list__item-icon fa-solid fa-headphones"></i>
+                <div class="list__item-txt">Tai nghe</div>
+            </div>
+            <div class="list__item">
+                <i class="list__item-icon fa-brands fa-usb"></i>
+                <div class="list__item-txt">Khác</div>
+            </div>
+        </div>
+        
+        <div class="ad-mid">
+            <a href="">
+                <img class="w-100" src="https://theme.hstatic.net/1000026716/1000440777/14/slideshow_4.jpg?v=29472" alt="...">
+            </a>
+        </div>
+
+        <div class="ad-right">
+            <div class="store">
+                <h3 class="store-head">Hệ thống các cửa hàng</h3>
+                <div class="store-item">
+                    <i class="store-icon fa-solid fa-location-dot"></i>
+                    <ul class="store-list">585 Điện Biên Phủ, Phường 1, Quận 3, Việt Nam</ul>
+                </div>
+                <div class="store-item">
+                    <i class="store-icon fa-solid fa-location-dot"></i>
+                    <ul class="store-list">609 Lê Hồng Phong, Phường 10, Quận 10, Việt Nam</ul>
+                </div>
+            </div>
+            <div class="ad-min">
+                <a href="">
+                    <img class="w-100" src="https://cdn2.cellphones.com.vn/690x300/https://dashboard.cellphones.com.vn/storage/zenbook%2014.png" alt="...">
+                </a>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!-- Laptop văn phòng -->
+    <div class="container-product">
+        <div class="feature-product">
+            <div class="product-name">
+                <div  onclick='containerHomeClose()' class="product-name__item">
+                    <h3 class="product-name__txt">Laptop văn phòng nổi bật</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Asus</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Acer</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Hp</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Dell</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Lenovo</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">LG</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Huawei</h3>
+                </div>
+            </div>
+            <div id="LapVanPhong_Recommend" class="product-box"></div>               
+            <div class="product-page">
+                <div onclick="Section_Office_1()" class="product-page__button">1</div>
+                <div onclick="Section_Office_2()" class="product-page__button">2</div>
+                <div onclick="Section_Office_3()" class="product-page__button">3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Laptop gaming -->
+    <div class="content-product">
+        <div class="feature-product">
+            <div class="product-name">
+                <div class="product-name__item">
+                    <h3 class="product-name__txt">Laptop gaming nổi bật</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Asus</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Acer</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Hp</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Dell</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Lenovo</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">LG</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Huawei</h3>
+                </div>
+            </div>
+            <div id="LapGaming_Recommend" class="product-box"></div>            
+            <div class="product-page">
+                <div onclick="Section_Gaming_1()" class="product-page__button">1</div>
+                <div onclick="Section_Gaming_2()" class="product-page__button">2</div>
+                <div onclick="Section_Gaming_3()" class="product-page__button">3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bàn phím -->
+    <div class="content-product">
+        <div class="feature-product">
+            <div class="product-name">
+                <div class="product-name__item">
+                    <h3 class="product-name__txt">Bàn phím nổi bật</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Akko</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Logitech</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Razer</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Corsair</h3>
+                </div>
+            </div>
+            <div id ="Keyboard_Recommend" class="product-box"></div>            
+            <div class="product-page">
+                <div onclick="Section_Keyboard_1()" class="product-page__button">1</div>
+                <div onclick="Section_Keyboard_2()" class="product-page__button">2</div>
+                <div onclick="Section_Keyboard_3()" class="product-page__button">3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chuột và lót chuột -->
+    <div class="content-product">
+        <div class="feature-product">
+            <div class="product-name">
+                <div class="product-name__item">
+                    <h3 class="product-name__txt">Chuột & Lót chuột nổi bật</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Akko</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Logitech</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Razer</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Corsair</h3>
+                </div>
+            </div>
+            <div id="Mouse_Recommend" class="product-box"></div>
+            <div class="product-page">
+                <div onclick="Section_Mouses_1()" class="product-page__button">1</div>
+                <div onclick="Section_Mouses_2()" class="product-page__button">2</div>
+                <div onclick="Section_Mouses_3()" class="product-page__button">3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tai nghe -->
+    <div class="content-product">
+        <div class="feature-product">
+            <div class="product-name">
+                <div class="product-name__item">
+                    <h3 class="product-name__txt">Tai nghe nổi bật</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Akko</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Logitech</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Razer</h3>
+                </div>
+                <div class="product-name__item">
+                    <h3 class="product-name__brand">Corsair</h3>
+                </div>
+            </div>
+            <div id="Headphone_Recommend" class="product-box"></div>
+            <div class="product-page">
+                <div onclick="Section_Headphones_1()" class="product-page__button">1</div>
+                <div onclick="Section_Headphones_2()" class="product-page__button">2</div>
+                <div onclick="Section_Headphones_3()" class="product-page__button">3</div>
+            </div>
+        </div>
+    </div>  
+    </div> `
+    document.getElementById("content").innerHTML=str
+}
+function GoBack(){
+    renderContent()
+    start()
+}
+function SearchRecipt(customer){
+    var id_customer=customer.getAttribute("id_customer")
+    table = `<div class="cart">
+            <div class="cart-form">
+        <h1 class="cart__headline">Giỏ hàng</h1>
+        <div class="cart--table" id="cart_table">
+        <table>
+        <thead>
+        <tr>
+        <th style="padding:10px;">ID</th>
+        <th style="padding:10px;">Tên sản phẩm</th>
+        <th style="padding:10px;">Sản phẩm</th>
+        <th style="padding:10px;">Số lượng</th>
+        <th style="padding:10px;">Giá tiền</th>
+        </tr>
+        </thead>`
+        table += `
+        <tr>
+        <td rowspan="${data[i].chitietdh.length}">${data[i].item}</td>
+        <td  id="tensp">${data[j].name}</td>
+        <td styles="padding-left=20px;"><img src="${data[j].img} id="image" ></td>
+        <td "><input type="number" name="quantity" value="${quantity_product1}" min="1" max="10" id="soluong" class="sl"  style="text-align:center;"</td>
+        <td id="giatien" class="price">${data[j].new_price}</td>
+    </tr>`
+    
+    fetch(urlDH)
+    .then(res => res.json())
+    .then(data =>{
+        for(i=0;i<data.length;i++){
+            if(data[i].id_kh==id_customer){
+                table += `
+                <tr>
+                <td rowspan="${data[i].chitietdh.length}">${data[i].item}</td>`
+            for(j=0;j<data[i].chitietdh.length;j++){
+            `<td  id="tensp">${data[j].name}</td>
+                    <td styles="padding-left=20px;"><img src="${data[j].img} id="image" ></td>
+                    <td "><input type="text" name="quantity" value="${data[i].chitietdh[j].sl}" id="soluong" class="sl"  style="text-align:center;"</td>
+                    <td id="giatien" class="price">${data[i].chitietdh[j].price}</td>
+            </tr>`
+            }
+                table += `<tr>
+                <td colspan="3">Tổng cộng</td>
+                <td>${data[i].tongcong}</td
+                    </tr>
+                </table>
+                </div>
+                </div>
+                </div>
+                </div>`     
+            }
+        }
+    })
+    
+}
+var list = []
+
+function OrderProduct(order) {
+    var id_product = order.getAttribute("id_product")
+    var origin_product = order.getAttribute("origin")
+    var quantity_product = 1
+    let price = order.getAttribute("price").split("₫")
+    let price1 = price[0].split(",")
+    var price2 = ""
+    var flag = false
+    for (var j = 0; j < price1.length; j++) {
+        price2 += price1[j]
+    }
+    if (list.length != 0) {
+        for (var i = 0; i < list.length; i++) {
+
+            if (id_product == list[i].id && origin_product == list[i].origin) {
+                flag = true
+                list[i].sl += 1
+                break
+            }
+        }
+        if (flag == false) {
+
+            var product = { id: id_product, origin: origin_product, sl: quantity_product, price: parseInt(price2) }
+            list.push(product)
+        }
+    } else {
+        var product = { id: id_product, origin: origin_product, sl: quantity_product, price: parseInt(price2) }
+        list.push(product)
+    }
+}
+var table
+
+function Cart() {
+    Total()
+    console.log(list)
+    var upload = document.getElementById('content')
+    table = `<div class="cart">
+            <div class="cart-form">
+        <h1 class="cart__headline">Giỏ hàng</h1>
+        <div class="cart--table" id="cart_table">
+        <table>
+        <thead>
+        <tr>
+        <th style="padding:10px;">Tên sản phẩm</th>
+                            <th style="padding:10px;">Sản phẩm</th>
+                            <th style="padding:10px;">Số lượng</th>
+                            <th style="padding:10px;">Giá tiền</th>
+                            <th style="padding:10px;">Xóa</th>
+        </tr>
+        </thead>`
+    list.forEach(item => {
+           url = urlOffice
+        if (item.origin === "Office") {
+            url = urlOffice
+        }
+        if (item.origin === "Gaming") {
+            url = urlGaming
+        }
+        if (item.origin === "Keyboard") {
+            url = urlKeyboard
+        }
+        if (item.origin === "Mouse") {
+            url = urlMouse
+        }
+        if (item.origin === "Headphone") {
+            url = urlHeadphone
+        }
+        let id_product1 = item.id
+        var origin_product1 = item.origin
+        var quantity_product1 = item.sl
+        console.log(quantity_product1)
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                console.log(quantity_product1)
+                for (j = 0; j < data.length; j++) {
+                    if (data[j].id === id_product1) {
+                        table += `
+                        <tr >
+                        <td  id="tensp">${data[j].name}</td>
+                        <td styles="padding-left=20px;"><img src="${data[j].img} id="image" ></td>
+                        <td "><input type="number" name="quantity" value="${quantity_product1}" min="1" max="10" id="soluong" class="sl"  style="text-align:center;"</td>
+                        <td id="giatien" class="price">${data[j].new_price}</td>
+                        <td><button class="btn-remove" onclick="remove_Cart(this)"  id_product="${data[j].id}" origin="${origin_product1}" customer="">Xóa</button></td>
+                    </tr>`
+                        console.log(data[j].img)
+                        break
+                    }
+                };
+            })
+        setTimeout(function() {}, 1000)   
+    });
+      
+    setTimeout(function() {
+        table += `<tr>
+        <td colspan="4">Tổng cộng</td>
+        <td>${total}</td
+            </tr>
+        </table>
+        </div>
+    <div class="cart__note">
+        <div>
+            <input type="text" class="cart__note--cartbox" name="cart__note--cartbox" placeholder="Ghi chú">
+        </div>
+        <div>
+            <button class="cart__note--btn" id="notebox" onclick="Discharge()">Thanh toán</button>
+        </div>
+        </div>
+        </div>
+        </div>`
+        upload.innerHTML = table
+    }, 100)
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+function remove_Cart(item) {
+    // var remove_cart = document.querySelectorAll(".btn-remove");
+    var remove_cart = item.getAttribute("id_product")
+    var origin = item.getAttribute("origin")
+    for (var i = 0; i < list.length; i++) {
+        if (remove_cart == list[i].id && origin == list[i].origin) {
+            list.splice(i)
+            Cart()
+        }
+    }
+}
+var urlDH = 'http://localhost:3000/DonHang';
+
+function Discharge() {
+    const DischargeButton = document.querySelector(".cart__note--btn")
+    var id = document.customerForm.id.value
+    console.log(id)
+    var length1
+    var ArrayProduct = []
+    for (i = 0; i < list.length; i++) {
+        ArrayProduct.push({
+            id_sp: list[i].id,
+            phanloai: list[i].origin,
+            sl: list[i].sl,
+            price: list[i].price
+
+        })
+    }
+    fetch(urlDH)
+        .then(res => res.json())
+        .then(data => length1 = data.length)
+    DischargeButton.addEventListener("click", event => {
+        // length = data.length()
+
+        const json = {
+            id: length1 + 1,
+            // id_kh: 
+            chitietdh: ArrayProduct,
+            tongcong: total
+
+        }
+        const post = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(json)
+        }
+        fetch(urlDH, post)
+            .then(response => response.json())
+            .then(data => console.log(data))
+    })
+}
+let total
+
+function Total() {
+    total = 0
+    for (i = 0; i < list.length; i++) {
+        if (list[i].origin == "Office") {
+            url = lapOfficeApi
+        }
+        if (list[i].origin == "Gaming") {
+            url = lapGamingApi
+        }
+        if (list[i].origin == "Keyboard") {
+            url = keyboardApi
+        }
+        if (list[i].origin == "Mouse") {
+            url = mouseApi
+        }
+        if (list[i].origin == "Headphone") {
+            url = headphoneApi
+        }
+        var sl_sp = list[i].sl
+        total += list[i].price * sl_sp
+    }
 }
