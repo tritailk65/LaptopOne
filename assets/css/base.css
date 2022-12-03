@@ -1,11 +1,13 @@
 :root{
-    --primary-color: #0022c2;
+    --primary-color: #00167c;
     --secondary-color: #FF0000;
+    --background-color: #F5F5F5;
     --button-color: #E1DAFD;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;    
+    --border-hover-color:#aeaeae;
 }
 
 * {
@@ -40,4 +42,9 @@ html{
     height: 35px;
     width: 200px;
     background-color: var(--border-color);
+    border-radius: 6px;
+}
+
+.separate{
+    border: 1px solid var(--border-color);
 }
