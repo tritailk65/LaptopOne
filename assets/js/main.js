@@ -850,7 +850,6 @@ var list = []
 function OrderProduct(order) {
     var id_product = order.getAttribute("id_product")
     var origin_product = order.getAttribute("origin")
-
     var quantity_product = 1
     let price = order.getAttribute("price").split("₫")
     let price1 = price[0].split(",")
@@ -861,18 +860,14 @@ function OrderProduct(order) {
     }
     if (list.length != 0) {
         for (var i = 0; i < list.length; i++) {
-
             if (id_product == list[i].id && origin_product == list[i].origin) {
                 flag = true
                 list[i].sl += 1
-                var product = { sl: quantity_product }
-                list.push(product)
                 break
             }
         }
         if (flag == false) {
-
-            var product = { id: id_product, origin: origin_product, sl: quantity_product, id_kh: id_acc, price: parseInt(price2) }
+            var product = { id: id_product, origin: origin_product, sl: quantity_product, price: parseInt(price2) }
             list.push(product)
         }
     } else {
@@ -900,26 +895,26 @@ function Cart() {
                             <th style="padding:10px;">Xóa</th>
         </tr>
         </thead>`
-    for (i = 0; i < list.length; i++) {
+    list.forEach(item => {
         url = urlOffice
-        if (list[i].origin === "Office") {
+        if (item.origin === "Office") {
             url = urlOffice
         }
-        if (list[i].origin === "Gaming") {
+        if (item.origin === "Gaming") {
             url = urlGaming
         }
-        if (list[i].origin === "Keyboard") {
+        if (item.origin === "Keyboard") {
             url = urlKeyboard
         }
-        if (list[i].origin === "Mouse") {
+        if (item.origin === "Mouse") {
             url = urlMouse
         }
-        if (list[i].origin === "Headphone") {
+        if (item.origin === "Headphone") {
             url = urlHeadphone
         }
-        let id_product1 = list[i].id
-        var origin_product1 = list[i].origin
-        var quantity_product1 = list[i].sl
+        let id_product1 = item.id
+        var origin_product1 = item.origin
+        var quantity_product1 = item.sl
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -933,13 +928,14 @@ function Cart() {
                         <td id="giatien" class="price">${data[j].new_price}</td>
                         <td><button class="btn-remove" onclick="remove_Cart(this)"  id_product="${data[j].id}" origin="${origin_product1}" customer="">Xóa</button></td>
                     </tr>`
-                        console.log(data[j].img)
                         break
                     }
                 };
             })
         setTimeout(function() {}, 100)
-    }
+    });
+
+
     var timeout = setTimeout(function() {
         table += `<tr>
         <td colspan="4">Tổng cộng</td>
@@ -970,7 +966,7 @@ function remove_Cart(item) {
     var origin = item.getAttribute("origin")
     for (var i = 0; i < list.length; i++) {
         if (remove_cart == list[i].id && origin == list[i].origin) {
-            list.splice(i)
+            list.splice(i, 1)
             Cart()
         }
     }
