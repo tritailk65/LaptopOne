@@ -562,7 +562,7 @@ function SignUp() {
             for (var i = 0; i < data.length; i++) {
                 if (data[i].Username == user && data[i].Password == pass && data[i].Permission == "Admin") {
                     document.querySelector('.modal').style.display = 'none';
-                    var str = `<div class="navbar__user-item navbar__user-item-txt navbar__user-order">
+                    var str = `<div id_customer="${data[i].id}" onclick="RenderListRecipt(this)" class="navbar__user-item navbar__user-item-txt navbar__user-order" >
                         <i class="navbar__user-icon fa-solid fa-truck-fast"></i>
                         Tra cứu đơn hàng
                     </div>
@@ -583,8 +583,8 @@ function SignUp() {
                     break
                 } else if (data[i].Username == user && data[i].Password == pass && data[i].Permission == "Customer") {
                     document.querySelector('.modal').style.display = 'none';
-                    var str = `<div class="navbar__user-item navbar__user-item-txt navbar__user-order">
-                        <i class="navbar__user-icon fa-solid fa-truck-fast"></i>
+                    var str = `<div id_customer="${data[i].id}" onclick="RenderListRecipt(this)" class="navbar__user-item navbar__user-item-txt navbar__user-order">
+                        <i class="navbar__user-icon fa-solid fa-truck-fast"> </i>
                         Tra cứu đơn hàng
                     </div>
                     <div onclick="DetailCustomer(this)"class="navbar__user-item navbar__user-item-txt navbar__user-id" value="${data[i].Username}" id_customer="${data[i].id}">
@@ -611,7 +611,7 @@ function SignUp() {
 ///Giữ lại tên tài khoản
 function setAccount(user,id){
     if(user == null){
-    document.getElementById("User").innerHTML=`<div onclick="SignUpOpen()" class="navbar__user-item navbar__user-item-txt navbar__user-order">
+    document.getElementById("User").innerHTML=`<div onclick="SignUpOpen()" class="navbar__user-item navbar__user-item-txt navbar__user-order" >
         <i class="navbar__user-icon fa-solid fa-truck-fast"></i>
         Tra cứu đơn hàng
     </div>
@@ -619,13 +619,13 @@ function setAccount(user,id){
         <i class="navbar__user-icon fa-solid fa-user"></i>
         Tài khoản của tôi
     </div>
-    <div onclick="SignUpOpen()" class="navbar__user-item navbar__user-item-txt navbar__user-cart" onclick="Cart()">
+    <div onclick="SignUpOpen()" class="navbar__user-item navbar__user-item-txt navbar__user-cart">
         <i class="navbar__user-icon fa-solid fa-cart-shopping"></i>
         Giỏ hàng
     </div>`
     }
     else if(user.includes("Admin")){
-        document.getElementById("User").innerHTML=`<div class="navbar__user-item navbar__user-item-txt navbar__user-order">
+        document.getElementById("User").innerHTML=`<div id_customer="${id}" onclick="RenderListRecipt(this)" class="navbar__user-item navbar__user-item-txt navbar__user-order" id_customer="${id}">
             <i class="navbar__user-icon fa-solid fa-truck-fast"></i>
             Tra cứu đơn hàng
         </div>
@@ -638,10 +638,10 @@ function setAccount(user,id){
             Giỏ hàng
         </div>`}
     else{
-        document.getElementById("User").innerHTML=`<div class="navbar__user-item navbar__user-item-txt navbar__user-order">
-        <i class="navbar__user-icon fa-solid fa-truck-fast"></i>
-        Tra cứu đơn hàng
-    </div>
+        document.getElementById("User").innerHTML=`<div id_customer="${id}" onclick="RenderListRecipt(this)" class="navbar__user-item navbar__user-item-txt navbar__user-order">
+                <i class="navbar__user-icon fa-solid fa-truck-fast"> </i>
+                Tra cứu đơn hàng
+            </div>
     <div onclick="DetailCustomer(this)" class="navbar__user-item navbar__user-item-txt navbar__user-id" value="${user}}" id_customer="${id}">
         <i class="navbar__user-icon fa-solid fa-user"></i>
         ${user}
@@ -655,7 +655,7 @@ function setAccount(user,id){
 function LogOut() {
     localStorage.removeItem("username")
     localStorage.removeItem("id")
-    var str = ` <div class="navbar__user-item navbar__user-item-txt navbar__user-order">
+    var str = ` <div onclick="SignUpOpen()" class="navbar__user-item navbar__user-item-txt navbar__user-order">
             <i class="navbar__user-icon fa-solid fa-truck-fast"></i>
             Tra cứu đơn hàng
         </div>
@@ -663,12 +663,13 @@ function LogOut() {
             <i class="navbar__user-icon fa-solid fa-user"></i>
             Tài khoản của tôi
         </div>
-        <div onclick="Cart()" class="navbar__user-item navbar__user-item-txt navbar__user-cart">
+        <div onclick="SignUpOpen()" class="navbar__user-item navbar__user-item-txt navbar__user-cart">
             <i class="navbar__user-icon fa-solid fa-cart-shopping"></i>
             Giỏ hàng
         </div>`
     document.getElementById("User").innerHTML = str;
     document.querySelector('.customer').style.display = 'none';
+    GoBack()
 }
 
 openAdmin = () => {
@@ -744,90 +745,6 @@ function Search(){
     var timeout=setTimeout(function(){
         document.getElementById("content-home").innerHTML=product
     },100)
-}
-var list = []
-
-function OrderProduct(order) {
-    var id_product = order.getAttribute("id_product")
-    var origin_product = order.getAttribute("origin")
-    var product = { id: id_product, origin: origin_product }
-    list.push(product)
-    console.log(list)
-}
-var table
-function Cart(){
-    console.log(list)
-    var upload = document.getElementById('content')
-    table= `<div class="cart">
-            <div class="cart-form">
-        <h1 class="cart__headline">Giỏ hàng</h1>
-        <div class="cart--table">
-        <table>
-        <tr>
-            <th>Sản phẩm</th>
-            <th>Tên sản phẩm</th>
-            <th>Số lượng</th>
-            <th>Giá tiền</th>
-            <th>Xóa</th>
-        </tr>`
-    for (i = 0; i < list.length; i++) {
-        console.log(i)
-        if (list[i].origin === "Office") {
-            url = lapOfficeApi
-        }
-        if (list[i].origin === "Gaming") {
-            url = lapGamingApi
-        }
-        if (list[i].origin === "Keybroad") {
-            url = keyboardApi
-        }
-        if (list[i].origin === "Mouse") {
-            url = mouseApi
-        }
-        console.log(list)
-        fetch(url)
-            .then(res => res.json())
-            .then(data => {
-                console.log(i)
-                for(j=0;j<data.length;j++){
-                    if (data[j].id === list[i-1].id) {
-                        console.log(data[j].id)
-                        table += `<tr>
-                        <td><img src="${data[j].img} id="image" ></td>
-                        <td>${data[j].name}</td>
-                        <td></td>
-                        <td>${data[j].new_price}</td>
-                        <td><button>Xóa</button></td>
-                    </tr>`
-                        console.log(table)
-
-                    }
-                };
-            })
-    }
-    setTimeout(function(){
-        table+= `<tr>
-        <td colspan="4">Tổng cộng</td>
-        <td colspan="2"></td>
-            </tr>
-            </tbody>
-        </table>
-        </div>
-    <div class="cart__note">
-        <div>
-            <input type="text" class="cart__note--cartbox" name="cart__note--cartbox" placeholder="Ghi chú">
-        </div>
-        <div>
-            <button class="cart__note--btn">Thanh toán</button>
-        </div>
-        </div>
-        </div>
-        </div>`
-        upload.innerHTML = table
-    },100)
-    console.log(table)
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
 }
 ////Thông tin khách hàng
 
@@ -1155,62 +1072,117 @@ function GoBack(){
     renderContent()
     start()
 }
-function SearchRecipt(customer){
-    var id_customer=customer.getAttribute("id_customer")
-    table = `<div class="cart">
-            <div class="cart-form">
-        <h1 class="cart__headline">Giỏ hàng</h1>
-        <div class="cart--table" id="cart_table">
-        <table>
-        <thead>
-        <tr>
-        <th style="padding:10px;">ID</th>
-        <th style="padding:10px;">Tên sản phẩm</th>
-        <th style="padding:10px;">Sản phẩm</th>
-        <th style="padding:10px;">Số lượng</th>
-        <th style="padding:10px;">Giá tiền</th>
-        </tr>
-        </thead>`
-        table += `
-        <tr>
-        <td rowspan="${data[i].chitietdh.length}">${data[i].item}</td>
-        <td  id="tensp">${data[j].name}</td>
-        <td styles="padding-left=20px;"><img src="${data[j].img} id="image" ></td>
-        <td "><input type="number" name="quantity" value="${quantity_product1}" min="1" max="10" id="soluong" class="sl"  style="text-align:center;"</td>
-        <td id="giatien" class="price">${data[j].new_price}</td>
-    </tr>`
-    
-    fetch(urlDH)
-    .then(res => res.json())
-    .then(data =>{
-        for(i=0;i<data.length;i++){
-            if(data[i].id_kh==id_customer){
-                table += `
-                <tr>
-                <td rowspan="${data[i].chitietdh.length}">${data[i].item}</td>`
-            for(j=0;j<data[i].chitietdh.length;j++){
-            `<td  id="tensp">${data[j].name}</td>
-                    <td styles="padding-left=20px;"><img src="${data[j].img} id="image" ></td>
-                    <td "><input type="text" name="quantity" value="${data[i].chitietdh[j].sl}" id="soluong" class="sl"  style="text-align:center;"</td>
-                    <td id="giatien" class="price">${data[i].chitietdh[j].price}</td>
-            </tr>`
-            }
-                table += `<tr>
-                <td colspan="3">Tổng cộng</td>
-                <td>${data[i].tongcong}</td
-                    </tr>
-                </table>
-                </div>
-                </div>
-                </div>
-                </div>`     
-            }
-        }
-    })
-    
-}
-var list = []
 
+var listRecipt=[]
+function RenderListRecipt(array){
+    listRecipt=[]
+    var id_customer=array.getAttribute("id_customer")
+    var tableHD= `<div class="Recipt" style="width=100%">
+    <div class="Recipt-form">
+    <h1 class="Recipt__headline" style="margin:200px 500px 0px; width: 100%">Thông tin các đơn hàng</h1>
+    <div class="Recipt--table" id="Recipt_table" style="width=100%">
+    <table style="margin:50px 300px" border="solid black" class="recipt_table">
+    <thead>
+    <tr>
+    <th>ID</th>
+    <th>Tên sản phẩm</th>
+    <th>Sản phẩm</th>
+    <th>Số lượng</th>
+    <th>Giá tiền</th>
+    </tr>
+    </thead>`
+    fetch(urlDH)
+    .then(res=> res.json())
+    .then(data =>{
+        data.forEach(item => {
+            setTimeout(() => {
+                SearchRecipt(item,id_customer)   
+            }, 100);
+
+        });
+    })
+    setTimeout(() => { 
+        console.log(listRecipt)
+        if(listRecipt.length == 0){
+            alert("Khách hàng chưa có đơn hàng")
+        }
+        else{
+        for(j=0;j<listRecipt.length;j++){
+            tableHD +=`
+            <tr>
+            <td colspan="5"><b>${listRecipt[j].id}</b><span style="padding-left: 100px">${listRecipt[j].tinhtrang}</span></td>
+            </tr>`
+            for(i=0;i<listRecipt[j].chitietdh.length;i++){
+                tableHD+=
+                    `<tr>
+                    <td>+</td>
+                    <td id="tensp">${listRecipt[j].chitietdh[i].tensp}</td>
+                    <td styles="padding-left=20px;"><img src="${listRecipt[j].chitietdh[i].img} id="image" ></td>
+                    <td>${listRecipt[j].chitietdh[i].sl}</td>
+                    <td id="giatien" class="price">${listRecipt[j].chitietdh[i].price}</td>
+                    </tr>`
+            }
+                tableHD+= `<tr>
+                <td colspan="4"><b>Tổng cộng:</b></td>
+                <td>${listRecipt[j].tongcong}</td
+                    </tr>`               
+        };
+        table+=`</table>
+        </div>
+        </div>
+        </div>`         
+        document.getElementById("content").innerHTML= tableHD 
+    }
+    }, 1000);
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;  
+}
+function SearchRecipt(customer,id){
+    if(customer.id_kh==id){
+        var id_DH=customer.id
+        var TongCong=customer.tongcong
+        var TinhTrang=customer.tinhtrang
+        var ctdh=[]
+        customer.chitietdh.forEach(item => {
+        if(item.phanloai=="Office"){
+            url=urlOffice
+        }
+        if(item.phanloai=="Gaming"){
+            url=urlGaming
+        }
+        if(item.phanloai=="Keyboard"){
+            url=urlKeyboard
+        }
+        if(item.phanloai=="Mouse"){
+            url=urlMouse
+        }
+        if(item.phanloai=="Headphone"){
+            url=urlHeadphone
+        }
+        fetch(url+"/"+item.id_sp)
+        .then(res=>res.json())
+        .then(info =>{
+        var one_product={
+            tensp: info.name,
+            img : info.img,
+            sl: item.sl,
+            price: item.price,
+        }  
+            ctdh.push(one_product)
+        })
+        });        
+            var one_HD={
+            id: id_DH,
+            chitietdh: ctdh,
+            tongcong: TongCong,
+            tinhtrang: TinhTrang
+        }
+        listRecipt.push(one_HD)  
+        }
+                  
+}
+
+var list = []
 function OrderProduct(order) {
     var id_product = order.getAttribute("id_product")
     var origin_product = order.getAttribute("origin")

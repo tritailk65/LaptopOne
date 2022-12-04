@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/cart.css">
+    <!-- <link rel="stylesheet" href="./assets/css/cart.css"> -->
     <link rel="stylesheet" href="./assets/css/ProductDetails.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +39,7 @@
                     <div class="navbar__header-search-box">
                         <input type="text" class="navbar__header-search-txt" placeholder="Bạn cần tìm gì ?" id="Search">        
                     </div>
-                    <div class="navbar__header-search-box-icon" onclick="Search()">
+                    <div onclick="Search()" class="navbar__header-search-box-icon">
                         <i class="navbar__header-search-icon fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
@@ -101,10 +101,8 @@
 
         <div SignUpOpen() id="modal" class="modal">
         </div>
-        <!-- Phần khách hàng -->
         <div DetailCustomer(this) class="customer" id="customer">
         </div>
-
         <div id="content" class="content">
 
             <div id="content-home">

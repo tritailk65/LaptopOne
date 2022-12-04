@@ -19,7 +19,7 @@ function renderUser(Users){
     var htmls = Users.map(function (user){
         return `
         <tr>
-					<td id = 'user_id'>${user.id}</td>
+					<td>${user.id}</td>
 					<td class="d-none d-xl-table-cell">${user.Username}</td>
 					<td class="d-none d-xl-table-cell">${user.Password}</td>
 					<td class="d-none d-md-table-cell">${user.Permission}</td>
@@ -27,9 +27,9 @@ function renderUser(Users){
 				</tr>
         `
     });
-    console.log(htmls)
     dataUser.innerHTML = htmls.join("")
 }
+
 usersChange = (url,type,inform) => {
     if(type=="POST"||type=="PUT"){
         fetch(url,{
@@ -42,17 +42,6 @@ usersChange = (url,type,inform) => {
         .then(res => res.json())
         .catch(error => console.log(error))
     }
-    if(type=="GET"){
-        fetch(url,{
-            method: type,
-            headers:{
-                'Content-Type': 'application/json'
-            }
-        })
-        .then(res => res.json())
-        .then(data => data)
-        .catch(error => console.log(error))
-    }
     if(type=="DELETE"){
         fetch(url,{
             method: type,
@@ -63,110 +52,84 @@ usersChange = (url,type,inform) => {
         .catch(error => console.log(error))
     }
 }
-edituser= () => {
-    var getuser=document.querySelector(".form-control").value
-    var id=getuser[0]
+
+edituser = () => {
+    let getUserID=document.getElementById("id").value
+    let getUserUname=document.getElementById("uname").value
+    let getUserPwd=document.getElementById("pwd").value
+    let getUserPer=document.getElementById("per").value
     var data={
-        id: getuser[0],
-        Username: getuser[1],
-        Password: getuser[2],
-        Permission: getuser[3]
+        id: getUserID,
+        Username: getUserUname,
+        Password: getUserPwd,
+        Permission: getUserPer
     }
-    usersChange("http://localhost:3000/Account/"+id,"PUT",data)
+    usersChange("http://localhost:3000/Account/"+getUserID,"PUT",data)
 }
+
 editUserForm = (user) => {
-    //Mở form edit đè lên trang hiện tại
-    window.open('user-edit.html');
+    let index = document.getElementById('content');
     //Lấy iduser và log ra console
     var id=user.getAttribute("id_user")
-    fetch("http://localhost:3000/Account/"+id)
-    .then(res => res.json())
-    .then(data =>{
-        var str=`<div class="col-12 ">
-    <div class="card">
-        <div class="card-header">
-            <h5 class="card-title mb-0">ID Tài khoản</h5>
-        </div>
-        <div class="card-body">
-            <input type="text" class="form-control" placeholder="1" value="${data.id}" readonly>
-        </div>
-    </div>
+    var str
+    //Lay user qua id
+    fetch (userURL+'/'+id)
+        .then (res => res.json())
+        .then (detail =>  {
+            str =`
+            <div class="container-fluid p-0">
+					<div style="display:flex; justify-content: space-between;" class="mb-3">
+						<h1 class="h3 d-inline align-middle">Forms sửa thông tin tài khoản</h1>
+                        <button style="margin-right: 30px;" class="btn btn-primary" onclick="edituser()">Sửa</button> 
+					</div>
 
-    <div class="card">
-        <div class="card-header">
-            <h5 class="card-title mb-0">Tên tài khoản</h5>
-        </div>
-        <div class="card-body">
-            <input type="text" class="form-control" placeholder="tk1@example.com" value="${data.Username}" readonly>
-        </div>
-    </div>
+					<div class="row" id="row">
+						<div class="col-12 ">
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">ID Tài khoản</h5>
+								</div>
+								<div class="card-body">
+									<input type="text" class="form-control" placeholder="1" id="id" value="${detail.id}" readonly>
+								</div>
+							</div>
+						
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Tên tài khoản</h5>
+								</div>
+								<div class="card-body">
+									<input type="text" class="form-control" placeholder="tk1@example.com" id="uname" value="${detail.Username}" readonly>
+								</div>
+							</div>
+						
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Mật khẩu</h5>
+								</div>
+								<div class="card-body">
+									<input type="text" class="form-control" placeholder="123abc" id="pwd" value="${detail.Password}">
+								</div>
+							</div>
+						
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Permission</h5>
+								</div>
+								<div class="card-body">
+									<input type="text" class="form-control" placeholder="Customer" id="per" value="${detail.Permission}" readonly>
+								</div>
+							</div>						
+						</div>
+			        </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h5 class="card-title mb-0">Mật khẩu</h5>
-        </div>
-        <div class="card-body">
-            <input type="text" class="form-control" placeholder="123abc" value="${data.Password}">
-        </div>
-    </div>
+                    </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h5 class="card-title mb-0">Permission</h5>
-        </div>
-        <div class="card-body">
-            <input type="text" class="form-control" placeholder="Customer" value="${data.Permission}" readonly>
-        </div>
-    </div>						
-</div>`
-        document.getElementById("row").innerHTML=str
+					</div>
+				</div>
+                `
+                index.innerHTML = str;
     })
-//     var detail=usersChange("http://localhost:3000/Account/"+id,"GET")
-//     console.log(detail)
-//     var str=`<div class="col-12 ">
-//     <div class="card">
-//         <div class="card-header">
-//             <h5 class="card-title mb-0">ID Tài khoản</h5>
-//         </div>
-//         <div class="card-body">
-//             <input type="text" class="form-control" placeholder="1" value="${detail.id}" readonly>
-//         </div>
-//     </div>
-
-//     <div class="card">
-//         <div class="card-header">
-//             <h5 class="card-title mb-0">Tên tài khoản</h5>
-//         </div>
-//         <div class="card-body">
-//             <input type="text" class="form-control" placeholder="tk1@example.com" value="${detail.Username}" readonly>
-//         </div>
-//     </div>
-
-//     <div class="card">
-//         <div class="card-header">
-//             <h5 class="card-title mb-0">Mật khẩu</h5>
-//         </div>
-//         <div class="card-body">
-//             <input type="text" class="form-control" placeholder="123abc" value="${detail.Password}">
-//         </div>
-//     </div>
-
-//     <div class="card">
-//         <div class="card-header">
-//             <h5 class="card-title mb-0">Permission</h5>
-//         </div>
-//         <div class="card-body">
-//             <input type="text" class="form-control" placeholder="Customer" value="${detail.Permission}" readonly>
-//         </div>
-//     </div>						
-// </div>`
-    // var getuser=document.querySelector(".form-control")
-    // getuser[0].value=detail.id
-    // getuser[1].value=detail.Username
-    // getuser[2].value=detail.Password
-    // getuser[3].value=detail.Permission
-
-    
 }
 
 deleteUser = (del) => {

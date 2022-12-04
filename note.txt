@@ -1,0 +1,8 @@
+file main.js
++dòng 1074-1175: phần tra cứu đơn hàng
++dòng 565,586,628,641: sửa lại onclick và thêm thuộc tính id_customer
++dòng 655: hàm LogOut() có sửa
+file ProductDetails
++dòng 131-137: css phần bảng
+file db.json 
++có cập nhật thông tin

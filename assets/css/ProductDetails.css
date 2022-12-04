@@ -128,3 +128,10 @@
     height: 50px;
     width: 70px;
 }
+.recipt_table{
+    width: 50%;
+    height: 100%;
+}
+.recipt_table td,th{
+    font-size: medium;
+}
