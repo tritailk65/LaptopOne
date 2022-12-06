@@ -652,6 +652,7 @@ function setAccount(user, id) {
 
 function LogOut() {
     localStorage.removeItem("username")
+    localStorage.removeItem("id")
     var str = ` <div class="navbar__user-item navbar__user-item-txt navbar__user-order">
             <i class="navbar__user-icon fa-solid fa-truck-fast"></i>
             Tra cứu đơn hàng
@@ -848,31 +849,40 @@ function SaveDetail() {
 var list = []
 
 function OrderProduct(order) {
-    var id_product = order.getAttribute("id_product")
-    var origin_product = order.getAttribute("origin")
-    var quantity_product = 1
-    let price = order.getAttribute("price").split("₫")
-    let price1 = price[0].split(",")
-    var price2 = ""
-    var flag = false
-    for (var j = 0; j < price1.length; j++) {
-        price2 += price1[j]
-    }
-    if (list.length != 0) {
-        for (var i = 0; i < list.length; i++) {
-            if (id_product == list[i].id && origin_product == list[i].origin) {
-                flag = true
-                list[i].sl += 1
-                break
+
+    var choose = confirm("Xác nhận đặt sản phẩm này ?")
+    if (choose == true) {
+        if (localStorage.getItem("id") != null) {
+            var id_product = order.getAttribute("id_product")
+            var origin_product = order.getAttribute("origin")
+            var quantity_product = 1
+            let price = order.getAttribute("price").split("₫")
+            let price1 = price[0].split(",")
+            var price2 = ""
+            var flag = false
+            for (var j = 0; j < price1.length; j++) {
+                price2 += price1[j]
             }
+            if (list.length != 0) {
+                for (var i = 0; i < list.length; i++) {
+                    if (id_product == list[i].id && origin_product == list[i].origin) {
+                        flag = true
+                        list[i].sl += 1
+                        break
+                    }
+                }
+                if (flag == false) {
+                    var product = { id: id_product, origin: origin_product, sl: quantity_product, price: parseInt(price2) }
+                    list.push(product)
+                }
+            } else {
+                var product = { id: id_product, origin: origin_product, sl: quantity_product, price: parseInt(price2) }
+                list.push(product)
+            }
+        } else {
+            alert("Cần đăng nhập để đặt hàng");
+            SignUpOpen()
         }
-        if (flag == false) {
-            var product = { id: id_product, origin: origin_product, sl: quantity_product, price: parseInt(price2) }
-            list.push(product)
-        }
-    } else {
-        var product = { id: id_product, origin: origin_product, sl: quantity_product, price: parseInt(price2) }
-        list.push(product)
     }
 }
 var table
@@ -888,11 +898,11 @@ function Cart() {
         <table>
         <thead>
         <tr>
-        <th style="padding:10px;">Tên sản phẩm</th>
-                            <th style="padding:10px;">Sản phẩm</th>
-                            <th style="padding:10px;">Số lượng</th>
-                            <th style="padding:10px;">Giá tiền</th>
-                            <th style="padding:10px;">Xóa</th>
+        <th >Tên sản phẩm</th>
+                            <th >Sản phẩm</th>
+                            <th >Số lượng</th>
+                            <th >Giá tiền</th>
+                            <th >Xóa</th>
         </tr>
         </thead>`
     list.forEach(item => {
@@ -923,8 +933,8 @@ function Cart() {
                         table += `<tbody>
                         <tr >
                         <td  id="tensp">${data[j].name}</td>
-                        <td ><img src="${data[j].img} id="image" ></td>
-                        <td "><input type="number" name="quantity" value="${quantity_product1}" min="1" max="10" id="soluong" class="sl"  style="text-align:center;"</td>
+                        <td  ><img src="${data[j].img}" class="image"></td>
+                        <td ><input type="number" name="quantity" value="${quantity_product1}" min="1" max="10" id="soluong" class="sl"  style="text-align:center;"</td>
                         <td id="giatien" class="price">${data[j].new_price}</td>
                         <td><button class="btn-remove" onclick="remove_Cart(this)"  id_product="${data[j].id}" origin="${origin_product1}" customer="">Xóa</button></td>
                     </tr>`
@@ -961,7 +971,6 @@ function Cart() {
 }
 
 function remove_Cart(item) {
-    // var remove_cart = document.querySelectorAll(".btn-remove");
     var remove_cart = item.getAttribute("id_product")
     var origin = item.getAttribute("origin")
     for (var i = 0; i < list.length; i++) {
@@ -974,44 +983,47 @@ function remove_Cart(item) {
 var urlDH = 'http://localhost:3000/DonHang';
 
 function Discharge() {
-    const DischargeButton = document.querySelector(".cart__note--btn")
-    var id = localStorage.getItem("id")
-    var length1
-    var ArrayProduct = []
-    for (i = 0; i < list.length; i++) {
-        ArrayProduct.push({
-            id_sp: list[i].id,
-            phanloai: list[i].origin,
-            sl: list[i].sl,
-            price: list[i].price
+    var choose = confirm("Xác nhận thanh toán đơn hàng này ?")
+    if (choose == true) {
+        const DischargeButton = document.querySelector(".cart__note--btn")
+        var id = localStorage.getItem("id")
+        var length1
+        var ArrayProduct = []
+        for (i = 0; i < list.length; i++) {
+            ArrayProduct.push({
+                id_sp: list[i].id,
+                phanloai: list[i].origin,
+                sl: list[i].sl,
+                price: list[i].price
 
-        })
+            })
+            fetch(urlDH)
+                .then(res => res.json())
+                .then(data => length1 = data.length)
+
+
+            const json = {
+                id: length1 + 1,
+                id_kh: id,
+                chitietdh: ArrayProduct,
+                tongcong: total
+
+            }
+            const post = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(json)
+            }
+            fetch(urlDH, post)
+                .then(response => response.json())
+                .then(data => console.log(data))
+
+        }
     }
-    fetch(urlDH)
-        .then(res => res.json())
-        .then(data => length1 = data.length)
-    DischargeButton.addEventListener("click", event => {
-        // length = data.length()
-
-        const json = {
-            id: length1 + 1,
-            id_kh: id,
-            chitietdh: ArrayProduct,
-            tongcong: total
-
-        }
-        const post = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(json)
-        }
-        fetch(urlDH, post)
-            .then(response => response.json())
-            .then(data => console.log(data))
-    })
 }
+
 let total
 
 function Total() {

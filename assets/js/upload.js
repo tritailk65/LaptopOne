@@ -62,7 +62,7 @@ function UpLoad(product) {
                     <span class="productdetails__header--information--content--info--details2">✔ Miễn phí giao hàng toàn quốc. </span>
                 </div>
                 <div class="productdetails__header--information--content--price" id="product-price"><del>${item.old_price}</del><br>${item.new_price}</div>
-                <div class="productdetails__header--information--content--order" id="Order" id_acc="${item.id_acc}" price= "${item.new_price}" id_product="${item.id}" origin="` + origin + `" onclick="OrderProduct(this)">Đặt hàng</div>
+                <div class="productdetails__header--information--content--order" id="Order" price= "${item.new_price}" id_product="${item.id}" origin="` + origin + `" onclick="OrderProduct(this)">Đặt hàng</div>
                 </div>
                 </div>
             </div>
