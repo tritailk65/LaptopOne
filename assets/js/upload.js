@@ -41,14 +41,13 @@ function UpLoad(product){
         <div class="productdetails__header--information">
             <div class="productdetails__header--information--image" id="product--image">
                 <div class="productdetails__header--information--image--item" id="image">
-                    <div class="productdetails__header--information--image--item--image" id="image-1"><img src="${item.img}"/></div>
-                    <div class="productdetails__header--information--image--item--image" id="image-2"><img class="product-detail_small-pic" src="${item.img_1}"/></div>
-                    <div class="productdetails__header--information--image--item--image" id="image-3"><img class="product-detail_small-pic" src="${item.img_2}"/></div>
-                    <div class="productdetails__header--information--image--item--image" id="image-4"><img class="product-detail_small-pic" src="${item.img_3}"/></div>
-                    <div class="productdetails__header--information--image--item--image" id="image-5"><img class="product-detail_small-pic" src="${item.img_4}"/></div>
-                    <div class="productdetails__header--information--image--item--image" id="image-6"><img class="product-detail_small-pic" src="${item.img_5}"/></div>
-                    
-                </div>
+                <div class="productdetails__header--information--image--item--image" id="image-1" style="background-image: url('${item.img}') ;"></div>
+                <div class="productdetails__header--information--image--item--image" id="image-2" style="background-image: url('${item.img_1}') ;"></div>
+                <div class="productdetails__header--information--image--item--image" id="image-3" style="background-image: url('${item.img_2}') ;"></div>
+                <div class="productdetails__header--information--image--item--image" id="image-4" style="background-image: url('${item.img_3}') ;"></div>
+                <div class="productdetails__header--information--image--item--image" id="image-5" style="background-image: url('${item.img_4}') ;"></div>
+                <div class="productdetails__header--information--image--item--image" id="image-6" style="background-image: url('${item.img_5}') ;"></div>
+            </div>
                 <button class="productdetails__header--information--image--previous" onclick="PreviousImage()"><</button>
                 <button class="productdetails__header--information--image--next" onclick="NextImage()">></button>
             </div>
@@ -62,7 +61,7 @@ function UpLoad(product){
                     <span class="productdetails__header--information--content--info--details2">✔ Miễn phí giao hàng toàn quốc. </span>
                 </div>
                 <div class="productdetails__header--information--content--price" id="product-price"><del>${item.old_price}</del><br>${item.new_price}</div>
-                <div class="productdetails__header--information--content--order" onclick="OrderProduct()">Đặt hàng</div>
+                <div class="productdetails__header--information--content--order" id="Order" id_product="${item.id}" origin="` + origin + `" price="${item.new_price}"onclick="OrderProduct(this)">Đặt hàng</div>
                 </div>
                 </div>
             </div>

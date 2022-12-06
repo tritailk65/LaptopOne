@@ -72,15 +72,15 @@
 							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
                 			<img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">Administrator</span>
               				</a>
-							<div class="dropdown-menu dropdown-menu-end">
-								<a class="dropdown-item" href="#">Log out</a>
+							<div onclick="LogOut()" class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" onclick="window.close()">Log out</a>
 							</div>
 						</li>
 					</ul>
 				</div>
 			</nav>
 
-			<main class="content">
+			<!-- <main class="content">
 				<div class="container-fluid p-0">
 
 					<h1 class="h3 mb-3"><strong>Analytics</strong> Dashboard</h1>
@@ -349,7 +349,7 @@
 					</div>
 
 				</div>
-			</main>
+			</main> -->
 
 		</div>
 	</div>
@@ -577,6 +577,8 @@
 			});
 		});
 	</script>
+
+	<script src ='../assets/js/main.js'></script>
 
 </body>
 

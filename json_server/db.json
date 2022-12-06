@@ -1431,26 +1431,196 @@
     {
       "id": "1",
       "Username": "Admin123",
-      "Password": "123456",
-      "Permission": "Admin"
+      "Password": "123123123",
+      "Permission": "Admin",
+      "Customer": "Nhóm 19",
+      "PhoneNumber": "0934567854",
+      "Address": "273 An D. Vương, Phường 3, Quận 5, Thành phố Hồ Chí Minh"
     },
     {
       "id": "2",
       "Username": "Customer1",
-      "Password": "1234656test",
-      "Permission": "Customer"
+      "Password": "12341234",
+      "Permission": "Customer",
+      "Customer": "Nguyễn Văn A",
+      "PhoneNumber": "0934567856",
+      "Address": "200 An D. Vương, Phường 3, Quận 5, Thành phố Hồ Chí Minh"
     },
     {
       "id": "3",
       "Username": "Customer2",
       "Password": "123123123",
-      "Permission": "Customer"
+      "Permission": "Customer",
+      "Customer": "Lê Minh Phúc",
+      "PhoneNumber": "0934567855",
+      "Address": "189 An D. Vương, Phường 3, Quận 5, Thành phố Hồ Chí Minh"
+    }
+  ],
+  "DonHang": [
+    {
+      "id": "1",
+      "id_kh": "2",
+      "chitietdh": [
+        {
+          "id_sp": "1",
+          "phanloai": "Office",
+          "sl": 1,
+          "price": 14990000
+        },
+        {
+          "id_sp": "1",
+          "phanloai": "Gaming",
+          "sl": 1,
+          "price": 22490000
+        }
+      ],
+      "day": "6/12/2022",
+      "tongcong": 37480000,
+      "tinhtrang": "Chưa nhận hàng"
     },
     {
-      "id": 4,
-      "Username": "test1",
-      "Password": "123456",
-      "Permission": "Customer"
+      "id": "3",
+      "id_kh": "3",
+      "chitietdh": [
+        {
+          "id_sp": "1",
+          "phanloai": "Keyboard",
+          "sl": 2,
+          "price": 2990000
+        },
+        {
+          "id_sp": "1",
+          "phanloai": "Mouse",
+          "sl": 2,
+          "price": 2379000
+        }
+      ],
+      "day": "6/12/2022",
+      "tongcong": 10738000,
+      "tinhtrang": "Đã giao hàng"
+    },
+    {
+      "id": "4",
+      "id_kh": "3",
+      "chitietdh": [
+        {
+          "id_sp": "1",
+          "phanloai": "Headphone",
+          "sl": 2,
+          "price": 900000
+        }
+      ],
+      "day": "6/12/2022",
+      "tongcong": 1800000,
+      "tinhtrang": "Đã giao hàng"
+    },
+    {
+      "id": "5",
+      "id_kh": "1",
+      "chitietdh": [
+        {
+          "id_sp": "3",
+          "phanloai": "Office",
+          "sl": 1,
+          "price": 19990000
+        }
+      ],
+      "day": "6/12/2022",
+      "tongcong": 19990000,
+      "tinhtrang": "Chưa nhận hàng"
+    },
+    {
+      "id": "6",
+      "id_kh": "1",
+      "chitietdh": [
+        {
+          "id_sp": "1",
+          "phanloai": "Office",
+          "sl": 1,
+          "price": 14990000
+        }
+      ],
+      "day": "6/12/2022",
+      "tongcong": 14990000,
+      "tinhtrang": "Đã giao hàng"
+    },
+    {
+      "id": "7",
+      "id_kh": "2",
+      "chitietdh": [
+        {
+          "id_sp": "1",
+          "phanloai": "Office",
+          "sl": 2,
+          "price": 14990000
+        }
+      ],
+      "day": "6/12/2022",
+      "tongcong": 32270000,
+      "tinhtrang": "Đã giao hàng"
+    },
+    {
+      "id": "8",
+      "id_kh": "2",
+      "chitietdh": [
+        {
+          "id_sp": "1",
+          "phanloai": "Office",
+          "sl": 2,
+          "price": 14990000
+        },
+        {
+          "id_sp": "7",
+          "phanloai": "Keyboard",
+          "sl": 1,
+          "price": 2290000
+        }
+      ],
+      "day": "6/12/2022",
+      "tongcong": 32270000,
+      "tinhtrang": "Đã giao hàng"
+    },
+    {
+      "id": "9",
+      "id_kh": "2",
+      "chitietdh": [
+        {
+          "id_sp": "1",
+          "phanloai": "Gaming",
+          "sl": 1,
+          "price": 22490000
+        },
+        {
+          "id_sp": "7",
+          "phanloai": "Gaming",
+          "sl": 1,
+          "price": 48990000
+        }
+      ],
+      "day": "6/12/2022",
+      "tongcong": 71480000,
+      "tinhtrang": "Đã giao hàng"
+    },
+    {
+      "id": 10,
+      "id_kh": "1",
+      "chitietdh": [
+        {
+          "id_sp": "5",
+          "phanloai": "Gaming",
+          "sl": 1,
+          "price": 17490000
+        },
+        {
+          "id_sp": "29",
+          "phanloai": "Keyboard",
+          "sl": 1,
+          "price": 3590000
+        }
+      ],
+      "day": "6/12/2022",
+      "tongcong": 21080000,
+      "tinhtrang": "Chưa nhận hàng"
     }
   ]
 }
