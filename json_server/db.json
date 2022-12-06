@@ -3009,6 +3009,18 @@
                 "price": 15590000
             }],
             "tongcong": 15590000
+        },
+        {
+            "id": 12,
+            "id_kh": "2",
+            "chitietdh": [{
+                "id_sp": "7",
+                "phanloai": "Keyboard",
+                "sl": 1,
+                "price": 2290000
+            }],
+            "day": "6/12/2022",
+            "tongcong": 2290000
         }
     ]
 }

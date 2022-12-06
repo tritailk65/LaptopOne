@@ -879,6 +879,7 @@ function OrderProduct(order) {
                 var product = { id: id_product, origin: origin_product, sl: quantity_product, price: parseInt(price2) }
                 list.push(product)
             }
+
         } else {
             alert("Cần đăng nhập để đặt hàng");
             SignUpOpen()
@@ -988,6 +989,11 @@ function Discharge() {
         const DischargeButton = document.querySelector(".cart__note--btn")
         var id = localStorage.getItem("id")
         var length1
+        let d = new Date()
+        let year = d.getFullYear()
+        let month = d.getMonth() + 1;
+        let day = d.getDate();
+        var daychoose = day + '/' + month + '/' + year;
         var ArrayProduct = []
         for (i = 0; i < list.length; i++) {
             ArrayProduct.push({
@@ -1006,6 +1012,7 @@ function Discharge() {
                 id: length1 + 1,
                 id_kh: id,
                 chitietdh: ArrayProduct,
+                day: daychoose,
                 tongcong: total
 
             }
