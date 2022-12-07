@@ -1,5 +1,3 @@
-var homeHTML="";
-
 function SignUpOpen() {
     var textHTLM = '<form class="sign-up-form" name="SignUpForm"> \
     <div onclick="SignUpClose()" class="sign-up_close-btn btn">x</div>\
@@ -485,19 +483,6 @@ function renderHeadphones3(Products){
     listProduct.innerHTML = htmls.join("");
 }
 
-//Lấy HTML document khi chuyển qua trang chi tiết sản phẩm
-function getHomeHTML () {
-    homeHTML = document.getElementById('content-home');
-}
-
-//Thay thế node con Product-detail bằng node Home
-function backHome () {
-    let parent = document.getElementById('content');
-    let child = document.getElementById('content-productdetail');
-    parent.replaceChild(homeHTML,child);
-}
-
-
 function Register() {
     var usertxt = document.RegisterForm.uname
     var user = usertxt.value
@@ -862,7 +847,6 @@ function SaveDetail(){
 
 var listRecipt=[]
 function RenderListRecipt(array){
-    getHomeHTML();
     listRecipt=[]
     var id_customer=array.getAttribute("id_customer")
     var tableHD= `<div class="Recipt" style="width=100%">
@@ -1021,7 +1005,6 @@ var table
 
 function Cart() {
     Total()
-    getHomeHTML()
     var upload = document.getElementById('content')
     table = `<div class="cart" id = "content-productdetail">
             <div class="cart-form">
@@ -1136,7 +1119,7 @@ function Discharge() {
                 .then(res => res.json())
                 .then(data => {
                      const json = {
-                id: parseInt (data[data.length-1].id) + 1,
+                id: (parseInt (data[data.length-1].id) + 1)+'',
                 id_kh: id,
                 chitietdh: ArrayProduct,
                 day: daychoose,
