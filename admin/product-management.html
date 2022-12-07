@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/pages-profile.html" />
+
+	<title>All Products | LaptopOne Admin</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="admin.html">
+          <span class="align-middle">LaptopOne Admin</span>
+        </a>
+
+				<ul class="sidebar-nav">
+						<li class="sidebar-header">
+							
+						</li>
+	
+						<li class="sidebar-item">
+							<a class="sidebar-link" href="admin.html">
+				  <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+				</a>
+						</li>
+	
+						<li class="sidebar-item">
+							<a class="sidebar-link" href="users-management.html">
+					<i class="align-middle" data-feather="user"></i> <span class="align-middle">Users Management</span>
+				</a>
+						</li>
+	
+						<li class="sidebar-item active">
+							<a class="sidebar-link" href="product-management.html">
+				<i class="align-middle me-2" data-feather="box"></i> <span class="align-middle">Products management</span>
+				</a>
+						</li>
+	
+						<li class="sidebar-item">
+							<a class="sidebar-link" href="recipt-management.html">
+				<i class="align-middle me-2" data-feather="truck"></i> <span class="align-middle">Recipt management</span>
+				</a>
+						</li>
+				</ul>
+
+			</div>
+		</nav>
+
+		<div class="main">
+
+			<!-- nav-bar -->
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+          		<i class="hamburger align-self-center"></i>
+        		</a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+	
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+                			<i class="align-middle" data-feather="settings"></i>
+             				</a>
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                			<img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">Administrator</span>
+              				</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" onclick="window.close()">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content" id="content">
+				<div class="row">
+					<div class="col-12">
+						<div class="card flex-fill w-100">
+							<div class="card-header">
+								<div style="display: flex; justify-content: space-between;">
+									<div>
+										<h5 class="card-title mb-0">Products list</h5>
+										<!-- <button onclick="addProduct()" style="margin-top: 10px;" class="btn btn-success">Thêm</button>  -->
+									</div>
+									<div>
+										<button onclick="prodOffice()" style="margin-top: 10px;" class="btn btn-info">Office</button> 
+										<button onclick="prodGaming()" style="margin-top: 10px;" class="btn btn-info">Gaming</button> 
+										<button onclick="prodMouse()" style="margin-top: 10px;" class="btn btn-info">Mouse</button> 
+										<button onclick="prodKeyboard()" style="margin-top: 10px;" class="btn btn-info">Keyboard</button> 
+										<button onclick="prodHeadphone()" style="margin-top: 10px;" class="btn btn-info">Headphone</button> 
+									</div>
+								</div>
+								
+							</div>
+							<table class="table table-hover my-0">
+								<thead>
+									<tr>
+										<th>ID</th>
+										<th class="d-none d-xl-table-cell">Product name</th>
+										<th class="d-none d-xl-table-cell">Type</th>
+										<th class="d-none d-xl-table-cell">Price</th>
+										<th class="d-none d-xl-table-cell">Image</th>
+										<th class="d-none d-xl-table-cell">Action</th>
+									</tr>
+								</thead>
+								<tbody id="body">
+							
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+			</main>
+
+		</div>	
+
+		
+
+		<script src="js/app.js"></script>
+		<script src="js/product-admin.js"></script>
+		<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

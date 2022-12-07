@@ -1,0 +1,6 @@
+file index.html:
++Dòng 113-132: gán thêm hàm 
++Thêm thẻ script filter.js
+file main.js:
++Dòng 1188: Hàm renderContent có sửa lại phần gán hàm onclick của menu (từ dòng 1193-1211)
+--Thêm file filter.js
