@@ -64,8 +64,9 @@ function UpLoad(product){
                 <div class="productdetails__header--information--content--order" id="Order" id_product="${item.id}" origin="` + origin + `" price="${item.new_price}"onclick="OrderProduct(this)">Đặt hàng</div>
                 </div>
                 </div>
-            </div>
-            <div class="productdetails__details" id="productdetail">
+            </div>`
+            if(item.type=="Office"||item.type=="Gaming"){
+            upload.innerHTML+=`<div class="productdetails__details" id="productdetail">
                 <h2> Thông số kỹ thuật </h2>
                 <table class="productdetails__details--table" cellspacing="3" cellpadding="10" border="10" bordercolor="black" id="product--table">
                     <tr>
@@ -132,8 +133,8 @@ function UpLoad(product){
                         <td>Kích thước:</td>
                         <td>${item.size}</td>
                     </tr>
-                </table>
-            </div>
+                </table>`}
+            upload.innerHTML+=`</div>
         </div>`
     }
         });

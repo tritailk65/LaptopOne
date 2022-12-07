@@ -1191,25 +1191,25 @@ function renderContent(){
     <div class="content-top">
         <div class="list">
         <div class="list__item"   onclick="Search1()">
-            <i class="list__item-icon fa-solid fa-laptop"></i>
+        <i class="list__item-icon fa-solid fa-laptop"></i>
         <div class="list__item-txt">Laptop văn phòng</div>
-        </div>
-        <div class="list__item"  onclick="Search2()">
-            <i class="list__item-icon fa-solid fa-laptop"></i>
-            <div class="list__item-txt">Laptop gaming</div>
-        </div>
-        div class="list__item"  onclick="Search3()">
-            <i class="list__item-icon fa-regular fa-keyboard"></i>
-            <div class="list__item-txt">Bàn phím</div>
-        </div>
-        <div class="list__item"  onclick="Search4()">
-            <i class="list__item-icon fa-solid fa-computer-mouse"></i>
-            <div class="list__item-txt">Chuột & Lót chuột</div>
-        </div>
-        <div class="list__item"  onclick="Search5()">
-            <i class="list__item-icon fa-solid fa-headphones"></i>
+    </div>
+    <div class="list__item"  onclick="Search2()">
+        <i class="list__item-icon fa-solid fa-laptop"></i>
+        <div class="list__item-txt">Laptop gaming</div>
+    </div>
+    <div class="list__item"  onclick="Search3()">
+        <i class="list__item-icon fa-regular fa-keyboard"></i>
+        <div class="list__item-txt">Bàn phím</div>
+    </div>
+    <div class="list__item"  onclick="Search4()">
+        <i class="list__item-icon fa-solid fa-computer-mouse"></i>
+        <div class="list__item-txt">Chuột & Lót chuột</div>
+    </div>
+    <div class="list__item"  onclick="Search5()">
+        <i class="list__item-icon fa-solid fa-headphones"></i>
         <div class="list__item-txt">Tai nghe</div>
-        </div>
+    </div>
         <div class="list__item">
             <i class="list__item-icon fa-brands fa-usb"></i>
             <div class="list__item-txt">Khác</div>
