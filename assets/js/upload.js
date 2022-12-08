@@ -6,7 +6,6 @@ const urlMouse="http://localhost:3000/Product_Mouses"
 const urlHeadphone ='http://localhost:3000/Product_Headphone'
 
 function UpLoad(product){
-    getHomeHTML();
     var upload=document.getElementById('content')
     var id=product.getAttribute("value")
     var origin=product.getAttribute("origin")

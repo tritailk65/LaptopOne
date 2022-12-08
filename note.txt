@@ -1,8 +1,2 @@
-file index.html:
-+Dòng 113-132: gán thêm hàm 
-+Thêm thẻ script filter.js
-file main.js:
-+Dòng 1188: Hàm renderContent có sửa lại phần gán hàm onclick của menu (từ dòng 1193-1211)
---Thêm file filter.js
-file upload.js:
-+Mới sửa lại khi chọn sản phẩm là chuột bàn phím tai nghe sẽ ko xuất hiện bảng thông số kỹ thuật
+Xong phần danh mục sản phẩm
+Xong phần chi tiết sản phẩm khi bấm vào sản phẩm chuột bàn phím và tai nghe sẽ ko hiện bảng thông số kỹ thuật

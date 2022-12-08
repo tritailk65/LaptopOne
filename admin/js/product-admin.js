@@ -116,7 +116,7 @@ function renderMouse(Products){
 				<td class="d-none d-xl-table-cell">${product.type}</td>
 				<td class="d-none d-xl-table-cell">${product.new_price}</td>
 				<td class="d-none d-xl-table-cell"><img class="avatar" src="${product.img}"></td>
-				<td><button onclick="editLaptopForm(this)" class="btn btn-primary" id_product = "${product.id}" type_product="${product.type}" >Sửa</button> <button id_product = "${product.id}" type_product="${product.type}" onclick="deleteProduct(this)" class="btn btn-danger">Xóa</button></td>
+				<td><button onclick="editDifProdForm(this)" class="btn btn-primary" id_product = "${product.id}" type_product="${product.type}" >Sửa</button> <button id_product = "${product.id}" type_product="${product.type}" onclick="deleteProduct(this)" class="btn btn-danger">Xóa</button></td>
         </tr>
         `
     });
@@ -146,7 +146,7 @@ function renderKeyboard(Products){
 				<td class="d-none d-xl-table-cell">${product.type}</td>
 				<td class="d-none d-xl-table-cell">${product.new_price}</td>
 				<td class="d-none d-xl-table-cell"><img class="avatar" src="${product.img}"></td>
-				<td><button onclick="editLaptopForm(this)" class="btn btn-primary" id_product = "${product.id}" type_product="${product.type}" >Sửa</button> <button id_product = "${product.id}" type_product="${product.type}" onclick="deleteProduct(this)" class="btn btn-danger">Xóa</button></td>
+				<td><button onclick="editDifProdForm(this)" class="btn btn-primary" id_product = "${product.id}" type_product="${product.type}" >Sửa</button> <button id_product = "${product.id}" type_product="${product.type}" onclick="deleteProduct(this)" class="btn btn-danger">Xóa</button></td>
         </tr>
         `
     });
@@ -176,7 +176,7 @@ function renderHeadphone(Products){
 				<td class="d-none d-xl-table-cell">${product.type}</td>
 				<td class="d-none d-xl-table-cell">${product.new_price}</td>
 				<td class="d-none d-xl-table-cell"><img class="avatar" src="${product.img}"></td>
-				<td><button onclick="editLaptopForm(this)" class="btn btn-primary" id_product = "${product.id}" type_product="${product.type}" >Sửa</button> <button id_product = "${product.id}" type_product="${product.type}" onclick="deleteProduct(this)" class="btn btn-danger">Xóa</button></td>
+				<td><button onclick="editDifProdForm(this)" class="btn btn-primary" id_product = "${product.id}" type_product="${product.type}" >Sửa</button> <button id_product = "${product.id}" type_product="${product.type}" onclick="deleteProduct(this)" class="btn btn-danger">Xóa</button></td>
         </tr>
         `
     });
